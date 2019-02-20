@@ -22,10 +22,7 @@ PODS:
   - FMDB/standard (2.6.2)
   - HandyJSON (4.2.1)
   - JSONKit-NoWarning (1.2)
-  - Kingfisher (5.1.0)
   - KMPlaceholderTextView (1.4.0)
-  - LLCycleScrollView (1.5.2):
-    - Kingfisher
   - MBProgressHUD (1.0.0)
   - MJExtension (3.0.15.1)
   - MJRefresh (2.4.12)
@@ -40,7 +37,6 @@ DEPENDENCIES:
   - HandyJSON (~> 4.2.0)
   - JSONKit-NoWarning (= 1.2)
   - KMPlaceholderTextView (= 1.4.0)
-  - LLCycleScrollView
   - MBProgressHUD (~> 1.0.0)
   - MJExtension (~> 3.0.13)
   - MJRefresh (~> 2.4.12)
@@ -56,9 +52,7 @@ SPEC REPOS:
     - FMDB
     - HandyJSON
     - JSONKit-NoWarning
-    - Kingfisher
     - KMPlaceholderTextView
-    - LLCycleScrollView
     - MBProgressHUD
     - MJExtension
     - MJRefresh
@@ -73,9 +67,7 @@ SPEC CHECKSUMS:
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   HandyJSON: d0c5fc80204f29056d59d3e5c4587fa0b16b60a8
   JSONKit-NoWarning: 3d27e6f9e6846ecf741e8c64dcadd7d5aa7193cb
-  Kingfisher: fcec238063d17404fca89bf0a850583211c4cbf6
   KMPlaceholderTextView: 2206c3df39979e9396e2d96fa9f427a8951121b0
-  LLCycleScrollView: abe3c5aa4c802a15bf43b172a8b1f312b9589e19
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
   MJRefresh: ca8e9589895977df32d379d46e6b8a5450b3ff44
@@ -83,6 +75,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
   UzysAssetsPickerController: 47c27bd96955467925f3d4d80b1e2e8aaeff766d
 
-PODFILE CHECKSUM: 386c75316a341b76bfbdc287ba91a7774cbd8079
+PODFILE CHECKSUM: 9d9582cef4fc9030504bab01f15a4a55bae02d35
 
 COCOAPODS: 1.5.2

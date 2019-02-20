@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>icon</key>
+		<string>tabbar_position</string>
+		<key>highlight_Icon</key>
+		<string>tabbar_position_selected</string>
+		<key>title</key>
+		<string>首页</string>
+		<key>controller</key>
+		<string>HomePageViewController</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>tabbar_message</string>
+		<key>highlight_Icon</key>
+		<string>tabbar_message_selected</string>
+		<key>title</key>
+		<string>任务</string>
+		<key>controller</key>
+		<string>TaskViewController</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>tabbar_mine</string>
+		<key>highlight_Icon</key>
+		<string>tabbar_mine_selected</string>
+		<key>title</key>
+		<string>我的</string>
+		<key>controller</key>
+		<string>MineViewController</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,85 @@
+//
+//  Definition.pch
+//  BaoLi-OA
+//
+//  Created by Liao Qiang on 2018/1/16.
+//  Copyright © 2018年 BaoLi. All rights reserved.
+//
+
+#ifndef Definition_pch
+#define Definition_pch
+
+#import "ProgressHUD.h"
+#import "ActivityIndicatorManager.h"
+#import "YYNSessionManager.h"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#define MAIN_SCREEN_HEIGHT           [[UIScreen mainScreen] bounds].size.height
+#define MAIN_SCREEN_WIDTH            [[UIScreen mainScreen] bounds].size.width
+
+//这两个的区别是横屏状态下iphone x的navbar 高度，横屏状态下88太高了
+//#define NAV_BAR_HEIGHT               (MAX(MAIN_SCREEN_WIDTH,MAIN_SCREEN_HEIGHT) == 812?88:64)
+#define NAV_BAR_HEIGHT               (MAIN_SCREEN_HEIGHT == 812?88:64)
+#define EXTRA_BAR_HEIGHT             (MAIN_SCREEN_HEIGHT == 812?12:0)
+#define SYSTEEM_BOTTOM_MARGIN        (MAIN_SCREEN_HEIGHT == 812?34:0)
+
+#define STATUS_BAR_HEIGHT            (MAIN_SCREEN_HEIGHT == 812?44:20)
+//#define NAV_BAR_HEIGHT               64
+#define TAB_BAR_HEIGHT               (MAIN_SCREEN_HEIGHT == 812?84:50)
+#define TABLE_SECTION_SPACE          11         //一般是tableview sectionfooter的高度
+#define COMMON_CELL_HEIGHT           50         //cell高度
+
+#define IOS8_OR_LATER               ([[[UIDevice currentDevice] systemVersion] floatValue]>=8.0)
+#define iPhone_X                    (MAIN_SCREEN_HEIGHT == 812)
+#define iPhone_P                    (MAIN_SCREEN_WIDTH == 414)
+
+#define kUIColorFromRGB(rgbValue) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+#define NAV_BACKGROUND_COLOR         kUIColorFromRGB(0xf3f3f3)
+#define TEXT_COLOR                   kUIColorFromRGB(0x333333)
+#define LIGHT_TEXT_COLOR             kUIColorFromRGB(0xA6A6A6)
+#define SEPARATELINE_COLOR           kUIColorFromRGB(0xEFEFEF)
+#define CONTROLLERVIEW_COLOR         kUIColorFromRGB(0xFAFAFA)
+#define MAIN_THEME_COLOR             kUIColorFromRGB(0x00AFF4)          //APP主题颜色
+
+#define RGBA(r,g,b,a)                [UIColor colorWithRed:(float)r/255.0f green:(float)g/255.0f blue:(float)b/255.0f alpha:a]
+#define RGB(r,g,b)                   [UIColor colorWithRed:(float)r/255.0f green:(float)g/255.0f blue:(float)b/255.0f alpha:1]
+//灰色
+#define GrayRGB(x) RGBA(x, x, x,1)
+
+//时间格式化
+#define timeFormatter               @"yyyy-MM-dd HH:mm:ss"
+#define YYNdateFormatter            @"yyyy-MM-dd"
+#define hourFormatter               @"HH:mm"
+#define PageSize                    15
+
+#ifdef iPhone_P
+#define SystemRatio                 1.08
+#define SystemImageRatio            1.08
+#else
+#define SystemRatio                 1
+#define SystemImageRatio            1
+#endif
+
+
+
+#define YYNDOMAIN                   @"http://47.74.128.130:8080/"
+//#define YYNDOMAIN                   @"http://192.168.1.165:8080/"
+//#define YYNDOMAIN                   @"http://192.168.1.188:8080/"
+
+#define YYNPush(ViewController)     [AppDelegate.sharedInstanced.rootNav pushViewController:ViewController animated:YES]
+
+#define pop()                       [self.navigationController popViewControllerAnimated:YES]
+#define pops(pageCount)             [self.navigationController popToViewController:[AppDelegate.sharedInstanced.rootNav.viewControllers objectAtIndex:AppDelegate.sharedInstanced.rootNav.viewControllers.count-pageCount-1] animated:YES]
+#define popToVCName(vcName)         for (UIViewController *vc in AppDelegate.sharedInstanced.rootNav.viewControllers) {\
+                                        if ([NSStringFromClass(vc.class) isEqualToString:vcName]) {\
+                                        [AppDelegate.sharedInstanced.rootNav popToViewController:vc animated:YES];\
+                                        break;\
+                                        }\
+                                    }
+
+#endif /* Definition_pch */

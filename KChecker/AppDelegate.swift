@@ -1,20 +1,32 @@
 //
 //  AppDelegate.swift
-//  KChecker
+//  ZhaoPin
 //
-//  Created by LiaoQiang on 2019/2/20.
+//  Created by LiaoQiang on 2019/1/23.
+//  Copyright © 2019年 Liao Qiang. All rights reserved.
 //
 
 import UIKit
-
+/*
+ 加载所有html文件的base
+ 网络请求封装，失败返回
+ 系统nav
+ 会话-翻译，多选，删除
+ mvvm
+ */
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
-
-
+    var nav:UINavigationController!
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        self.nav = UINavigationController(rootViewController: MainViewController())
+        self.nav.toolbar.isHidden = true
+        self.window?.rootViewController = self.nav
+        
         return true
     }
 
