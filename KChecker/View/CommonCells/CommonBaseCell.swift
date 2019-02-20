@@ -21,7 +21,6 @@ class CommonBaseCell: UITableViewCell,UITextFieldDelegate {
         for view in self.contentView.subviews {
             if view.isKind(of: UITextField.self)  {
                 let textField = view as! UITextField
-//                textField.setValue(UIColor.kUIColorFromRGB(hexString: "#CCCCCC"), forKey: "_placeholderLabel.textColor")
                 textField.returnKeyType = .done
                 textField.delegate = (textField.delegate != nil) ? textField.delegate:self
             }
@@ -33,16 +32,11 @@ class CommonBaseCell: UITableViewCell,UITextFieldDelegate {
         self.model = model
         //必填*
         if self.responds(to: #selector(getter: UIButton.titleLabel)) {
-//            if model.required == true && model.title!.count > 0 {
-//                let showTitle = "* " + model.title!
-//                let attriTitle = NSMutableAttributedString(string: showTitle)
-//                attriTitle.addAttributes([NSAttributedString.Key.foregroundColor : UIColor.kUIColorFromRGB(hexString: "0xF56767")], range: NSMakeRange(0, 1))
-//                (self.value(forKey: "titleLabel") as? UILabel)?.attributedText = attriTitle
-//            }
             if model.titleAttribute != nil {
                 self.setAttribute(model.titleAttribute!, forLabel: self.value(forKey: "titleLabel") as! UILabel)
             }
         }
+        self.contentView.layoutIfNeeded()
         self.accessoryType = (model.showAccessory == true ? .disclosureIndicator:.none)
     }
     

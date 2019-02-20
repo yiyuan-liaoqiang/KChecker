@@ -11,7 +11,7 @@ import UIKit
 class CommonCellUtil: NSObject {
     //type 和 CellName一一对应起来
     class var configInfo:[String:String] {
-        return ["title_value":"TitleValueTableViewCell","blank_space":"CommonBaseCell","title_switch":"TitleSwitchTableViewCell","title_textView":"TitleTextViewTableViewCell","title_timeRange":"TitleTimeRangeTableViewCell"]
+        return ["title_value":"TitleValueTableViewCell","blank_space":"CommonBaseCell","title_switch":"TitleSwitchTableViewCell","title_textView":"TitleTextViewTableViewCell","title_timeRange":"TitleTimeRangeTableViewCell","icon_title":"IconTitleCell"]
     }
     //获取对应cell
     class func configCell(CellDataModel model:CommonCellDataModel,tableView:UITableView) -> CommonBaseCell {

@@ -7,23 +7,16 @@
 
 import UIKit
 
-class MineViewController: BaseViewController {
-
+class MineViewController: BaseFormViewController {
+    
     override func viewDidLoad() {
+        let filePath = CommonUtils.bundlePathWithFileName(fileName: "Mine.plist")
+        let dicArray = NSArray(contentsOfFile: filePath) as? Array<[String : AnyObject]>
+        self.dataArray = [CommonCellDataModel].deserialize(from: dicArray) as Array<AnyObject>?
+        
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -54,6 +54,15 @@
 		0940C9FE221D34BB00C7697B /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940C9FD221D34BB00C7697B /* TaskViewController.swift */; };
 		0940CA01221D34D000C7697B /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940CA00221D34D000C7697B /* MineViewController.swift */; };
 		0940CA04221D353400C7697B /* WorkFinderTabbar.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0940CA03221D353400C7697B /* WorkFinderTabbar.plist */; };
+		0940CA07221D53EE00C7697B /* TaskListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940CA05221D53EE00C7697B /* TaskListCell.swift */; };
+		0940CA08221D53EE00C7697B /* TaskListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0940CA06221D53EE00C7697B /* TaskListCell.xib */; };
+		0940CA0A221D54CD00C7697B /* TaskList.html in Resources */ = {isa = PBXBuildFile; fileRef = 0940CA09221D54CD00C7697B /* TaskList.html */; };
+		0940CA0C221D5B7400C7697B /* dianj.png in Resources */ = {isa = PBXBuildFile; fileRef = 0940CA0B221D5B7400C7697B /* dianj.png */; };
+		0940CA0E221D609300C7697B /* Mine.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0940CA0D221D609300C7697B /* Mine.plist */; };
+		0940CA11221D61DB00C7697B /* IconTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940CA0F221D61DB00C7697B /* IconTitleCell.swift */; };
+		0940CA12221D61DB00C7697B /* IconTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0940CA10221D61DB00C7697B /* IconTitleCell.xib */; };
+		0940CA15221D647E00C7697B /* MineHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940CA13221D647E00C7697B /* MineHeaderCell.swift */; };
+		0940CA16221D647E00C7697B /* MineHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0940CA14221D647E00C7697B /* MineHeaderCell.xib */; };
 		4CCC1DF0FCF8C789A8954F12 /* Pods_KChecker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F0D7AC548AF54E233D8932 /* Pods_KChecker.framework */; };
 /* End PBXBuildFile section */
 
@@ -114,6 +123,15 @@
 		0940C9FD221D34BB00C7697B /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 		0940CA00221D34D000C7697B /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		0940CA03221D353400C7697B /* WorkFinderTabbar.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WorkFinderTabbar.plist; sourceTree = "<group>"; };
+		0940CA05221D53EE00C7697B /* TaskListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListCell.swift; sourceTree = "<group>"; };
+		0940CA06221D53EE00C7697B /* TaskListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskListCell.xib; sourceTree = "<group>"; };
+		0940CA09221D54CD00C7697B /* TaskList.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = TaskList.html; sourceTree = "<group>"; };
+		0940CA0B221D5B7400C7697B /* dianj.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dianj.png; sourceTree = "<group>"; };
+		0940CA0D221D609300C7697B /* Mine.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Mine.plist; sourceTree = "<group>"; };
+		0940CA0F221D61DB00C7697B /* IconTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconTitleCell.swift; sourceTree = "<group>"; };
+		0940CA10221D61DB00C7697B /* IconTitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IconTitleCell.xib; sourceTree = "<group>"; };
+		0940CA13221D647E00C7697B /* MineHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineHeaderCell.swift; sourceTree = "<group>"; };
+		0940CA14221D647E00C7697B /* MineHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineHeaderCell.xib; sourceTree = "<group>"; };
 		0E13B1AB14BC54BF0B438978 /* Pods-KChecker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KChecker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KChecker/Pods-KChecker.debug.xcconfig"; sourceTree = "<group>"; };
 		144CC2C42E0EC80D76B18D18 /* Pods-KChecker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KChecker.release.xcconfig"; path = "Pods/Target Support Files/Pods-KChecker/Pods-KChecker.release.xcconfig"; sourceTree = "<group>"; };
 		76F0D7AC548AF54E233D8932 /* Pods_KChecker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KChecker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -302,6 +320,7 @@
 		0940C9C1221D247E00C7697B /* H5 */ = {
 			isa = PBXGroup;
 			children = (
+				0940CA09221D54CD00C7697B /* TaskList.html */,
 				0940C9C2221D249C00C7697B /* Login.html */,
 			);
 			path = H5;
@@ -310,6 +329,7 @@
 		0940C9C4221D309800C7697B /* image */ = {
 			isa = PBXGroup;
 			children = (
+				0940CA0B221D5B7400C7697B /* dianj.png */,
 				0940C9C5221D30EA00C7697B /* mima.png */,
 				0940C9C6221D30EA00C7697B /* yhming.png */,
 			);
@@ -375,6 +395,8 @@
 				0940C9DC221D323300C7697B /* TitleTimeRangeTableViewCell.swift */,
 				0940C9DD221D323300C7697B /* TitleSwitchTableViewCell.swift */,
 				0940C9DE221D323300C7697B /* TitleTextViewTableViewCell.xib */,
+				0940CA0F221D61DB00C7697B /* IconTitleCell.swift */,
+				0940CA10221D61DB00C7697B /* IconTitleCell.xib */,
 			);
 			path = CommonCells;
 			sourceTree = "<group>";
@@ -415,6 +437,8 @@
 			isa = PBXGroup;
 			children = (
 				0940C9FD221D34BB00C7697B /* TaskViewController.swift */,
+				0940CA05221D53EE00C7697B /* TaskListCell.swift */,
+				0940CA06221D53EE00C7697B /* TaskListCell.xib */,
 			);
 			path = Task;
 			sourceTree = "<group>";
@@ -423,6 +447,8 @@
 			isa = PBXGroup;
 			children = (
 				0940CA00221D34D000C7697B /* MineViewController.swift */,
+				0940CA13221D647E00C7697B /* MineHeaderCell.swift */,
+				0940CA14221D647E00C7697B /* MineHeaderCell.xib */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -431,6 +457,7 @@
 			isa = PBXGroup;
 			children = (
 				0940CA03221D353400C7697B /* WorkFinderTabbar.plist */,
+				0940CA0D221D609300C7697B /* Mine.plist */,
 			);
 			path = Plist;
 			sourceTree = "<group>";
@@ -512,15 +539,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				0940C9EF221D323400C7697B /* TitleTextViewTableViewCell.xib in Resources */,
+				0940CA16221D647E00C7697B /* MineHeaderCell.xib in Resources */,
 				0940C934221CF98100C7697B /* LaunchScreen.storyboard in Resources */,
 				0940C9C7221D30EA00C7697B /* mima.png in Resources */,
+				0940CA0A221D54CD00C7697B /* TaskList.html in Resources */,
+				0940CA12221D61DB00C7697B /* IconTitleCell.xib in Resources */,
 				0940C931221CF98100C7697B /* Assets.xcassets in Resources */,
 				0940C9EC221D323400C7697B /* TitleTimeRangeTableViewCell.xib in Resources */,
+				0940CA08221D53EE00C7697B /* TaskListCell.xib in Resources */,
 				0940C9C8221D30EA00C7697B /* yhming.png in Resources */,
 				0940C9E7221D323400C7697B /* TitleSwitchTableViewCell.xib in Resources */,
 				0940CA04221D353400C7697B /* WorkFinderTabbar.plist in Resources */,
+				0940CA0C221D5B7400C7697B /* dianj.png in Resources */,
 				0940C9E8221D323400C7697B /* TitleValueTableViewCell.xib in Resources */,
 				0940C9E5221D323400C7697B /* 说明.txt in Resources */,
+				0940CA0E221D609300C7697B /* Mine.plist in Resources */,
 				0940C9C3221D249C00C7697B /* Login.html in Resources */,
 				0940C92F221CF97F00C7697B /* Main.storyboard in Resources */,
 			);
@@ -597,6 +630,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0940C95F221D034800C7697B /* CommonUtils.swift in Sources */,
+				0940CA11221D61DB00C7697B /* IconTitleCell.swift in Sources */,
 				0940C95C221D034800C7697B /* JsonTransfer.swift in Sources */,
 				0940C92C221CF97F00C7697B /* ViewController.swift in Sources */,
 				0940C9E4221D323300C7697B /* YYPickerView.swift in Sources */,
@@ -624,11 +658,13 @@
 				0940C957221D034800C7697B /* UIColor+Extension.swift in Sources */,
 				0940C9EE221D323400C7697B /* TitleSwitchTableViewCell.swift in Sources */,
 				0940C961221D034800C7697B /* ProgressHUD.m in Sources */,
+				0940CA07221D53EE00C7697B /* TaskListCell.swift in Sources */,
 				0940C9ED221D323400C7697B /* TitleTimeRangeTableViewCell.swift in Sources */,
 				0940C958221D034800C7697B /* UIController+SelectImage.swift in Sources */,
 				0940C9FB221D34A500C7697B /* HomePageViewController.swift in Sources */,
 				0940C9CC221D320700C7697B /* CommonCellDataModel.swift in Sources */,
 				0940C9FE221D34BB00C7697B /* TaskViewController.swift in Sources */,
+				0940CA15221D647E00C7697B /* MineHeaderCell.swift in Sources */,
 				0940C9E3221D323300C7697B /* KeyboardHeaderView.m in Sources */,
 				0940C95B221D034800C7697B /* CommonCellUtil.swift in Sources */,
 			);
