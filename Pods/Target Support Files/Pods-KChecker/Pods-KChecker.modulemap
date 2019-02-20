@@ -1,0 +1,6 @@
+framework module Pods_KChecker {
+  umbrella header "Pods-KChecker-umbrella.h"
+
+  export *
+  module * { export * }
+}
