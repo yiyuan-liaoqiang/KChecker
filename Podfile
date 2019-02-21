@@ -26,6 +26,7 @@ inhibit_all_warnings!
 #    Dictionary To Model
     pod "HandyJSON","~>4.2.0"
     pod "EGOImageLoading","0.0.1"
+    pod "Masonry","1.1.0"
     
 #   A UITextView subclass that adds support for multiline placeholder written in swift
     pod "KMPlaceholderTextView","1.4.0"

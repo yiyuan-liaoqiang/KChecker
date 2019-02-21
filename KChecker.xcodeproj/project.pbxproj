@@ -63,6 +63,14 @@
 		0940CA12221D61DB00C7697B /* IconTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0940CA10221D61DB00C7697B /* IconTitleCell.xib */; };
 		0940CA15221D647E00C7697B /* MineHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940CA13221D647E00C7697B /* MineHeaderCell.swift */; };
 		0940CA16221D647E00C7697B /* MineHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0940CA14221D647E00C7697B /* MineHeaderCell.xib */; };
+		09483FB2221EA3DD002D4937 /* HomePage.html in Resources */ = {isa = PBXBuildFile; fileRef = 09483FB1221EA3DD002D4937 /* HomePage.html */; };
+		09483FB5221EA931002D4937 /* 扫一扫@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09483FB3221EA931002D4937 /* 扫一扫@2x.png */; };
+		09483FB6221EA931002D4937 /* 日报@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09483FB4221EA931002D4937 /* 日报@2x.png */; };
+		09483FCB221EAE92002D4937 /* ECQRCodeScanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 09483FBB221EAE92002D4937 /* ECQRCodeScanVC.m */; };
+		09483FCF221EAE92002D4937 /* ECScanResultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 09483FC3221EAE92002D4937 /* ECScanResultVC.m */; };
+		09483FD0221EAE92002D4937 /* ECScanResultWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09483FC5221EAE92002D4937 /* ECScanResultWebView.m */; };
+		09483FD1221EAE92002D4937 /* ECScanResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09483FC6221EAE92002D4937 /* ECScanResultView.m */; };
+		09483FD2221EAE92002D4937 /* ECQRCodeScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09483FC9221EAE92002D4937 /* ECQRCodeScanView.m */; };
 		4CCC1DF0FCF8C789A8954F12 /* Pods_KChecker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F0D7AC548AF54E233D8932 /* Pods_KChecker.framework */; };
 /* End PBXBuildFile section */
 
@@ -132,6 +140,19 @@
 		0940CA10221D61DB00C7697B /* IconTitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IconTitleCell.xib; sourceTree = "<group>"; };
 		0940CA13221D647E00C7697B /* MineHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineHeaderCell.swift; sourceTree = "<group>"; };
 		0940CA14221D647E00C7697B /* MineHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineHeaderCell.xib; sourceTree = "<group>"; };
+		09483FB1221EA3DD002D4937 /* HomePage.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = HomePage.html; sourceTree = "<group>"; };
+		09483FB3221EA931002D4937 /* 扫一扫@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "扫一扫@2x.png"; sourceTree = "<group>"; };
+		09483FB4221EA931002D4937 /* 日报@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "日报@2x.png"; sourceTree = "<group>"; };
+		09483FBB221EAE92002D4937 /* ECQRCodeScanVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECQRCodeScanVC.m; sourceTree = "<group>"; };
+		09483FBD221EAE92002D4937 /* ECScanResultVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECScanResultVC.h; sourceTree = "<group>"; };
+		09483FBF221EAE92002D4937 /* ECQRCodeScanVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECQRCodeScanVC.h; sourceTree = "<group>"; };
+		09483FC3221EAE92002D4937 /* ECScanResultVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECScanResultVC.m; sourceTree = "<group>"; };
+		09483FC5221EAE92002D4937 /* ECScanResultWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECScanResultWebView.m; sourceTree = "<group>"; };
+		09483FC6221EAE92002D4937 /* ECScanResultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECScanResultView.m; sourceTree = "<group>"; };
+		09483FC7221EAE92002D4937 /* ECQRCodeScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECQRCodeScanView.h; sourceTree = "<group>"; };
+		09483FC8221EAE92002D4937 /* ECScanResultWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECScanResultWebView.h; sourceTree = "<group>"; };
+		09483FC9221EAE92002D4937 /* ECQRCodeScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECQRCodeScanView.m; sourceTree = "<group>"; };
+		09483FCA221EAE92002D4937 /* ECScanResultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECScanResultView.h; sourceTree = "<group>"; };
 		0E13B1AB14BC54BF0B438978 /* Pods-KChecker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KChecker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KChecker/Pods-KChecker.debug.xcconfig"; sourceTree = "<group>"; };
 		144CC2C42E0EC80D76B18D18 /* Pods-KChecker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KChecker.release.xcconfig"; path = "Pods/Target Support Files/Pods-KChecker/Pods-KChecker.release.xcconfig"; sourceTree = "<group>"; };
 		76F0D7AC548AF54E233D8932 /* Pods_KChecker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KChecker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -320,6 +341,7 @@
 		0940C9C1221D247E00C7697B /* H5 */ = {
 			isa = PBXGroup;
 			children = (
+				09483FB1221EA3DD002D4937 /* HomePage.html */,
 				0940CA09221D54CD00C7697B /* TaskList.html */,
 				0940C9C2221D249C00C7697B /* Login.html */,
 			);
@@ -329,6 +351,8 @@
 		0940C9C4221D309800C7697B /* image */ = {
 			isa = PBXGroup;
 			children = (
+				09483FB4221EA931002D4937 /* 日报@2x.png */,
+				09483FB3221EA931002D4937 /* 扫一扫@2x.png */,
 				0940CA0B221D5B7400C7697B /* dianj.png */,
 				0940C9C5221D30EA00C7697B /* mima.png */,
 				0940C9C6221D30EA00C7697B /* yhming.png */,
@@ -428,6 +452,7 @@
 		0940C9F9221D349400C7697B /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				09483FB9221EAE92002D4937 /* QRCode */,
 				0940C9FA221D34A500C7697B /* HomePageViewController.swift */,
 			);
 			path = HomePage;
@@ -460,6 +485,39 @@
 				0940CA0D221D609300C7697B /* Mine.plist */,
 			);
 			path = Plist;
+			sourceTree = "<group>";
+		};
+		09483FB9221EAE92002D4937 /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				09483FBA221EAE92002D4937 /* Controller */,
+				09483FC4221EAE92002D4937 /* View */,
+			);
+			path = QRCode;
+			sourceTree = "<group>";
+		};
+		09483FBA221EAE92002D4937 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				09483FBB221EAE92002D4937 /* ECQRCodeScanVC.m */,
+				09483FBD221EAE92002D4937 /* ECScanResultVC.h */,
+				09483FBF221EAE92002D4937 /* ECQRCodeScanVC.h */,
+				09483FC3221EAE92002D4937 /* ECScanResultVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		09483FC4221EAE92002D4937 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				09483FC5221EAE92002D4937 /* ECScanResultWebView.m */,
+				09483FC6221EAE92002D4937 /* ECScanResultView.m */,
+				09483FC7221EAE92002D4937 /* ECQRCodeScanView.h */,
+				09483FC8221EAE92002D4937 /* ECScanResultWebView.h */,
+				09483FC9221EAE92002D4937 /* ECQRCodeScanView.m */,
+				09483FCA221EAE92002D4937 /* ECScanResultView.h */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		5A553AD827CF499E637DD147 /* Frameworks */ = {
@@ -538,10 +596,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09483FB2221EA3DD002D4937 /* HomePage.html in Resources */,
 				0940C9EF221D323400C7697B /* TitleTextViewTableViewCell.xib in Resources */,
 				0940CA16221D647E00C7697B /* MineHeaderCell.xib in Resources */,
 				0940C934221CF98100C7697B /* LaunchScreen.storyboard in Resources */,
 				0940C9C7221D30EA00C7697B /* mima.png in Resources */,
+				09483FB5221EA931002D4937 /* 扫一扫@2x.png in Resources */,
 				0940CA0A221D54CD00C7697B /* TaskList.html in Resources */,
 				0940CA12221D61DB00C7697B /* IconTitleCell.xib in Resources */,
 				0940C931221CF98100C7697B /* Assets.xcassets in Resources */,
@@ -553,6 +613,7 @@
 				0940CA0C221D5B7400C7697B /* dianj.png in Resources */,
 				0940C9E8221D323400C7697B /* TitleValueTableViewCell.xib in Resources */,
 				0940C9E5221D323400C7697B /* 说明.txt in Resources */,
+				09483FB6221EA931002D4937 /* 日报@2x.png in Resources */,
 				0940CA0E221D609300C7697B /* Mine.plist in Resources */,
 				0940C9C3221D249C00C7697B /* Login.html in Resources */,
 				0940C92F221CF97F00C7697B /* Main.storyboard in Resources */,
@@ -597,6 +658,7 @@
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/UzysAssetsPickerController/UzysAssetsPickerController.framework",
@@ -613,6 +675,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UzysAssetsPickerController.framework",
@@ -635,6 +698,7 @@
 				0940C92C221CF97F00C7697B /* ViewController.swift in Sources */,
 				0940C9E4221D323300C7697B /* YYPickerView.swift in Sources */,
 				0940C956221D034800C7697B /* MyMD5.m in Sources */,
+				09483FCF221EAE92002D4937 /* ECScanResultVC.m in Sources */,
 				0940C955221D034800C7697B /* MyConst.swift in Sources */,
 				0940C9BA221D037300C7697B /* BaseFormViewController.swift in Sources */,
 				0940C9BC221D037300C7697B /* BaseWebViewController.swift in Sources */,
@@ -648,16 +712,19 @@
 				0940C9EA221D323400C7697B /* CommonBaseCell.swift in Sources */,
 				0940C959221D034800C7697B /* YYRoute.swift in Sources */,
 				0940C9F0221D323400C7697B /* TabbarView.swift in Sources */,
+				09483FD2221EAE92002D4937 /* ECQRCodeScanView.m in Sources */,
 				0940C960221D034800C7697B /* YYDateUtil.swift in Sources */,
 				0940C9F1221D323400C7697B /* YYDatePickerView.swift in Sources */,
 				0940C9E6221D323400C7697B /* YYAlertController.swift in Sources */,
 				0940C95A221D034800C7697B /* YYNSessionManager.m in Sources */,
 				0940C9F3221D32C300C7697B /* AppDelegate.swift in Sources */,
 				0940C9F6221D32E700C7697B /* MainViewController.swift in Sources */,
+				09483FD1221EAE92002D4937 /* ECScanResultView.m in Sources */,
 				0940CA01221D34D000C7697B /* MineViewController.swift in Sources */,
 				0940C957221D034800C7697B /* UIColor+Extension.swift in Sources */,
 				0940C9EE221D323400C7697B /* TitleSwitchTableViewCell.swift in Sources */,
 				0940C961221D034800C7697B /* ProgressHUD.m in Sources */,
+				09483FCB221EAE92002D4937 /* ECQRCodeScanVC.m in Sources */,
 				0940CA07221D53EE00C7697B /* TaskListCell.swift in Sources */,
 				0940C9ED221D323400C7697B /* TitleTimeRangeTableViewCell.swift in Sources */,
 				0940C958221D034800C7697B /* UIController+SelectImage.swift in Sources */,
@@ -666,6 +733,7 @@
 				0940C9FE221D34BB00C7697B /* TaskViewController.swift in Sources */,
 				0940CA15221D647E00C7697B /* MineHeaderCell.swift in Sources */,
 				0940C9E3221D323300C7697B /* KeyboardHeaderView.m in Sources */,
+				09483FD0221EAE92002D4937 /* ECScanResultWebView.m in Sources */,
 				0940C95B221D034800C7697B /* CommonCellUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -813,8 +881,8 @@
 			baseConfigurationReference = 0E13B1AB14BC54BF0B438978 /* Pods-KChecker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4EJ2UY3NTY;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = RDPS29QS74;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Definition.pch";
 				INFOPLIST_FILE = KChecker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -823,6 +891,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.liaoqiang.KChecker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "common *";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/KChecker-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -835,8 +904,8 @@
 			baseConfigurationReference = 144CC2C42E0EC80D76B18D18 /* Pods-KChecker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4EJ2UY3NTY;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = RDPS29QS74;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Definition.pch";
 				INFOPLIST_FILE = KChecker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -845,6 +914,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.liaoqiang.KChecker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "common *";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/KChecker-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

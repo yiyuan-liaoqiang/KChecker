@@ -6,16 +6,29 @@
 //
 
 import UIKit
+import WebKit
 
-class HomePageViewController: BaseViewController {
+class HomePageViewController: BaseWebViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.webView.frame = CGRect(x: 0, y: MyConst.NAV_BAR_HEIGHT(), width: MyConst.MAIN_SCREEN_WIDTH, height: MyConst.MAIN_SCREEN_HEIGHT-MyConst.TAB_BAR_HEIGHT()-MyConst.NAV_BAR_HEIGHT())
+        
+        let filePath = Bundle.main.path(forResource: "HomePage.html", ofType: nil)
+        self.webView.load(URLRequest(url: URL(fileURLWithPath: filePath!)))
+        
+        self.addActionsNames(actions: ["scan"])
+        
     }
     
-
+    override func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+        if message.name == "scan" {
+            //扫一扫
+            YYRoute.pushToController("ECQRCodeScanVC", data: nil)
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
