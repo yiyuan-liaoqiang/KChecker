@@ -153,7 +153,7 @@ class TabbarSingleView: UIView {
     func setSelected(isSelected:Bool) -> Void {
         if isSelected {
             iv.image = UIImage.init(named: dataDic!["highlight_Icon"]!)
-            label.textColor = UIColor.kUIColorFromRGB(hexString: "#434F68")
+            label.textColor = UIColor.kUIColorFromRGB(hexString: "#0295FF")
         }
         else
         {

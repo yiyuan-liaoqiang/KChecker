@@ -4,9 +4,9 @@
 <array>
 	<dict>
 		<key>icon</key>
-		<string>tabbar_position</string>
+		<string>首页未选中</string>
 		<key>highlight_Icon</key>
-		<string>tabbar_position_selected</string>
+		<string>首页选中</string>
 		<key>title</key>
 		<string>首页</string>
 		<key>controller</key>
@@ -14,9 +14,9 @@
 	</dict>
 	<dict>
 		<key>icon</key>
-		<string>tabbar_message</string>
+		<string>任务未选中</string>
 		<key>highlight_Icon</key>
-		<string>tabbar_message_selected</string>
+		<string>任务选中</string>
 		<key>title</key>
 		<string>任务</string>
 		<key>controller</key>
@@ -24,9 +24,9 @@
 	</dict>
 	<dict>
 		<key>icon</key>
-		<string>tabbar_mine</string>
+		<string>我的</string>
 		<key>highlight_Icon</key>
-		<string>tabbar_mine_selected</string>
+		<string>我的选中</string>
 		<key>title</key>
 		<string>我的</string>
 		<key>controller</key>
