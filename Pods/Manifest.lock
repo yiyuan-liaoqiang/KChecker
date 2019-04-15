@@ -14,13 +14,14 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - Cache (5.2.0)
   - EGOCache (2.2.0)
   - EGOImageLoading (0.0.1):
     - EGOCache
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
-  - HandyJSON (4.2.1)
+  - HandyJSON (5.0.0-beta)
   - JSONKit-NoWarning (1.2)
   - KMPlaceholderTextView (1.4.0)
   - Masonry (1.1.0)
@@ -33,9 +34,10 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
+  - Cache
   - EGOImageLoading (= 0.0.1)
   - FMDB (~> 2.6.2)
-  - HandyJSON (~> 4.2.0)
+  - HandyJSON (= 5.0.0-beta)
   - JSONKit-NoWarning (= 1.2)
   - KMPlaceholderTextView (= 1.4.0)
   - Masonry (= 1.1.0)
@@ -49,6 +51,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - Cache
     - EGOCache
     - EGOImageLoading
     - FMDB
@@ -65,10 +68,11 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Cache: 807c5d86d01a177f06ede9865add3aea269bbfd4
   EGOCache: 191fd213da6804d487b49b1a91772ba904f3e324
   EGOImageLoading: 99d7c4a9fb5a192ab37979b63ea03efc7097fe8e
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
-  HandyJSON: d0c5fc80204f29056d59d3e5c4587fa0b16b60a8
+  HandyJSON: b84ac9904050a0897a0802092b7cb8808e0a4e9a
   JSONKit-NoWarning: 3d27e6f9e6846ecf741e8c64dcadd7d5aa7193cb
   KMPlaceholderTextView: 2206c3df39979e9396e2d96fa9f427a8951121b0
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
@@ -79,6 +83,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
   UzysAssetsPickerController: 47c27bd96955467925f3d4d80b1e2e8aaeff766d
 
-PODFILE CHECKSUM: d373459734a697ebab3e3cc1dc332dc9d93388e7
+PODFILE CHECKSUM: 172e474ad18a0d91eba0f3439ad93a62b6222fb7
 
 COCOAPODS: 1.5.2

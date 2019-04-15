@@ -69,8 +69,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 #endif
 
 
-
-#define YYNDOMAIN                   @"http://47.74.128.130:8080/"
+#define YYNDOMAIN                   @"http://106.12.101.46:9094/"
 //#define YYNDOMAIN                   @"http://192.168.1.165:8080/"
 //#define YYNDOMAIN                   @"http://192.168.1.188:8080/"
 

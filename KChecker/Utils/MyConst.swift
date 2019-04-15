@@ -10,15 +10,21 @@ import Foundation
 import UIKit
 import WebKit
 
+struct Const {
+    //baseForm 选择图片cell 图片控件的宽高和space
+    static let imgPickerCell_ImageWidth = 77
+    static let imgPickerCell_ImageSpace = 12
+}
+
 class MyConst: NSObject {
     
     static let MAIN_SCREEN_HEIGHT       = UIScreen.main.bounds.size.height
     static let MAIN_SCREEN_WIDTH        = UIScreen.main.bounds.size.width
-    static let SYSTEEM_BOTTOM_MARGIN    = CGFloat(UIScreen.main.bounds.size.height==812 ? 34:0)
+    static let SYSTEEM_BOTTOM_MARGIN    = CGFloat((UIScreen.main.bounds.size.height==812 || UIScreen.main.bounds.size.height==896) ? 34:0)
     
     static func NAV_BAR_HEIGHT()->CGFloat
     {
-        if UIScreen.main.bounds.size.height==812 {
+        if (UIScreen.main.bounds.size.height==812 || UIScreen.main.bounds.size.height==896) {
             return 88;
         }
         else
@@ -29,7 +35,7 @@ class MyConst: NSObject {
     
     static func TAB_BAR_HEIGHT() ->CGFloat
     {
-        if UIScreen.main.bounds.size.height==812 {
+        if (UIScreen.main.bounds.size.height==812 || UIScreen.main.bounds.size.height==896) {
             return 84;
         }
         else
@@ -40,7 +46,7 @@ class MyConst: NSObject {
     
     static func EXTRA_BAR_HEIGHT()->CGFloat
     {
-        if UIScreen.main.bounds.size.height == 812{
+        if (UIScreen.main.bounds.size.height==812 || UIScreen.main.bounds.size.height==896){
             return 12;
         }
         else

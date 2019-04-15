@@ -1,9 +1,9 @@
 //
 //  CommonCellDataModel.swift
-//  KChecker
+//  Jobnt
 //  表单通用数据模型--model for all form
 //  Created by LiaoQiang on 2019/1/24.
-//  Copyright © 2019年 Liao Qiang. All rights reserved.
+//  Copyright © 2019年 Yiyuan Networks 上海义援网络科技有限公司. All rights reserved.
 //
 
 import UIKit
@@ -18,7 +18,7 @@ class CommonCellDataModel: HandyJSON {
     var serverValue:String?
     var localKey:String?
     var serverKey:String?
-    var height:NSNumber?
+    var height:NSNumber?                        //这里仅仅是plist初始高度或者默认高度，如果高度有改变，需要通过cHeight获取
     var type:String?                            //type类型
     var showSepLine:Bool?                       //是否显示cell分割线
     var placeholder:String?
@@ -29,7 +29,7 @@ class CommonCellDataModel: HandyJSON {
     var required:Bool?                          //是否必填
     var format:NSNumber?                        //时间选择格式--1:date 2:date&time 3:time
     var keyboardType:NSNumber?                  //键盘类型  4-数字键盘 7-email地址
-    var rule:String?                            //输入规则进行本地验证-:phone:手机号码（纯数字，11位），email:邮箱，maxLength@50：最大长度50，minLength@10：最小长度10      notnull/:key1/key2 请先选择key1或者key2    notnull&:key1&key2 请先选择key1和key2
+    var rule:String?                            //输入规则进行本地验证-:phone:手机号码（纯数字，11位），email:邮箱，maxLength@50：最大长度50，minLength@10：最小长度10 length:18：长度为18（身份证）      notnull/:key1/key2 请先选择key1或者key2    notnull&:key1&key2 请先选择key1和key2
     var buttonType:Bool?                        //type = button时候的样式  delete-删除样式，红底白字
     var enableSelectDate:String?                //past future all
     var cellName:String?                        //自定义cell名称，type为空生效
@@ -38,6 +38,22 @@ class CommonCellDataModel: HandyJSON {
     var titleAttribute:[String:AnyObject]?      //titleLabel 属性 support:fontSize、textColor、weight
     
     required init() {}
+    
+    var cHeight:NSNumber? {
+        get {
+            if let cellName = self.cellName , cellName == "ImgPickerTableViewCell" {
+                //计算图片cell高度    77 12
+                var lines = 1
+                let imgCountPerLine = (Int(MyConst.MAIN_SCREEN_WIDTH)-15-(15-Const.imgPickerCell_ImageWidth)) / (Const.imgPickerCell_ImageWidth+Const.imgPickerCell_ImageSpace)
+                let imgs = self.localValue?.split(separator: ",")
+                if imgs != nil {
+                    lines = (imgs!.count+1)/imgCountPerLine + ((imgs!.count+1)%imgCountPerLine == 0 ? 0:1)
+                }
+                return 52 + (Const.imgPickerCell_ImageWidth + Const.imgPickerCell_ImageSpace) * lines - Const.imgPickerCell_ImageSpace as NSNumber
+            }
+            return self.height
+        }
+    }
     
     //跳转到下一页输入的选项
     func getInputOptions() -> InputOptions {

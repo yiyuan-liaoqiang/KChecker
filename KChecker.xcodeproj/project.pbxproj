@@ -28,11 +28,9 @@
 		0940C9BA221D037300C7697B /* BaseFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940C992221D037300C7697B /* BaseFormViewController.swift */; };
 		0940C9BB221D037300C7697B /* BaseInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940C993221D037300C7697B /* BaseInputViewController.swift */; };
 		0940C9BC221D037300C7697B /* BaseWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940C994221D037300C7697B /* BaseWebViewController.swift */; };
-		0940C9BF221D23DD00C7697B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940C9BE221D23DD00C7697B /* LoginViewController.swift */; };
 		0940C9C3221D249C00C7697B /* Login.html in Resources */ = {isa = PBXBuildFile; fileRef = 0940C9C2221D249C00C7697B /* Login.html */; };
 		0940C9C7221D30EA00C7697B /* mima.png in Resources */ = {isa = PBXBuildFile; fileRef = 0940C9C5221D30EA00C7697B /* mima.png */; };
 		0940C9C8221D30EA00C7697B /* yhming.png in Resources */ = {isa = PBXBuildFile; fileRef = 0940C9C6221D30EA00C7697B /* yhming.png */; };
-		0940C9CC221D320700C7697B /* CommonCellDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940C9CB221D320700C7697B /* CommonCellDataModel.swift */; };
 		0940C9E3221D323300C7697B /* KeyboardHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0940C9CF221D323300C7697B /* KeyboardHeaderView.m */; };
 		0940C9E4221D323300C7697B /* YYPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940C9D0221D323300C7697B /* YYPickerView.swift */; };
 		0940C9E5221D323400C7697B /* 说明.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0940C9D3221D323300C7697B /* 说明.txt */; };
@@ -71,6 +69,19 @@
 		09483FD0221EAE92002D4937 /* ECScanResultWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09483FC5221EAE92002D4937 /* ECScanResultWebView.m */; };
 		09483FD1221EAE92002D4937 /* ECScanResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09483FC6221EAE92002D4937 /* ECScanResultView.m */; };
 		09483FD2221EAE92002D4937 /* ECQRCodeScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09483FC9221EAE92002D4937 /* ECQRCodeScanView.m */; };
+		098B7934226309E6003B893B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 098B7932226309E6003B893B /* LoginViewController.xib */; };
+		098B7935226309E6003B893B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098B7933226309E6003B893B /* LoginViewController.swift */; };
+		098B793B22630D03003B893B /* AccountHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098B793822630D03003B893B /* AccountHelper.swift */; };
+		098B793C22630D03003B893B /* SMSHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098B793922630D03003B893B /* SMSHelper.swift */; };
+		098B793F22630D4C003B893B /* YYNCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098B793E22630D4C003B893B /* YYNCache.swift */; };
+		098B794322630DD6003B893B /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098B794122630DD6003B893B /* UserModel.swift */; };
+		098B794422630DD6003B893B /* CommonCellDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098B794222630DD6003B893B /* CommonCellDataModel.swift */; };
+		098B79462263272C003B893B /* DaylyRecord.plist in Resources */ = {isa = PBXBuildFile; fileRef = 098B79452263272C003B893B /* DaylyRecord.plist */; };
+		098B794822632B24003B893B /* DaylyRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098B794722632B24003B893B /* DaylyRecordViewController.swift */; };
+		098B794B22632CD2003B893B /* YYNPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 098B794922632CD2003B893B /* YYNPickerView.m */; };
+		098B794D22632D99003B893B /* CommonOptionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098B794C22632D99003B893B /* CommonOptionsModel.swift */; };
+		098B795022633E52003B893B /* TitleValueVTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098B794E22633E52003B893B /* TitleValueVTableViewCell.swift */; };
+		098B795122633E52003B893B /* TitleValueVTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 098B794F22633E52003B893B /* TitleValueVTableViewCell.xib */; };
 		4CCC1DF0FCF8C789A8954F12 /* Pods_KChecker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F0D7AC548AF54E233D8932 /* Pods_KChecker.framework */; };
 /* End PBXBuildFile section */
 
@@ -102,11 +113,9 @@
 		0940C992221D037300C7697B /* BaseFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseFormViewController.swift; sourceTree = "<group>"; };
 		0940C993221D037300C7697B /* BaseInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseInputViewController.swift; sourceTree = "<group>"; };
 		0940C994221D037300C7697B /* BaseWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWebViewController.swift; sourceTree = "<group>"; };
-		0940C9BE221D23DD00C7697B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0940C9C2221D249C00C7697B /* Login.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Login.html; sourceTree = "<group>"; };
 		0940C9C5221D30EA00C7697B /* mima.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mima.png; sourceTree = "<group>"; };
 		0940C9C6221D30EA00C7697B /* yhming.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yhming.png; sourceTree = "<group>"; };
-		0940C9CB221D320700C7697B /* CommonCellDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonCellDataModel.swift; sourceTree = "<group>"; };
 		0940C9CF221D323300C7697B /* KeyboardHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardHeaderView.m; sourceTree = "<group>"; };
 		0940C9D0221D323300C7697B /* YYPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYPickerView.swift; sourceTree = "<group>"; };
 		0940C9D1221D323300C7697B /* KeyboardHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardHeaderView.h; sourceTree = "<group>"; };
@@ -153,6 +162,20 @@
 		09483FC8221EAE92002D4937 /* ECScanResultWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECScanResultWebView.h; sourceTree = "<group>"; };
 		09483FC9221EAE92002D4937 /* ECQRCodeScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECQRCodeScanView.m; sourceTree = "<group>"; };
 		09483FCA221EAE92002D4937 /* ECScanResultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECScanResultView.h; sourceTree = "<group>"; };
+		098B7932226309E6003B893B /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		098B7933226309E6003B893B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		098B793822630D03003B893B /* AccountHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountHelper.swift; sourceTree = "<group>"; };
+		098B793922630D03003B893B /* SMSHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMSHelper.swift; sourceTree = "<group>"; };
+		098B793E22630D4C003B893B /* YYNCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYNCache.swift; sourceTree = "<group>"; };
+		098B794122630DD6003B893B /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		098B794222630DD6003B893B /* CommonCellDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonCellDataModel.swift; sourceTree = "<group>"; };
+		098B79452263272C003B893B /* DaylyRecord.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DaylyRecord.plist; sourceTree = "<group>"; };
+		098B794722632B24003B893B /* DaylyRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaylyRecordViewController.swift; sourceTree = "<group>"; };
+		098B794922632CD2003B893B /* YYNPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYNPickerView.m; sourceTree = "<group>"; };
+		098B794A22632CD2003B893B /* YYNPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYNPickerView.h; sourceTree = "<group>"; };
+		098B794C22632D99003B893B /* CommonOptionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonOptionsModel.swift; sourceTree = "<group>"; };
+		098B794E22633E52003B893B /* TitleValueVTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleValueVTableViewCell.swift; sourceTree = "<group>"; };
+		098B794F22633E52003B893B /* TitleValueVTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleValueVTableViewCell.xib; sourceTree = "<group>"; };
 		0E13B1AB14BC54BF0B438978 /* Pods-KChecker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KChecker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KChecker/Pods-KChecker.debug.xcconfig"; sourceTree = "<group>"; };
 		144CC2C42E0EC80D76B18D18 /* Pods-KChecker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KChecker.release.xcconfig"; path = "Pods/Target Support Files/Pods-KChecker/Pods-KChecker.release.xcconfig"; sourceTree = "<group>"; };
 		76F0D7AC548AF54E233D8932 /* Pods_KChecker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KChecker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -212,6 +235,8 @@
 		0940C93B221D034800C7697B /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				098B793D22630D4C003B893B /* Cache */,
+				098B793622630D03003B893B /* Helper */,
 				0940C93C221D034800C7697B /* MyConst.swift */,
 				0940C93D221D034800C7697B /* Md5 */,
 				0940C940221D034800C7697B /* Extension */,
@@ -303,7 +328,6 @@
 				0940C9FC221D34AE00C7697B /* Task */,
 				0940C9F9221D349400C7697B /* HomePage */,
 				0940C9F4221D32E700C7697B /* Main */,
-				0940C9BD221D23C700C7697B /* Login */,
 				0940C990221D037300C7697B /* Base */,
 			);
 			path = Controller;
@@ -318,14 +342,6 @@
 				0940C994221D037300C7697B /* BaseWebViewController.swift */,
 			);
 			path = Base;
-			sourceTree = "<group>";
-		};
-		0940C9BD221D23C700C7697B /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				0940C9BE221D23DD00C7697B /* LoginViewController.swift */,
-			);
-			path = Login;
 			sourceTree = "<group>";
 		};
 		0940C9C0221D247500C7697B /* Resources */ = {
@@ -363,17 +379,9 @@
 		0940C9C9221D320700C7697B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0940C9CA221D320700C7697B /* Common */,
+				098B794022630DD6003B893B /* Common */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		0940C9CA221D320700C7697B /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				0940C9CB221D320700C7697B /* CommonCellDataModel.swift */,
-			);
-			path = Common;
 			sourceTree = "<group>";
 		};
 		0940C9CD221D323300C7697B /* View */ = {
@@ -391,6 +399,8 @@
 		0940C9CE221D323300C7697B /* CommonView */ = {
 			isa = PBXGroup;
 			children = (
+				098B794A22632CD2003B893B /* YYNPickerView.h */,
+				098B794922632CD2003B893B /* YYNPickerView.m */,
 				0940C9CF221D323300C7697B /* KeyboardHeaderView.m */,
 				0940C9D1221D323300C7697B /* KeyboardHeaderView.h */,
 				0940C9D0221D323300C7697B /* YYPickerView.swift */,
@@ -410,6 +420,8 @@
 		0940C9D5221D323300C7697B /* CommonCells */ = {
 			isa = PBXGroup;
 			children = (
+				098B794E22633E52003B893B /* TitleValueVTableViewCell.swift */,
+				098B794F22633E52003B893B /* TitleValueVTableViewCell.xib */,
 				0940C9D6221D323300C7697B /* TitleSwitchTableViewCell.xib */,
 				0940C9D7221D323300C7697B /* TitleValueTableViewCell.xib */,
 				0940C9D8221D323300C7697B /* TitleValueTableViewCell.swift */,
@@ -454,6 +466,7 @@
 			children = (
 				09483FB9221EAE92002D4937 /* QRCode */,
 				0940C9FA221D34A500C7697B /* HomePageViewController.swift */,
+				098B794722632B24003B893B /* DaylyRecordViewController.swift */,
 			);
 			path = HomePage;
 			sourceTree = "<group>";
@@ -471,6 +484,7 @@
 		0940C9FF221D34BF00C7697B /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				098B7931226309E6003B893B /* Login */,
 				0940CA00221D34D000C7697B /* MineViewController.swift */,
 				0940CA13221D647E00C7697B /* MineHeaderCell.swift */,
 				0940CA14221D647E00C7697B /* MineHeaderCell.xib */,
@@ -483,6 +497,7 @@
 			children = (
 				0940CA03221D353400C7697B /* WorkFinderTabbar.plist */,
 				0940CA0D221D609300C7697B /* Mine.plist */,
+				098B79452263272C003B893B /* DaylyRecord.plist */,
 			);
 			path = Plist;
 			sourceTree = "<group>";
@@ -499,10 +514,10 @@
 		09483FBA221EAE92002D4937 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				09483FBB221EAE92002D4937 /* ECQRCodeScanVC.m */,
 				09483FBD221EAE92002D4937 /* ECScanResultVC.h */,
-				09483FBF221EAE92002D4937 /* ECQRCodeScanVC.h */,
 				09483FC3221EAE92002D4937 /* ECScanResultVC.m */,
+				09483FBF221EAE92002D4937 /* ECQRCodeScanVC.h */,
+				09483FBB221EAE92002D4937 /* ECQRCodeScanVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -518,6 +533,42 @@
 				09483FCA221EAE92002D4937 /* ECScanResultView.h */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		098B7931226309E6003B893B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				098B7932226309E6003B893B /* LoginViewController.xib */,
+				098B7933226309E6003B893B /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		098B793622630D03003B893B /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				098B793822630D03003B893B /* AccountHelper.swift */,
+				098B793922630D03003B893B /* SMSHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		098B793D22630D4C003B893B /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				098B793E22630D4C003B893B /* YYNCache.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		098B794022630DD6003B893B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				098B794122630DD6003B893B /* UserModel.swift */,
+				098B794222630DD6003B893B /* CommonCellDataModel.swift */,
+				098B794C22632D99003B893B /* CommonOptionsModel.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		5A553AD827CF499E637DD147 /* Frameworks */ = {
@@ -598,15 +649,18 @@
 			files = (
 				09483FB2221EA3DD002D4937 /* HomePage.html in Resources */,
 				0940C9EF221D323400C7697B /* TitleTextViewTableViewCell.xib in Resources */,
+				098B7934226309E6003B893B /* LoginViewController.xib in Resources */,
 				0940CA16221D647E00C7697B /* MineHeaderCell.xib in Resources */,
 				0940C934221CF98100C7697B /* LaunchScreen.storyboard in Resources */,
 				0940C9C7221D30EA00C7697B /* mima.png in Resources */,
 				09483FB5221EA931002D4937 /* 扫一扫@2x.png in Resources */,
 				0940CA0A221D54CD00C7697B /* TaskList.html in Resources */,
+				098B79462263272C003B893B /* DaylyRecord.plist in Resources */,
 				0940CA12221D61DB00C7697B /* IconTitleCell.xib in Resources */,
 				0940C931221CF98100C7697B /* Assets.xcassets in Resources */,
 				0940C9EC221D323400C7697B /* TitleTimeRangeTableViewCell.xib in Resources */,
 				0940CA08221D53EE00C7697B /* TaskListCell.xib in Resources */,
+				098B795122633E52003B893B /* TitleValueVTableViewCell.xib in Resources */,
 				0940C9C8221D30EA00C7697B /* yhming.png in Resources */,
 				0940C9E7221D323400C7697B /* TitleSwitchTableViewCell.xib in Resources */,
 				0940CA04221D353400C7697B /* WorkFinderTabbar.plist in Resources */,
@@ -649,6 +703,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-KChecker/Pods-KChecker-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Cache/Cache.framework",
 				"${BUILT_PRODUCTS_DIR}/EGOCache/EGOCache.framework",
 				"${BUILT_PRODUCTS_DIR}/EGOImageLoading/EGOImageLoading.framework",
 				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
@@ -666,6 +721,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EGOCache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EGOImageLoading.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
@@ -693,6 +749,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0940C95F221D034800C7697B /* CommonUtils.swift in Sources */,
+				098B793C22630D03003B893B /* SMSHelper.swift in Sources */,
 				0940CA11221D61DB00C7697B /* IconTitleCell.swift in Sources */,
 				0940C95C221D034800C7697B /* JsonTransfer.swift in Sources */,
 				0940C92C221CF97F00C7697B /* ViewController.swift in Sources */,
@@ -700,18 +757,21 @@
 				0940C956221D034800C7697B /* MyMD5.m in Sources */,
 				09483FCF221EAE92002D4937 /* ECScanResultVC.m in Sources */,
 				0940C955221D034800C7697B /* MyConst.swift in Sources */,
+				098B794B22632CD2003B893B /* YYNPickerView.m in Sources */,
 				0940C9BA221D037300C7697B /* BaseFormViewController.swift in Sources */,
 				0940C9BC221D037300C7697B /* BaseWebViewController.swift in Sources */,
-				0940C9BF221D23DD00C7697B /* LoginViewController.swift in Sources */,
 				0940C95D221D034800C7697B /* ActivityIndicator.swift in Sources */,
 				0940C9B9221D037300C7697B /* BaseViewController.swift in Sources */,
 				0940C95E221D034800C7697B /* ActivityIndicatorManager.m in Sources */,
+				098B793B22630D03003B893B /* AccountHelper.swift in Sources */,
 				0940C9EB221D323400C7697B /* TitleTextViewTableViewCell.swift in Sources */,
 				0940C9BB221D037300C7697B /* BaseInputViewController.swift in Sources */,
 				0940C9E9221D323400C7697B /* TitleValueTableViewCell.swift in Sources */,
+				098B794322630DD6003B893B /* UserModel.swift in Sources */,
 				0940C9EA221D323400C7697B /* CommonBaseCell.swift in Sources */,
 				0940C959221D034800C7697B /* YYRoute.swift in Sources */,
 				0940C9F0221D323400C7697B /* TabbarView.swift in Sources */,
+				098B793F22630D4C003B893B /* YYNCache.swift in Sources */,
 				09483FD2221EAE92002D4937 /* ECQRCodeScanView.m in Sources */,
 				0940C960221D034800C7697B /* YYDateUtil.swift in Sources */,
 				0940C9F1221D323400C7697B /* YYDatePickerView.swift in Sources */,
@@ -721,15 +781,19 @@
 				0940C9F6221D32E700C7697B /* MainViewController.swift in Sources */,
 				09483FD1221EAE92002D4937 /* ECScanResultView.m in Sources */,
 				0940CA01221D34D000C7697B /* MineViewController.swift in Sources */,
+				098B795022633E52003B893B /* TitleValueVTableViewCell.swift in Sources */,
 				0940C957221D034800C7697B /* UIColor+Extension.swift in Sources */,
 				0940C9EE221D323400C7697B /* TitleSwitchTableViewCell.swift in Sources */,
 				0940C961221D034800C7697B /* ProgressHUD.m in Sources */,
+				098B7935226309E6003B893B /* LoginViewController.swift in Sources */,
 				09483FCB221EAE92002D4937 /* ECQRCodeScanVC.m in Sources */,
 				0940CA07221D53EE00C7697B /* TaskListCell.swift in Sources */,
+				098B794D22632D99003B893B /* CommonOptionsModel.swift in Sources */,
 				0940C9ED221D323400C7697B /* TitleTimeRangeTableViewCell.swift in Sources */,
+				098B794422630DD6003B893B /* CommonCellDataModel.swift in Sources */,
+				098B794822632B24003B893B /* DaylyRecordViewController.swift in Sources */,
 				0940C958221D034800C7697B /* UIController+SelectImage.swift in Sources */,
 				0940C9FB221D34A500C7697B /* HomePageViewController.swift in Sources */,
-				0940C9CC221D320700C7697B /* CommonCellDataModel.swift in Sources */,
 				0940C9FE221D34BB00C7697B /* TaskViewController.swift in Sources */,
 				0940CA15221D647E00C7697B /* MineHeaderCell.swift in Sources */,
 				0940C9E3221D323300C7697B /* KeyboardHeaderView.m in Sources */,

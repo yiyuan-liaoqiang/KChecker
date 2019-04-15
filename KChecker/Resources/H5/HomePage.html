@@ -38,19 +38,22 @@
 		function scan() {
 			window.webkit.messageHandlers.scan.postMessage({});
 		}
+    function daylyRecord() {
+        window.webkit.messageHandlers.daylyRecord.postMessage({});
+    }
 	</script>
 	<body style="display: flex;flex-direction: column;justify-content: space-between;">
 		<div id="scan">
 			<div class="backDiv" onclick="scan()">
-				<div><img src="日报@2x.png" style="width: 148px;height: 148px;"/></div>
+				<div><img src="扫一扫@2x.png" style="width: 148px;height: 148px;"/></div>
 				<div style="margin-top: 0;font-size: 16px;color: #333;"><span>请扫描设备二维码</span></div>
 			</div>
 		</div>
 		
 
 		<div id="daylyRecord">
-			<div class="backDiv">
-				<div><img src="扫一扫@2x.png" style="width: 148px;height: 148px;"/></div>
+			<div class="backDiv" onclick="daylyRecord()">
+				<div><img src="日报@2x.png" style="width: 148px;height: 148px;"/></div>
 				<div style="margin-top: 0;font-size: 16px;color: #333;"><span>请点击填写日报</span></div>
 			</div>
 		</div>

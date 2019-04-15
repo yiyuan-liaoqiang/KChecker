@@ -10,6 +10,7 @@ import UIKit
 class TaskViewController: BaseWebViewController {
 
 //    var tableView:UITableView!
+    var dataArray:[Any]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,9 +21,14 @@ class TaskViewController: BaseWebViewController {
         let filePath = Bundle.main.path(forResource: "TaskList.html", ofType: nil)
         self.webView.load(URLRequest(url: URL(fileURLWithPath: filePath!)))
         
+        taskList()
     }
     
-    
+    func taskList() {
+        AccountHelper.taskList(["page":"1" as AnyObject,"size":"15" as AnyObject]) { (err, obj) in
+            
+        }
+    }
     
 //    func setupTableView() {
 //        tableView = UITableView(frame: CGRect(x: 0, y: MyConst.NAV_BAR_HEIGHT(), width: MyConst.MAIN_SCREEN_WIDTH, height: MyConst.MAIN_SCREEN_HEIGHT-MyConst.TAB_BAR_HEIGHT()))

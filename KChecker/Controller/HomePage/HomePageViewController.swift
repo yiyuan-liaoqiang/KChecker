@@ -19,6 +19,7 @@ class HomePageViewController: BaseWebViewController {
         self.webView.load(URLRequest(url: URL(fileURLWithPath: filePath!)))
         
         self.addActionsNames(actions: ["scan"])
+        self.addActionsNames(actions: ["daylyRecord"])
         
     }
     
@@ -26,6 +27,9 @@ class HomePageViewController: BaseWebViewController {
         if message.name == "scan" {
             //扫一扫
             YYRoute.pushToController("ECQRCodeScanVC", data: nil)
+        }
+        else {
+            YYRoute.pushToController(DaylyRecordViewController(), data: nil)
         }
     }
     

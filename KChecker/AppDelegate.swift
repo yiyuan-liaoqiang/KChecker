@@ -23,8 +23,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        self.nav = UINavigationController(rootViewController: MainViewController())
-        self.nav.toolbar.isHidden = true
+        if AccountHelper.isLogin {
+            self.nav = UINavigationController(rootViewController: MainViewController())
+            self.nav.toolbar.isHidden = true
+        }
+        else {
+            self.nav = UINavigationController(rootViewController: LoginViewController())
+            self.nav.toolbar.isHidden = true
+        }
+        
         self.window?.rootViewController = self.nav
         
         return true
@@ -51,7 +58,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
 
 }
 

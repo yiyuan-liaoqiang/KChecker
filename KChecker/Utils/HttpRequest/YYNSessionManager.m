@@ -7,6 +7,7 @@
 //
 
 #import "YYNSessionManager.h"
+#import "KChecker-Swift.h"
 
 @implementation YYNSessionManager
 
@@ -111,6 +112,10 @@
             [self.requestSerializer setValue:value forHTTPHeaderField:key];
         }
     }
+    NSString *token = [AccountHelper token];
+    if (token != nil && token.length > 0) {
+        [self.requestSerializer setValue:token forHTTPHeaderField:@"Authorization"];
+    }
     [self.requestSerializer setValue:@"ios" forHTTPHeaderField:@"platform"];
 }
 
@@ -187,13 +192,7 @@
     NSString *completelyUrlStr = urlStr;
     if(![urlStr hasPrefix:@"http"])
     {
-#ifdef TARGET_OA
         completelyUrlStr = [NSString stringWithFormat:@"%@%@",YYNDOMAIN,urlStr];
-#endif
-        
-#ifdef TARGET_ShareAction
-        completelyUrlStr = [NSString stringWithFormat:@"%@%@",@"http://47.74.128.130:8080/",urlStr];
-#endif
     }
     return completelyUrlStr;
 }
@@ -212,16 +211,6 @@
     if ([params isKindOfClass:NSDictionary.class]) {
         NSMutableDictionary *mdic = [params mutableCopy];
         //去掉单纯的/参数
-        NSArray *values = [params allValues];
-        if (([values containsObject:@"/"] || [values containsObject:@"//"]) && ![url isEqualToString:@"disk/file/save-copy-to-disk"]) {
-            NSMutableArray *selectKeys = [[NSMutableArray alloc] init];
-            for (NSString *key in params.allKeys) {
-                if ([@[@"/",@"//"] containsObject:[mdic objectForKey:key]]) {
-                    [selectKeys addObject:key];
-                }
-            }
-            [mdic removeObjectsForKeys:selectKeys];
-        }
         [mdic setObject:@"ios" forKey:@"platform"];
         return mdic.copy;
     }

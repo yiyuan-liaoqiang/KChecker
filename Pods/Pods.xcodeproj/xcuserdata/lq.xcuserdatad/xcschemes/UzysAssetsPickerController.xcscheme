@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "029FFE049BC1C8D041BDA2D0B12E41C3"
+               BlueprintIdentifier = "ECA401E4F7B212C0952DD189A1B47955"
                BlueprintName = "UzysAssetsPickerController"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "UzysAssetsPickerController.framework">

@@ -9,7 +9,7 @@
 import UIKit
 
 class CommonBaseCell: UITableViewCell,UITextFieldDelegate {
-    private var model:CommonCellDataModel! {
+    var model:CommonCellDataModel! {
         didSet {
             
         }
@@ -69,22 +69,22 @@ class CommonBaseCell: UITableViewCell,UITextFieldDelegate {
     }
     
     //绘制分割线
-    override func draw(_ rect: CGRect) {
-        super.draw(rect)
-        
-        guard let model = model, model.showSepLine == true else {
-            return
-        }
-        
-        let context = UIGraphicsGetCurrentContext()
-        context!.beginPath()
-        context!.move(to: CGPoint(x: CGFloat(truncating: model.lineInsetsOffset ?? 15), y: rect.size.height - 0.5))
-        context!.addLine(to: CGPoint(x: rect.size.width, y: rect.size.height - 0.5))
-        context!.setStrokeColor(UIColor.red.cgColor)
-        context!.setLineWidth(0.5)
-        context!.closePath()
-        context!.drawPath(using: CGPathDrawingMode.fill)
-    }
+//    override func draw(_ rect: CGRect) {
+//        super.draw(rect)
+//        
+//        guard let model = model, model.showSepLine == true else {
+//            return
+//        }
+//        
+//        let context = UIGraphicsGetCurrentContext()
+//        context!.beginPath()
+//        context!.move(to: CGPoint(x: CGFloat(truncating: model.lineInsetsOffset ?? 15), y: rect.size.height - 0.5))
+//        context!.addLine(to: CGPoint(x: rect.size.width, y: rect.size.height - 0.5))
+//        context!.setStrokeColor(UIColor.red.cgColor)
+//        context!.setLineWidth(0.5)
+//        context!.closePath()
+//        context!.drawPath(using: CGPathDrawingMode.fill)
+//    }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

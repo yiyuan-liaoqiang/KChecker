@@ -24,11 +24,25 @@ inhibit_all_warnings!
     pod "UzysAssetsPickerController","0.9.9"
     pod "SwiftyJSON","4.1.0"
 #    Dictionary To Model
-    pod "HandyJSON","~>4.2.0"
+    pod "HandyJSON",'5.0.0-beta'
     pod "EGOImageLoading","0.0.1"
     pod "Masonry","1.1.0"
     
 #   A UITextView subclass that adds support for multiline placeholder written in swift
     pod "KMPlaceholderTextView","1.4.0"
+    
+    pod 'Cache'
+    post_install do |installer|
+        installer.pods_project.targets.each do |target|
+            # Cache pod does not accept optimization level '-O', causing Bus 10 error. Use '-Osize' or '-Onone'
+            if target.name == 'Cache'
+                target.build_configurations.each do |config|
+                    level = '-Osize'
+                    config.build_settings['SWIFT_OPTIMIZATION_LEVEL'] = level
+                    puts "Set #{target.name} #{config.name} to Optimization Level #{level}"
+                end
+            end
+        end
+    end
 
 end
