@@ -19,4 +19,8 @@ class MineViewController: BaseFormViewController {
         // Do any additional setup after loading the view.
     }
     
+    //点检记录
+    @objc func dianjian() {
+        YYRoute.pushToController(aaaaaaaaa(), data: nil)
+    }
 }

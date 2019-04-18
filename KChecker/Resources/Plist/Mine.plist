@@ -34,7 +34,7 @@
 		<key>showAccessory</key>
 		<true/>
 		<key>action</key>
-		<string>selectWeekday:</string>
+		<string>dianjian</string>
 	</dict>
 	<dict>
 		<key>title</key>
