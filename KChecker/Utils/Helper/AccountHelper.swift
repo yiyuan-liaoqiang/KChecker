@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class AccountHelper: NSObject {
     
@@ -49,12 +50,11 @@ class AccountHelper: NSObject {
     //获取任务列表
     static func taskList(_ param:Dictionary<String,AnyObject>,_ callback:@escaping ((_ err:String?,_ ret:AnyObject?)->())){
         YYNSessionManager.default()?.method("get", urlString: "tasks", andParams: param, andHttpHeaders: nil, success: { (ret) in
-            var ret0 = ret as? [String:AnyObject]
-            guard ret0 != nil, Int(truncating: ret0!["code"] as! NSNumber) == 200 else {
-                callback(ret0!["msg"] as? String, nil)
+            guard let data = ret as? [AnyObject] else {
+                callback("请求失败", nil)
                 return
             }
-            callback(nil, ret0?["data"])
+            callback(nil, data as AnyObject)
         }, failure: { (error) in
             callback(error as? String, nil)
         })

@@ -61,6 +61,8 @@
 		0940CA12221D61DB00C7697B /* IconTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0940CA10221D61DB00C7697B /* IconTitleCell.xib */; };
 		0940CA15221D647E00C7697B /* MineHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940CA13221D647E00C7697B /* MineHeaderCell.swift */; };
 		0940CA16221D647E00C7697B /* MineHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0940CA14221D647E00C7697B /* MineHeaderCell.xib */; };
+		09434FFC226810E4000A7777 /* CGFloat+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09434FFB226810E4000A7777 /* CGFloat+Utils.swift */; };
+		09434FFE22681985000A7777 /* Array+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09434FFD22681985000A7777 /* Array+Utils.swift */; };
 		09483FB2221EA3DD002D4937 /* HomePage.html in Resources */ = {isa = PBXBuildFile; fileRef = 09483FB1221EA3DD002D4937 /* HomePage.html */; };
 		09483FB5221EA931002D4937 /* 扫一扫@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09483FB3221EA931002D4937 /* 扫一扫@2x.png */; };
 		09483FB6221EA931002D4937 /* 日报@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09483FB4221EA931002D4937 /* 日报@2x.png */; };
@@ -149,6 +151,8 @@
 		0940CA10221D61DB00C7697B /* IconTitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IconTitleCell.xib; sourceTree = "<group>"; };
 		0940CA13221D647E00C7697B /* MineHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineHeaderCell.swift; sourceTree = "<group>"; };
 		0940CA14221D647E00C7697B /* MineHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineHeaderCell.xib; sourceTree = "<group>"; };
+		09434FFB226810E4000A7777 /* CGFloat+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Utils.swift"; sourceTree = "<group>"; };
+		09434FFD22681985000A7777 /* Array+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Utils.swift"; sourceTree = "<group>"; };
 		09483FB1221EA3DD002D4937 /* HomePage.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = HomePage.html; sourceTree = "<group>"; };
 		09483FB3221EA931002D4937 /* 扫一扫@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "扫一扫@2x.png"; sourceTree = "<group>"; };
 		09483FB4221EA931002D4937 /* 日报@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "日报@2x.png"; sourceTree = "<group>"; };
@@ -262,8 +266,10 @@
 		0940C940221D034800C7697B /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				09434FFB226810E4000A7777 /* CGFloat+Utils.swift */,
 				0940C941221D034800C7697B /* UIColor+Extension.swift */,
 				0940C942221D034800C7697B /* UIController+SelectImage.swift */,
+				09434FFD22681985000A7777 /* Array+Utils.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -773,6 +779,7 @@
 				0940C9F0221D323400C7697B /* TabbarView.swift in Sources */,
 				098B793F22630D4C003B893B /* YYNCache.swift in Sources */,
 				09483FD2221EAE92002D4937 /* ECQRCodeScanView.m in Sources */,
+				09434FFE22681985000A7777 /* Array+Utils.swift in Sources */,
 				0940C960221D034800C7697B /* YYDateUtil.swift in Sources */,
 				0940C9F1221D323400C7697B /* YYDatePickerView.swift in Sources */,
 				0940C9E6221D323400C7697B /* YYAlertController.swift in Sources */,
@@ -798,6 +805,7 @@
 				0940CA15221D647E00C7697B /* MineHeaderCell.swift in Sources */,
 				0940C9E3221D323300C7697B /* KeyboardHeaderView.m in Sources */,
 				09483FD0221EAE92002D4937 /* ECScanResultWebView.m in Sources */,
+				09434FFC226810E4000A7777 /* CGFloat+Utils.swift in Sources */,
 				0940C95B221D034800C7697B /* CommonCellUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

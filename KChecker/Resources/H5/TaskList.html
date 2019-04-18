@@ -50,41 +50,15 @@
                     </style>
                 </head>
     <body>
-        <div class="taskListCell">
-            <div class="taskType">
-                <img src="dianj.png"/>
-                <span style="position: absolute;color: white;font-size: 11px;left: 9px;top: 11px;">点检</span>
-            </div>
-            <div class="taskTitle"><span>点检车间A系列A设备</span></div>
-            <div class="taskTime"><span>2018-12-23 22:15</span></div>
-        </div>
-        
-        <div class="taskListCell">
-            <div class="taskType">
-                <img src="dianj.png"/>
-                <span style="position: absolute;color: white;font-size: 11px;left: 9px;top: 11px;">点检</span>
-            </div>
-            <div class="taskTitle"><span>点检车间B系列B设备</span></div>
-            <div class="taskTime"><span>2018-12-23 22:15</span></div>
-        </div>
-        
-        <div class="taskListCell">
-            <div class="taskType">
-                <img src="dianj.png"/>
-                <span style="position: absolute;color: white;font-size: 11px;left: 9px;top: 11px;">维护</span>
-            </div>
-            <div class="taskTitle"><span>维护车间A系列A设备</span></div>
-            <div class="taskTime"><span>2018-12-23 22:15</span></div>
-        </div>
-        
-        <div class="taskListCell">
-            <div class="taskType">
-                <img src="dianj.png"/>
-                <span style="position: absolute;color: white;font-size: 11px;left: 9px;top: 11px;">润滑</span>
-            </div>
-            <div class="taskTitle"><span>润滑车间A系列A设备</span></div>
-            <div class="taskTime"><span>2018-12-23 22:15</span></div>
-        </div>
         
     </body>
 </html>
+
+<script>
+	
+	function insertCell(data) {
+		var html = `<div class='taskListCell'> <div class="taskType"> <img src="dianj.png"/> <span style="position: absolute;color: white;font-size: 11px;left: 9px;top: 11px;">${data.tag}</span> </div> <div class="taskTitle"><span>${data.facilityName}</span></div> <div class="taskTime"><span>${data.date}</span></div> </div>`
+		var body = document.getElementsByTagName("body")[0]
+		body.innerHTML = body.innerHTML + html
+	}
+</script>
