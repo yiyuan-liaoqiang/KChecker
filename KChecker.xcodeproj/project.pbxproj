@@ -85,11 +85,11 @@
 		098B795022633E52003B893B /* TitleValueVTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098B794E22633E52003B893B /* TitleValueVTableViewCell.swift */; };
 		098B795122633E52003B893B /* TitleValueVTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 098B794F22633E52003B893B /* TitleValueVTableViewCell.xib */; };
 		4CCC1DF0FCF8C789A8954F12 /* Pods_KChecker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F0D7AC548AF54E233D8932 /* Pods_KChecker.framework */; };
-		BED675E222686C1F00591AA2 /* ChaeckViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BED675E122686C1F00591AA2 /* ChaeckViewController.m */; };
-		BED675E522686FD200591AA2 /* OilingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BED675E422686FD200591AA2 /* OilingViewController.m */; };
-		BED675E82268707000591AA2 /* MaintainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BED675E72268707000591AA2 /* MaintainViewController.m */; };
-		BED675EB2268710F00591AA2 /* LogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BED675EA2268710F00591AA2 /* LogViewController.m */; };
-		BED675EE2268722500591AA2 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BED675ED2268722500591AA2 /* SettingViewController.m */; };
+		BED675F822696F0200591AA2 /* CheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED675F722696F0200591AA2 /* CheckViewController.swift */; };
+		BED675FA226973F200591AA2 /* OilingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED675F9226973F100591AA2 /* OilingViewController.swift */; };
+		BED675FC2269748000591AA2 /* MaintainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED675FB2269748000591AA2 /* MaintainViewController.swift */; };
+		BED675FE2269749000591AA2 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED675FD2269749000591AA2 /* LogViewController.swift */; };
+		BED676002269749E00591AA2 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED675FF2269749E00591AA2 /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -188,16 +188,11 @@
 		0E13B1AB14BC54BF0B438978 /* Pods-KChecker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KChecker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KChecker/Pods-KChecker.debug.xcconfig"; sourceTree = "<group>"; };
 		144CC2C42E0EC80D76B18D18 /* Pods-KChecker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KChecker.release.xcconfig"; path = "Pods/Target Support Files/Pods-KChecker/Pods-KChecker.release.xcconfig"; sourceTree = "<group>"; };
 		76F0D7AC548AF54E233D8932 /* Pods_KChecker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KChecker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BED675E022686C1F00591AA2 /* ChaeckViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChaeckViewController.h; sourceTree = "<group>"; };
-		BED675E122686C1F00591AA2 /* ChaeckViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChaeckViewController.m; sourceTree = "<group>"; };
-		BED675E322686FD200591AA2 /* OilingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OilingViewController.h; sourceTree = "<group>"; };
-		BED675E422686FD200591AA2 /* OilingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OilingViewController.m; sourceTree = "<group>"; };
-		BED675E62268707000591AA2 /* MaintainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaintainViewController.h; sourceTree = "<group>"; };
-		BED675E72268707000591AA2 /* MaintainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaintainViewController.m; sourceTree = "<group>"; };
-		BED675E92268710F00591AA2 /* LogViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogViewController.h; sourceTree = "<group>"; };
-		BED675EA2268710F00591AA2 /* LogViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogViewController.m; sourceTree = "<group>"; };
-		BED675EC2268722500591AA2 /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
-		BED675ED2268722500591AA2 /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		BED675F722696F0200591AA2 /* CheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckViewController.swift; sourceTree = "<group>"; };
+		BED675F9226973F100591AA2 /* OilingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OilingViewController.swift; sourceTree = "<group>"; };
+		BED675FB2269748000591AA2 /* MaintainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaintainViewController.swift; sourceTree = "<group>"; };
+		BED675FD2269749000591AA2 /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
+		BED675FF2269749E00591AA2 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -613,16 +608,11 @@
 		BED675DF22686BC000591AA2 /* DetailController */ = {
 			isa = PBXGroup;
 			children = (
-				BED675E022686C1F00591AA2 /* ChaeckViewController.h */,
-				BED675E122686C1F00591AA2 /* ChaeckViewController.m */,
-				BED675E322686FD200591AA2 /* OilingViewController.h */,
-				BED675E422686FD200591AA2 /* OilingViewController.m */,
-				BED675E62268707000591AA2 /* MaintainViewController.h */,
-				BED675E72268707000591AA2 /* MaintainViewController.m */,
-				BED675E92268710F00591AA2 /* LogViewController.h */,
-				BED675EA2268710F00591AA2 /* LogViewController.m */,
-				BED675EC2268722500591AA2 /* SettingViewController.h */,
-				BED675ED2268722500591AA2 /* SettingViewController.m */,
+				BED675F722696F0200591AA2 /* CheckViewController.swift */,
+				BED675F9226973F100591AA2 /* OilingViewController.swift */,
+				BED675FB2269748000591AA2 /* MaintainViewController.swift */,
+				BED675FD2269749000591AA2 /* LogViewController.swift */,
+				BED675FF2269749E00591AA2 /* SettingViewController.swift */,
 			);
 			path = DetailController;
 			sourceTree = "<group>";
@@ -790,17 +780,16 @@
 				0940C95F221D034800C7697B /* CommonUtils.swift in Sources */,
 				098B793C22630D03003B893B /* SMSHelper.swift in Sources */,
 				0940CA11221D61DB00C7697B /* IconTitleCell.swift in Sources */,
-				BED675E82268707000591AA2 /* MaintainViewController.m in Sources */,
 				0940C95C221D034800C7697B /* JsonTransfer.swift in Sources */,
 				0940C92C221CF97F00C7697B /* ViewController.swift in Sources */,
 				0940C9E4221D323300C7697B /* YYPickerView.swift in Sources */,
-				BED675EE2268722500591AA2 /* SettingViewController.m in Sources */,
 				0940C956221D034800C7697B /* MyMD5.m in Sources */,
 				09483FCF221EAE92002D4937 /* ECScanResultVC.m in Sources */,
 				0940C955221D034800C7697B /* MyConst.swift in Sources */,
 				098B794B22632CD2003B893B /* YYNPickerView.m in Sources */,
 				0940C9BA221D037300C7697B /* BaseFormViewController.swift in Sources */,
 				0940C9BC221D037300C7697B /* BaseWebViewController.swift in Sources */,
+				BED675FE2269749000591AA2 /* LogViewController.swift in Sources */,
 				0940C95D221D034800C7697B /* ActivityIndicator.swift in Sources */,
 				0940C9B9221D037300C7697B /* BaseViewController.swift in Sources */,
 				0940C95E221D034800C7697B /* ActivityIndicatorManager.m in Sources */,
@@ -811,18 +800,19 @@
 				098B794322630DD6003B893B /* UserModel.swift in Sources */,
 				0940C9EA221D323400C7697B /* CommonBaseCell.swift in Sources */,
 				0940C959221D034800C7697B /* YYRoute.swift in Sources */,
+				BED675FA226973F200591AA2 /* OilingViewController.swift in Sources */,
 				0940C9F0221D323400C7697B /* TabbarView.swift in Sources */,
 				098B793F22630D4C003B893B /* YYNCache.swift in Sources */,
 				09483FD2221EAE92002D4937 /* ECQRCodeScanView.m in Sources */,
 				09434FFE22681985000A7777 /* Array+Utils.swift in Sources */,
 				0940C960221D034800C7697B /* YYDateUtil.swift in Sources */,
 				0940C9F1221D323400C7697B /* YYDatePickerView.swift in Sources */,
-				BED675EB2268710F00591AA2 /* LogViewController.m in Sources */,
+				BED675FC2269748000591AA2 /* MaintainViewController.swift in Sources */,
 				0940C9E6221D323400C7697B /* YYAlertController.swift in Sources */,
 				0940C95A221D034800C7697B /* YYNSessionManager.m in Sources */,
 				0940C9F3221D32C300C7697B /* AppDelegate.swift in Sources */,
 				0940C9F6221D32E700C7697B /* MainViewController.swift in Sources */,
-				BED675E522686FD200591AA2 /* OilingViewController.m in Sources */,
+				BED675F822696F0200591AA2 /* CheckViewController.swift in Sources */,
 				09483FD1221EAE92002D4937 /* ECScanResultView.m in Sources */,
 				0940CA01221D34D000C7697B /* MineViewController.swift in Sources */,
 				098B795022633E52003B893B /* TitleValueVTableViewCell.swift in Sources */,
@@ -830,7 +820,6 @@
 				0940C9EE221D323400C7697B /* TitleSwitchTableViewCell.swift in Sources */,
 				0940C961221D034800C7697B /* ProgressHUD.m in Sources */,
 				098B7935226309E6003B893B /* LoginViewController.swift in Sources */,
-				BED675E222686C1F00591AA2 /* ChaeckViewController.m in Sources */,
 				09483FCB221EAE92002D4937 /* ECQRCodeScanVC.m in Sources */,
 				0940CA07221D53EE00C7697B /* TaskListCell.swift in Sources */,
 				098B794D22632D99003B893B /* CommonOptionsModel.swift in Sources */,
@@ -841,6 +830,7 @@
 				0940C9FB221D34A500C7697B /* HomePageViewController.swift in Sources */,
 				0940C9FE221D34BB00C7697B /* TaskViewController.swift in Sources */,
 				0940CA15221D647E00C7697B /* MineHeaderCell.swift in Sources */,
+				BED676002269749E00591AA2 /* SettingViewController.swift in Sources */,
 				0940C9E3221D323300C7697B /* KeyboardHeaderView.m in Sources */,
 				09483FD0221EAE92002D4937 /* ECScanResultWebView.m in Sources */,
 				09434FFC226810E4000A7777 /* CGFloat+Utils.swift in Sources */,

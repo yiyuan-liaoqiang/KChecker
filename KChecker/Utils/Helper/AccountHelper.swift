@@ -60,6 +60,19 @@ class AccountHelper: NSObject {
         })
     }
     
+    //获取检点记录列表
+    static func checkList(_ param:Dictionary<String,AnyObject>,_ callback:@escaping ((_ err:String?,_ ret:AnyObject?)->())){
+        YYNSessionManager.default()?.method("get", urlString: "check/history", andParams: param, andHttpHeaders: nil, success: { (ret) in
+            guard let data = ret as? [AnyObject] else {
+                callback("请求失败", nil)
+                return
+            }
+            callback(nil, data as AnyObject)
+        }, failure: { (error) in
+            callback(error as? String, nil)
+        })
+    }
+    
     //密码登录
     static func loginWithPwd(_ param:Dictionary<String,AnyObject>,_ callback:@escaping ((_ err:String?,_ ret:AnyObject?)->())){
         YYNSessionManager.default()?.method("post", urlString: "signIn", andParams: param, andHttpHeaders: nil, success: { (ret) in

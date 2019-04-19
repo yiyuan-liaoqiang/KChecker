@@ -12,7 +12,6 @@
 #import "YYNPickerView.h"
 #import "ActivityIndicatorManager.h"
 #import "MJRefresh.h"
-#import "ChaeckViewController.h"
-#import "OilingViewController.h"
-#import "LogViewController.h"
-#import "SettingViewController.h"
+//#import "ChaeckViewController.h"
+
+

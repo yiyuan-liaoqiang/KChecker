@@ -21,16 +21,16 @@ class MineViewController: BaseFormViewController {
     
     //点检记录selectWeekday:maintain
     @objc func dianjian() {
-        YYRoute.pushToController(ChaeckViewController(), data: nil)
+        YYRoute.pushToController("CheckViewController", data: nil)
     }
     @objc func oiling() {
-        YYRoute.pushToController(OilingViewController(), data: nil)
+        YYRoute.pushToController("OilingViewController", data: nil)
     }
     @objc func maintain(){
-        YYRoute.pushToController(MainViewController(), data: nil)
+        YYRoute.pushToController("MaintainViewController", data: nil)
     }
     @objc func log(){
-        YYRoute.pushToController(LogViewController(), data: nil)
+        YYRoute.pushToController("LogViewController", data: nil)
     }
     @objc func setting(){
         YYRoute.pushToController(SettingViewController(), data: nil)
