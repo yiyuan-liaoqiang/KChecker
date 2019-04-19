@@ -66,7 +66,7 @@ class TaskViewController: BaseWebViewController {
                 let data : NSData! = try? JSONSerialization.data(withJSONObject: dic, options: []) as NSData
                 let JSONString = NSString(data:data as Data,encoding: String.Encoding.utf8.rawValue)! as String
                 self.webView.evaluateJavaScript("insertCell(\(String(describing: JSONString)))", completionHandler: { (ret, err) in
-                    print(ret,err)
+                    
                 })
             }
         }
