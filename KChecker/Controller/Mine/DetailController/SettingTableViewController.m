@@ -8,8 +8,8 @@
 #import "SettingTableViewController.h"
 #import "SettingTableViewCell.h"
 #import "SettingModel.h"
-
-@interface SettingTableViewController ()<UITableViewDelegate , UITableViewDataSource>
+#import "KChecker-Swift.h"
+@interface SettingTableViewController ()<UITableViewDelegate , UITableViewDataSource , UIAlertViewDelegate>
 @property (nonatomic ,strong) NSArray *dataArray;
 @property (nonatomic ,strong) UITableView *tableView;
 
@@ -57,7 +57,7 @@
 }
 
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {    
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *strID = @"cell";
     
     SettingTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:strID];
@@ -71,6 +71,25 @@
     SettingModel *model = self.dataArray[indexPath.row];
     cell.textLabel.text = model.title;
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if(indexPath.row == 2)
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"确定是否退出账号" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定",nil];
+        [alert show];
+       
+    }
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if(buttonIndex == 1)
+    {
+        LoginViewController *vc = [[LoginViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 @end

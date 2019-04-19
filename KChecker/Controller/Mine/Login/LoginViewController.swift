@@ -60,7 +60,7 @@ class LoginViewController: BaseViewController,UITextFieldDelegate {
                 //用户信息保存在本地
 //                let user = UserModel.deserialize(from: data as? [String:Any])
 //                AccountHelper.synchronizeUserInfo(user)
-                try? YYNCache.userRelatedStorage?.setObject(JSON(true), forKey: "isLogin")
+              try? YYNCache.userRelatedStorage?.setObject(JSON(true), forKey: "isLogin")
                 try? YYNCache.userRelatedStorage?.setObject(JSON(data as Any), forKey: "token")
                 YYRoute.pushToController(MainViewController(), data: nil)
                 return
