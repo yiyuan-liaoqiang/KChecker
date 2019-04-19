@@ -1,5 +1,5 @@
 //
-//  TaskDetailViewController.h
+//  CheckUPViewController.h
 //  KChecker
 //
 //  Created by LiaoQiang on 2019/4/19.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TaskDetailViewController : BaseOCViewController
+@interface CheckUPViewController : BaseOCViewController
 
 @end
 

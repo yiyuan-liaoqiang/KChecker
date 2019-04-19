@@ -85,6 +85,11 @@
                 NSDictionary* datajsonObject = [NSJSONSerialization JSONObjectWithData:[[NSData alloc] initWithBase64EncodedString:jsonObject[@"data"] options:0] options:NSJSONReadingMutableLeaves error:nil];
             }
         }
+        else if ([obj.stringValue containsString:@"facilityIdentifier"] && [obj.stringValue containsString:@"facilityName"]) {
+            NSMutableDictionary *json = [[JsonStringTransfer jsonStringToDictionary:obj.stringValue] mutableCopy];
+            json[@"facilityId"] = json[@"facilityIdentifier"];
+            [YYRoute pushToController:@"TaskDetailViewController" data:json];
+        }
         else{
             ECScanResultVC *resultVC = [[ECScanResultVC alloc] init];
             resultVC.scanResultStr = obj.stringValue;

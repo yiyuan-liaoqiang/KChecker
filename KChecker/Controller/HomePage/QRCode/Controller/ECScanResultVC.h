@@ -7,7 +7,7 @@
 //
 
 
-@interface ECScanResultVC : UIViewController
+@interface ECScanResultVC : BaseOCViewController
 
 @property (nonatomic, copy) NSString *scanResultStr;
 

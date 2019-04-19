@@ -9,7 +9,7 @@
 import UIKit
 
 class YYRoute: NSObject {
-    class func pushToController(_ vcName:String,data:AnyObject?) {
+    @objc class func pushToController(_ vcName:String,data:AnyObject?) {
         var cls = NSClassFromString(vcName) as? UIViewController.Type
         if cls == nil {
             cls = NSClassFromString("KChecker."+vcName) as? UIViewController.Type

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0922CE40226A15F10042A220 /* AliyunEmasServices-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0922CE3F226A15F10042A220 /* AliyunEmasServices-Info.plist */; };
+		0922CE43226A1CBC0042A220 /* BaseOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0922CE42226A1CBC0042A220 /* BaseOCViewController.m */; };
+		0922CE46226A20450042A220 /* TitleIndexView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0922CE45226A20450042A220 /* TitleIndexView.m */; };
+		0922CE49226A206B0042A220 /* NSString+CalculateSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 0922CE48226A206B0042A220 /* NSString+CalculateSize.m */; };
 		0940C92C221CF97F00C7697B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940C92B221CF97F00C7697B /* ViewController.swift */; };
 		0940C92F221CF97F00C7697B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0940C92D221CF97F00C7697B /* Main.storyboard */; };
 		0940C931221CF98100C7697B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0940C930221CF98100C7697B /* Assets.xcassets */; };
@@ -84,7 +88,16 @@
 		098B794D22632D99003B893B /* CommonOptionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098B794C22632D99003B893B /* CommonOptionsModel.swift */; };
 		098B795022633E52003B893B /* TitleValueVTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098B794E22633E52003B893B /* TitleValueVTableViewCell.swift */; };
 		098B795122633E52003B893B /* TitleValueVTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 098B794F22633E52003B893B /* TitleValueVTableViewCell.xib */; };
+		09B7F440226A231D0096F056 /* DMLazyScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B7F43E226A231D0096F056 /* DMLazyScrollView.m */; };
+		09B7F444226A23DB0096F056 /* CheckUPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B7F443226A23DB0096F056 /* CheckUPViewController.m */; };
+		09B7F448226A2D6E0096F056 /* CheckUPDeviceInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B7F446226A2D6E0096F056 /* CheckUPDeviceInfoCell.m */; };
+		09B7F449226A2D6E0096F056 /* CheckUPDeviceInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09B7F447226A2D6E0096F056 /* CheckUPDeviceInfoCell.xib */; };
+		09B7F44D226A2D9E0096F056 /* CheckUPStandardsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B7F44B226A2D9E0096F056 /* CheckUPStandardsCell.m */; };
+		09B7F44E226A2D9E0096F056 /* CheckUPStandardsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09B7F44C226A2D9E0096F056 /* CheckUPStandardsCell.xib */; };
+		09B7F451226A2FE00096F056 /* CheckUPModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B7F450226A2FE00096F056 /* CheckUPModel.m */; };
 		09F26BE42269DA7D00E9DF64 /* TaskDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F26BE32269DA7D00E9DF64 /* TaskDetailViewController.m */; };
+		09F687B5226A31450016D0B4 /* JsonStringTransfer.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F687B4226A31450016D0B4 /* JsonStringTransfer.m */; };
+		09F687B8226A32E20016D0B4 /* UILabel+YYNExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F687B7226A32E20016D0B4 /* UILabel+YYNExtension.m */; };
 		4CCC1DF0FCF8C789A8954F12 /* Pods_KChecker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F0D7AC548AF54E233D8932 /* Pods_KChecker.framework */; };
 		BED675F822696F0200591AA2 /* CheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED675F722696F0200591AA2 /* CheckViewController.swift */; };
 		BED675FA226973F200591AA2 /* OilingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED675F9226973F100591AA2 /* OilingViewController.swift */; };
@@ -100,6 +113,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0922CE3F226A15F10042A220 /* AliyunEmasServices-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AliyunEmasServices-Info.plist"; sourceTree = "<group>"; };
+		0922CE41226A1CBC0042A220 /* BaseOCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseOCViewController.h; sourceTree = "<group>"; };
+		0922CE42226A1CBC0042A220 /* BaseOCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseOCViewController.m; sourceTree = "<group>"; };
+		0922CE44226A20450042A220 /* TitleIndexView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleIndexView.h; sourceTree = "<group>"; };
+		0922CE45226A20450042A220 /* TitleIndexView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleIndexView.m; sourceTree = "<group>"; };
+		0922CE47226A206B0042A220 /* NSString+CalculateSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CalculateSize.h"; sourceTree = "<group>"; };
+		0922CE48226A206B0042A220 /* NSString+CalculateSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CalculateSize.m"; sourceTree = "<group>"; };
 		0940C926221CF97F00C7697B /* KChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0940C92B221CF97F00C7697B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0940C92E221CF97F00C7697B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -192,8 +212,24 @@
 		098B794C22632D99003B893B /* CommonOptionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonOptionsModel.swift; sourceTree = "<group>"; };
 		098B794E22633E52003B893B /* TitleValueVTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleValueVTableViewCell.swift; sourceTree = "<group>"; };
 		098B794F22633E52003B893B /* TitleValueVTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleValueVTableViewCell.xib; sourceTree = "<group>"; };
+		09B7F43E226A231D0096F056 /* DMLazyScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMLazyScrollView.m; sourceTree = "<group>"; };
+		09B7F43F226A231D0096F056 /* DMLazyScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMLazyScrollView.h; sourceTree = "<group>"; };
+		09B7F442226A23DB0096F056 /* CheckUPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckUPViewController.h; sourceTree = "<group>"; };
+		09B7F443226A23DB0096F056 /* CheckUPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckUPViewController.m; sourceTree = "<group>"; };
+		09B7F445226A2D6E0096F056 /* CheckUPDeviceInfoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckUPDeviceInfoCell.h; sourceTree = "<group>"; };
+		09B7F446226A2D6E0096F056 /* CheckUPDeviceInfoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckUPDeviceInfoCell.m; sourceTree = "<group>"; };
+		09B7F447226A2D6E0096F056 /* CheckUPDeviceInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckUPDeviceInfoCell.xib; sourceTree = "<group>"; };
+		09B7F44A226A2D9E0096F056 /* CheckUPStandardsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckUPStandardsCell.h; sourceTree = "<group>"; };
+		09B7F44B226A2D9E0096F056 /* CheckUPStandardsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckUPStandardsCell.m; sourceTree = "<group>"; };
+		09B7F44C226A2D9E0096F056 /* CheckUPStandardsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckUPStandardsCell.xib; sourceTree = "<group>"; };
+		09B7F44F226A2FE00096F056 /* CheckUPModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckUPModel.h; sourceTree = "<group>"; };
+		09B7F450226A2FE00096F056 /* CheckUPModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckUPModel.m; sourceTree = "<group>"; };
 		09F26BE22269DA7D00E9DF64 /* TaskDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskDetailViewController.h; sourceTree = "<group>"; };
 		09F26BE32269DA7D00E9DF64 /* TaskDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaskDetailViewController.m; sourceTree = "<group>"; };
+		09F687B3226A31450016D0B4 /* JsonStringTransfer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonStringTransfer.h; sourceTree = "<group>"; };
+		09F687B4226A31450016D0B4 /* JsonStringTransfer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonStringTransfer.m; sourceTree = "<group>"; };
+		09F687B6226A32E20016D0B4 /* UILabel+YYNExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+YYNExtension.h"; sourceTree = "<group>"; };
+		09F687B7226A32E20016D0B4 /* UILabel+YYNExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+YYNExtension.m"; sourceTree = "<group>"; };
 		0E13B1AB14BC54BF0B438978 /* Pods-KChecker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KChecker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KChecker/Pods-KChecker.debug.xcconfig"; sourceTree = "<group>"; };
 		144CC2C42E0EC80D76B18D18 /* Pods-KChecker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KChecker.release.xcconfig"; path = "Pods/Target Support Files/Pods-KChecker/Pods-KChecker.release.xcconfig"; sourceTree = "<group>"; };
 		76F0D7AC548AF54E233D8932 /* Pods_KChecker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KChecker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -248,6 +284,7 @@
 		0940C928221CF97F00C7697B /* KChecker */ = {
 			isa = PBXGroup;
 			children = (
+				0922CE3F226A15F10042A220 /* AliyunEmasServices-Info.plist */,
 				0940C9CD221D323300C7697B /* View */,
 				0940C9C9221D320700C7697B /* Model */,
 				0940C9C0221D247500C7697B /* Resources */,
@@ -269,6 +306,10 @@
 		0940C93B221D034800C7697B /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				09F687B6226A32E20016D0B4 /* UILabel+YYNExtension.h */,
+				09F687B7226A32E20016D0B4 /* UILabel+YYNExtension.m */,
+				09F687B3226A31450016D0B4 /* JsonStringTransfer.h */,
+				09F687B4226A31450016D0B4 /* JsonStringTransfer.m */,
 				098B793D22630D4C003B893B /* Cache */,
 				098B793622630D03003B893B /* Helper */,
 				0940C93C221D034800C7697B /* MyConst.swift */,
@@ -347,6 +388,7 @@
 		0940C951221D034800C7697B /* ThirdParties */ = {
 			isa = PBXGroup;
 			children = (
+				09B7F43D226A231D0096F056 /* DMLazyScrollView */,
 				0940C952221D034800C7697B /* TIPProgressHUD */,
 			);
 			path = ThirdParties;
@@ -380,6 +422,8 @@
 				0940C992221D037300C7697B /* BaseFormViewController.swift */,
 				0940C993221D037300C7697B /* BaseInputViewController.swift */,
 				0940C994221D037300C7697B /* BaseWebViewController.swift */,
+				0922CE41226A1CBC0042A220 /* BaseOCViewController.h */,
+				0922CE42226A1CBC0042A220 /* BaseOCViewController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -420,6 +464,8 @@
 			isa = PBXGroup;
 			children = (
 				098B794022630DD6003B893B /* Common */,
+				09B7F44F226A2FE00096F056 /* CheckUPModel.h */,
+				09B7F450226A2FE00096F056 /* CheckUPModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -439,6 +485,10 @@
 		0940C9CE221D323300C7697B /* CommonView */ = {
 			isa = PBXGroup;
 			children = (
+				0922CE47226A206B0042A220 /* NSString+CalculateSize.h */,
+				0922CE48226A206B0042A220 /* NSString+CalculateSize.m */,
+				0922CE44226A20450042A220 /* TitleIndexView.h */,
+				0922CE45226A20450042A220 /* TitleIndexView.m */,
 				098B794A22632CD2003B893B /* YYNPickerView.h */,
 				098B794922632CD2003B893B /* YYNPickerView.m */,
 				0940C9CF221D323300C7697B /* KeyboardHeaderView.m */,
@@ -516,6 +566,7 @@
 		0940C9FC221D34AE00C7697B /* Task */ = {
 			isa = PBXGroup;
 			children = (
+				09B7F441226A239C0096F056 /* CheckUP */,
 				0940C9FD221D34BB00C7697B /* TaskViewController.swift */,
 				0940CA05221D53EE00C7697B /* TaskListCell.swift */,
 				0940CA06221D53EE00C7697B /* TaskListCell.xib */,
@@ -617,6 +668,30 @@
 				BED676152269A8A600591AA2 /* SettingModel.m */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		09B7F43D226A231D0096F056 /* DMLazyScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				09B7F43E226A231D0096F056 /* DMLazyScrollView.m */,
+				09B7F43F226A231D0096F056 /* DMLazyScrollView.h */,
+			);
+			path = DMLazyScrollView;
+			sourceTree = "<group>";
+		};
+		09B7F441226A239C0096F056 /* CheckUP */ = {
+			isa = PBXGroup;
+			children = (
+				09B7F442226A23DB0096F056 /* CheckUPViewController.h */,
+				09B7F443226A23DB0096F056 /* CheckUPViewController.m */,
+				09B7F445226A2D6E0096F056 /* CheckUPDeviceInfoCell.h */,
+				09B7F446226A2D6E0096F056 /* CheckUPDeviceInfoCell.m */,
+				09B7F447226A2D6E0096F056 /* CheckUPDeviceInfoCell.xib */,
+				09B7F44A226A2D9E0096F056 /* CheckUPStandardsCell.h */,
+				09B7F44B226A2D9E0096F056 /* CheckUPStandardsCell.m */,
+				09B7F44C226A2D9E0096F056 /* CheckUPStandardsCell.xib */,
+			);
+			path = CheckUP;
 			sourceTree = "<group>";
 		};
 		5A553AD827CF499E637DD147 /* Frameworks */ = {
@@ -725,13 +800,16 @@
 				0940CA08221D53EE00C7697B /* TaskListCell.xib in Resources */,
 				098B795122633E52003B893B /* TitleValueVTableViewCell.xib in Resources */,
 				0940C9C8221D30EA00C7697B /* yhming.png in Resources */,
+				09B7F44E226A2D9E0096F056 /* CheckUPStandardsCell.xib in Resources */,
 				0940C9E7221D323400C7697B /* TitleSwitchTableViewCell.xib in Resources */,
 				0940CA04221D353400C7697B /* WorkFinderTabbar.plist in Resources */,
 				0940CA0C221D5B7400C7697B /* dianj.png in Resources */,
 				0940C9E8221D323400C7697B /* TitleValueTableViewCell.xib in Resources */,
 				0940C9E5221D323400C7697B /* 说明.txt in Resources */,
 				09483FB6221EA931002D4937 /* 日报@2x.png in Resources */,
+				0922CE40226A15F10042A220 /* AliyunEmasServices-Info.plist in Resources */,
 				0940CA0E221D609300C7697B /* Mine.plist in Resources */,
+				09B7F449226A2D6E0096F056 /* CheckUPDeviceInfoCell.xib in Resources */,
 				0940C9C3221D249C00C7697B /* Login.html in Resources */,
 				0940C92F221CF97F00C7697B /* Main.storyboard in Resources */,
 			);
@@ -814,11 +892,13 @@
 				0940C95F221D034800C7697B /* CommonUtils.swift in Sources */,
 				098B793C22630D03003B893B /* SMSHelper.swift in Sources */,
 				0940CA11221D61DB00C7697B /* IconTitleCell.swift in Sources */,
+				09B7F44D226A2D9E0096F056 /* CheckUPStandardsCell.m in Sources */,
 				0940C95C221D034800C7697B /* JsonTransfer.swift in Sources */,
 				0940C92C221CF97F00C7697B /* ViewController.swift in Sources */,
 				0940C9E4221D323300C7697B /* YYPickerView.swift in Sources */,
 				0940C956221D034800C7697B /* MyMD5.m in Sources */,
 				BED676162269A8A600591AA2 /* SettingModel.m in Sources */,
+				09F687B5226A31450016D0B4 /* JsonStringTransfer.m in Sources */,
 				09483FCF221EAE92002D4937 /* ECScanResultVC.m in Sources */,
 				0940C955221D034800C7697B /* MyConst.swift in Sources */,
 				098B794B22632CD2003B893B /* YYNPickerView.m in Sources */,
@@ -836,9 +916,11 @@
 				098B794322630DD6003B893B /* UserModel.swift in Sources */,
 				BED676122269A3C900591AA2 /* NSArray+Ex.m in Sources */,
 				0940C9EA221D323400C7697B /* CommonBaseCell.swift in Sources */,
+				09B7F448226A2D6E0096F056 /* CheckUPDeviceInfoCell.m in Sources */,
 				0940C959221D034800C7697B /* YYRoute.swift in Sources */,
 				09F26BE42269DA7D00E9DF64 /* TaskDetailViewController.m in Sources */,
 				BED675FA226973F200591AA2 /* OilingViewController.swift in Sources */,
+				09F687B8226A32E20016D0B4 /* UILabel+YYNExtension.m in Sources */,
 				0940C9F0221D323400C7697B /* TabbarView.swift in Sources */,
 				098B793F22630D4C003B893B /* YYNCache.swift in Sources */,
 				09483FD2221EAE92002D4937 /* ECQRCodeScanView.m in Sources */,
@@ -849,16 +931,19 @@
 				0940C9E6221D323400C7697B /* YYAlertController.swift in Sources */,
 				0940C95A221D034800C7697B /* YYNSessionManager.m in Sources */,
 				0940C9F3221D32C300C7697B /* AppDelegate.swift in Sources */,
+				0922CE46226A20450042A220 /* TitleIndexView.m in Sources */,
 				0940C9F6221D32E700C7697B /* MainViewController.swift in Sources */,
 				BED675F822696F0200591AA2 /* CheckViewController.swift in Sources */,
 				09483FD1221EAE92002D4937 /* ECScanResultView.m in Sources */,
 				0940CA01221D34D000C7697B /* MineViewController.swift in Sources */,
 				098B795022633E52003B893B /* TitleValueVTableViewCell.swift in Sources */,
+				09B7F440226A231D0096F056 /* DMLazyScrollView.m in Sources */,
 				0940C957221D034800C7697B /* UIColor+Extension.swift in Sources */,
 				0940C9EE221D323400C7697B /* TitleSwitchTableViewCell.swift in Sources */,
 				0940C961221D034800C7697B /* ProgressHUD.m in Sources */,
 				098B7935226309E6003B893B /* LoginViewController.swift in Sources */,
 				09483FCB221EAE92002D4937 /* ECQRCodeScanVC.m in Sources */,
+				0922CE49226A206B0042A220 /* NSString+CalculateSize.m in Sources */,
 				0940CA07221D53EE00C7697B /* TaskListCell.swift in Sources */,
 				098B794D22632D99003B893B /* CommonOptionsModel.swift in Sources */,
 				0940C9ED221D323400C7697B /* TitleTimeRangeTableViewCell.swift in Sources */,
@@ -875,6 +960,9 @@
 				09483FD0221EAE92002D4937 /* ECScanResultWebView.m in Sources */,
 				09434FFC226810E4000A7777 /* CGFloat+Utils.swift in Sources */,
 				0940C95B221D034800C7697B /* CommonCellUtil.swift in Sources */,
+				09B7F451226A2FE00096F056 /* CheckUPModel.m in Sources */,
+				09B7F444226A23DB0096F056 /* CheckUPViewController.m in Sources */,
+				0922CE43226A1CBC0042A220 /* BaseOCViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1022,16 +1110,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = RDPS29QS74;
+				DEVELOPMENT_TEAM = WCYQSY2P5P;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Definition.pch";
 				INFOPLIST_FILE = KChecker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.liaoqiang.KChecker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.KChecker.liaoqiang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "common *";
+				PROVISIONING_PROFILE_SPECIFIER = KChecker;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/KChecker-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1045,16 +1133,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = RDPS29QS74;
+				DEVELOPMENT_TEAM = WCYQSY2P5P;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Definition.pch";
 				INFOPLIST_FILE = KChecker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.liaoqiang.KChecker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.KChecker.liaoqiang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "common *";
+				PROVISIONING_PROFILE_SPECIFIER = KChecker;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/KChecker-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

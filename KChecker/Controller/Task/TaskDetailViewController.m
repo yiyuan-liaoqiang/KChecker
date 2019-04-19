@@ -6,8 +6,15 @@
 //
 
 #import "TaskDetailViewController.h"
+#import "CheckUPViewController.h"
+#import "DMLazyScrollView.h"
 
-@interface TaskDetailViewController ()
+@interface TaskDetailViewController ()<DMLazyScrollViewDelegate>
+{
+    DMLazyScrollView *_lazyScrollView;
+    NSMutableArray *_viewControllerArray;
+}
+@property (nonatomic, strong)TitleIndexView *titleView;
 
 @end
 
@@ -16,16 +23,75 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title = self.baseData[@"facilityName"];
+    [self.view addSubview:self.titleView];
+    [self lazyViewInital];
+}
+
+
+- (void)lazyViewInital
+{
+    NSUInteger numberOfPages = 6;
+    _viewControllerArray = [[NSMutableArray alloc] initWithCapacity:numberOfPages];
+    for (NSUInteger k = 0; k < numberOfPages; ++k) {
+        [_viewControllerArray addObject:[NSNull null]];
+    }
+    _lazyScrollView = [[DMLazyScrollView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.titleView.frame), MAIN_SCREEN_WIDTH, MAIN_SCREEN_HEIGHT-CGRectGetMaxY(self.titleView.frame))];
+    _lazyScrollView.scrollEnabled = YES;
+    [_lazyScrollView setEnableCircularScroll:NO];
+    [_lazyScrollView setAutoPlay:NO];
+    __weak __typeof(&*self)weakSelf = self;
+    _lazyScrollView.dataSource = ^(NSUInteger index) {
+        return [weakSelf controllerAtIndex:index];
+    };
+    _lazyScrollView.numberOfPages = numberOfPages;
+    _lazyScrollView.controlDelegate = self;
+    [self.view addSubview:_lazyScrollView];
+}
+
+- (void)lazyScrollViewDidEndDecelerating:(DMLazyScrollView *)pagingView atPageIndex:(NSInteger)pageIndex
+{
+    [self.titleView setCurrentIndex:pageIndex+10];
+}
+
+- (UIViewController *) controllerAtIndex:(NSInteger) index {
+    if (index > _viewControllerArray.count || index < 0) return nil;
+    id res = [_viewControllerArray objectAtIndex:index];
+    if (res == [NSNull null])
+    {
+        BaseOCViewController *vc;
+        if (index == 0) {
+            vc = [[CheckUPViewController alloc] init];
+        }
+        else {
+            vc = [[CheckUPViewController alloc] init];
+        }
+        [vc setValue:self.baseData forKey:@"baseData"];
+        [_viewControllerArray replaceObjectAtIndex:index withObject:vc];
+        return vc;
+    }
+    return res;
+}
+
+- (TitleIndexView *)titleView {
+    if (_titleView == nil) {
+        _titleView = [[TitleIndexView alloc] initWithFrame:CGRectMake(0, NAV_BAR_HEIGHT, MAIN_SCREEN_WIDTH, 46) andTitleArray:@[@"点检计划",@"润滑计划",@"维修计划",@"紧固计划",@"调整计划",@"更换计划"]andNormalAttri:@{@"color":kUIColorFromRGB(0x808080),@"font":[UIFont systemFontOfSize:15]} andHighlightAttri:@{@"color":MAIN_THEME_COLOR,@"font":[UIFont systemFontOfSize:15]} andIsAverageDivision:false];
+        [_titleView.sepLine removeFromSuperview];
+        _titleView.callback = ^(NSInteger tag) {
+            
+        };
+    }
+    return _titleView;
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

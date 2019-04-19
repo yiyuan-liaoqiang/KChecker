@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "KChecker/Controller/Mine/Login/LoginViewController.swift"
-            timestampString = "576950327.420898"
+            filePath = "KChecker/Controller/Mine/MineViewController.swift"
+            timestampString = "577357521.431393"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "loginAction(_:)"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "log()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

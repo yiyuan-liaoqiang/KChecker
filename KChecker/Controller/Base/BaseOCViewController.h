@@ -1,5 +1,5 @@
 //
-//  TaskDetailViewController.h
+//  BaseOCViewController.h
 //  KChecker
 //
 //  Created by LiaoQiang on 2019/4/19.
@@ -9,7 +9,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TaskDetailViewController : BaseOCViewController
+@interface BaseOCViewController : UIViewController
+
+@property (nonatomic, strong)id baseData;
 
 @end
 
