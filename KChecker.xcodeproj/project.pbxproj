@@ -90,6 +90,12 @@
 		BED675FC2269748000591AA2 /* MaintainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED675FB2269748000591AA2 /* MaintainViewController.swift */; };
 		BED675FE2269749000591AA2 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED675FD2269749000591AA2 /* LogViewController.swift */; };
 		BED676002269749E00591AA2 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED675FF2269749E00591AA2 /* SettingViewController.swift */; };
+		BED6760622699E4600591AA2 /* SettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BED6760522699E4600591AA2 /* SettingTableViewController.m */; };
+		BED6760822699F5900591AA2 /* Setting.plist in Resources */ = {isa = PBXBuildFile; fileRef = BED6760722699F5900591AA2 /* Setting.plist */; };
+		BED6760B2269A19700591AA2 /* SettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BED6760A2269A19700591AA2 /* SettingTableViewCell.m */; };
+		BED676122269A3C900591AA2 /* NSArray+Ex.m in Sources */ = {isa = PBXBuildFile; fileRef = BED6760E2269A3C900591AA2 /* NSArray+Ex.m */; };
+		BED676132269A3C900591AA2 /* NSDictionary+EX.m in Sources */ = {isa = PBXBuildFile; fileRef = BED6760F2269A3C900591AA2 /* NSDictionary+EX.m */; };
+		BED676162269A8A600591AA2 /* SettingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BED676152269A8A600591AA2 /* SettingModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -193,6 +199,17 @@
 		BED675FB2269748000591AA2 /* MaintainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaintainViewController.swift; sourceTree = "<group>"; };
 		BED675FD2269749000591AA2 /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
 		BED675FF2269749E00591AA2 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		BED6760422699E4600591AA2 /* SettingTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingTableViewController.h; sourceTree = "<group>"; };
+		BED6760522699E4600591AA2 /* SettingTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewController.m; sourceTree = "<group>"; };
+		BED6760722699F5900591AA2 /* Setting.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Setting.plist; sourceTree = "<group>"; };
+		BED676092269A19700591AA2 /* SettingTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingTableViewCell.h; sourceTree = "<group>"; };
+		BED6760A2269A19700591AA2 /* SettingTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewCell.m; sourceTree = "<group>"; };
+		BED6760E2269A3C900591AA2 /* NSArray+Ex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Ex.m"; sourceTree = "<group>"; };
+		BED6760F2269A3C900591AA2 /* NSDictionary+EX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+EX.m"; sourceTree = "<group>"; };
+		BED676102269A3C900591AA2 /* NSArray+Ex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Ex.h"; sourceTree = "<group>"; };
+		BED676112269A3C900591AA2 /* NSDictionary+EX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+EX.h"; sourceTree = "<group>"; };
+		BED676142269A8A600591AA2 /* SettingModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingModel.h; sourceTree = "<group>"; };
+		BED676152269A8A600591AA2 /* SettingModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -276,6 +293,10 @@
 		0940C940221D034800C7697B /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				BED676102269A3C900591AA2 /* NSArray+Ex.h */,
+				BED6760E2269A3C900591AA2 /* NSArray+Ex.m */,
+				BED676112269A3C900591AA2 /* NSDictionary+EX.h */,
+				BED6760F2269A3C900591AA2 /* NSDictionary+EX.m */,
 				09434FFB226810E4000A7777 /* CGFloat+Utils.swift */,
 				0940C941221D034800C7697B /* UIColor+Extension.swift */,
 				0940C942221D034800C7697B /* UIController+SelectImage.swift */,
@@ -449,6 +470,8 @@
 				0940C9DE221D323300C7697B /* TitleTextViewTableViewCell.xib */,
 				0940CA0F221D61DB00C7697B /* IconTitleCell.swift */,
 				0940CA10221D61DB00C7697B /* IconTitleCell.xib */,
+				BED676092269A19700591AA2 /* SettingTableViewCell.h */,
+				BED6760A2269A19700591AA2 /* SettingTableViewCell.m */,
 			);
 			path = CommonCells;
 			sourceTree = "<group>";
@@ -515,6 +538,7 @@
 				0940CA03221D353400C7697B /* WorkFinderTabbar.plist */,
 				0940CA0D221D609300C7697B /* Mine.plist */,
 				098B79452263272C003B893B /* DaylyRecord.plist */,
+				BED6760722699F5900591AA2 /* Setting.plist */,
 			);
 			path = Plist;
 			sourceTree = "<group>";
@@ -584,6 +608,8 @@
 				098B794122630DD6003B893B /* UserModel.swift */,
 				098B794222630DD6003B893B /* CommonCellDataModel.swift */,
 				098B794C22632D99003B893B /* CommonOptionsModel.swift */,
+				BED676142269A8A600591AA2 /* SettingModel.h */,
+				BED676152269A8A600591AA2 /* SettingModel.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -613,6 +639,8 @@
 				BED675FB2269748000591AA2 /* MaintainViewController.swift */,
 				BED675FD2269749000591AA2 /* LogViewController.swift */,
 				BED675FF2269749E00591AA2 /* SettingViewController.swift */,
+				BED6760422699E4600591AA2 /* SettingTableViewController.h */,
+				BED6760522699E4600591AA2 /* SettingTableViewController.m */,
 			);
 			path = DetailController;
 			sourceTree = "<group>";
@@ -676,6 +704,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BED6760822699F5900591AA2 /* Setting.plist in Resources */,
 				09483FB2221EA3DD002D4937 /* HomePage.html in Resources */,
 				0940C9EF221D323400C7697B /* TitleTextViewTableViewCell.xib in Resources */,
 				098B7934226309E6003B893B /* LoginViewController.xib in Resources */,
@@ -784,6 +813,7 @@
 				0940C92C221CF97F00C7697B /* ViewController.swift in Sources */,
 				0940C9E4221D323300C7697B /* YYPickerView.swift in Sources */,
 				0940C956221D034800C7697B /* MyMD5.m in Sources */,
+				BED676162269A8A600591AA2 /* SettingModel.m in Sources */,
 				09483FCF221EAE92002D4937 /* ECScanResultVC.m in Sources */,
 				0940C955221D034800C7697B /* MyConst.swift in Sources */,
 				098B794B22632CD2003B893B /* YYNPickerView.m in Sources */,
@@ -794,10 +824,12 @@
 				0940C9B9221D037300C7697B /* BaseViewController.swift in Sources */,
 				0940C95E221D034800C7697B /* ActivityIndicatorManager.m in Sources */,
 				098B793B22630D03003B893B /* AccountHelper.swift in Sources */,
+				BED6760622699E4600591AA2 /* SettingTableViewController.m in Sources */,
 				0940C9EB221D323400C7697B /* TitleTextViewTableViewCell.swift in Sources */,
 				0940C9BB221D037300C7697B /* BaseInputViewController.swift in Sources */,
 				0940C9E9221D323400C7697B /* TitleValueTableViewCell.swift in Sources */,
 				098B794322630DD6003B893B /* UserModel.swift in Sources */,
+				BED676122269A3C900591AA2 /* NSArray+Ex.m in Sources */,
 				0940C9EA221D323400C7697B /* CommonBaseCell.swift in Sources */,
 				0940C959221D034800C7697B /* YYRoute.swift in Sources */,
 				BED675FA226973F200591AA2 /* OilingViewController.swift in Sources */,
@@ -826,11 +858,13 @@
 				0940C9ED221D323400C7697B /* TitleTimeRangeTableViewCell.swift in Sources */,
 				098B794422630DD6003B893B /* CommonCellDataModel.swift in Sources */,
 				098B794822632B24003B893B /* DaylyRecordViewController.swift in Sources */,
+				BED6760B2269A19700591AA2 /* SettingTableViewCell.m in Sources */,
 				0940C958221D034800C7697B /* UIController+SelectImage.swift in Sources */,
 				0940C9FB221D34A500C7697B /* HomePageViewController.swift in Sources */,
 				0940C9FE221D34BB00C7697B /* TaskViewController.swift in Sources */,
 				0940CA15221D647E00C7697B /* MineHeaderCell.swift in Sources */,
 				BED676002269749E00591AA2 /* SettingViewController.swift in Sources */,
+				BED676132269A3C900591AA2 /* NSDictionary+EX.m in Sources */,
 				0940C9E3221D323300C7697B /* KeyboardHeaderView.m in Sources */,
 				09483FD0221EAE92002D4937 /* ECScanResultWebView.m in Sources */,
 				09434FFC226810E4000A7777 /* CGFloat+Utils.swift in Sources */,

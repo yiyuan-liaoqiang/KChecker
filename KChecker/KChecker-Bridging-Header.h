@@ -12,6 +12,6 @@
 #import "YYNPickerView.h"
 #import "ActivityIndicatorManager.h"
 #import "MJRefresh.h"
-//#import "ChaeckViewController.h"
+#import "SettingTableViewController.h"
 
 

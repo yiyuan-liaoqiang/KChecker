@@ -33,6 +33,6 @@ class MineViewController: BaseFormViewController {
         YYRoute.pushToController("LogViewController", data: nil)
     }
     @objc func setting(){
-        YYRoute.pushToController(SettingViewController(), data: nil)
+        YYRoute.pushToController(SettingTableViewController(), data: nil)
     }
 }

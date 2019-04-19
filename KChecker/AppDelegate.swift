@@ -33,6 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         self.window?.rootViewController = self.nav
+//        self.window?.backgroundColor = UIColor.white;
         
         return true
     }
