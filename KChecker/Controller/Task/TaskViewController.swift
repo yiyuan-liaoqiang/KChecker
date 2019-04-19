@@ -23,6 +23,7 @@ class TaskViewController: BaseWebViewController {
         let filePath = Bundle.main.path(forResource: "TaskList.html", ofType: nil)
         self.webView.frame = CGRect(x: .zero, y: .NAV_BAR_HEIGHT, width: .MAIN_SCREEN_WIDTH, height: .MAIN_SCREEN_HEIGHT - .NAV_BAR_HEIGHT - .TAB_BAR_HEIGHT)
         self.webView.load(URLRequest(url: URL(fileURLWithPath: filePath!)))
+        self.addActionsNames(actions: ["didSelect"])
         
         weak var weakSelf = self
         self.webView.scrollView.footer = MJRefreshBackNormalFooter(refreshingBlock: {
@@ -58,6 +59,10 @@ class TaskViewController: BaseWebViewController {
         self.reloadData()
     }
     
+    override func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+        YYRoute.pushToController("TaskDetailViewController", data: nil)
+    }
+    
     func reloadData() {
         //刷新webView数据
         self.lock.lock()
@@ -72,12 +77,5 @@ class TaskViewController: BaseWebViewController {
         }
         self.lock.unlock()
     }
-    
-//    func setupTableView() {
-//        tableView = UITableView(frame: CGRect(x: 0, y: MyConst.NAV_BAR_HEIGHT(), width: MyConst.MAIN_SCREEN_WIDTH, height: MyConst.MAIN_SCREEN_HEIGHT-MyConst.TAB_BAR_HEIGHT()))
-//        tableView.delegate = self
-//        tableView.dataSource = self
-//        self.view.addSubview(tableView)
-//    }
 
 }

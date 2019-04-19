@@ -84,6 +84,7 @@
 		098B794D22632D99003B893B /* CommonOptionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098B794C22632D99003B893B /* CommonOptionsModel.swift */; };
 		098B795022633E52003B893B /* TitleValueVTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098B794E22633E52003B893B /* TitleValueVTableViewCell.swift */; };
 		098B795122633E52003B893B /* TitleValueVTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 098B794F22633E52003B893B /* TitleValueVTableViewCell.xib */; };
+		09F26BE42269DA7D00E9DF64 /* TaskDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F26BE32269DA7D00E9DF64 /* TaskDetailViewController.m */; };
 		4CCC1DF0FCF8C789A8954F12 /* Pods_KChecker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F0D7AC548AF54E233D8932 /* Pods_KChecker.framework */; };
 		BED675F822696F0200591AA2 /* CheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED675F722696F0200591AA2 /* CheckViewController.swift */; };
 		BED675FA226973F200591AA2 /* OilingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED675F9226973F100591AA2 /* OilingViewController.swift */; };
@@ -191,6 +192,8 @@
 		098B794C22632D99003B893B /* CommonOptionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonOptionsModel.swift; sourceTree = "<group>"; };
 		098B794E22633E52003B893B /* TitleValueVTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleValueVTableViewCell.swift; sourceTree = "<group>"; };
 		098B794F22633E52003B893B /* TitleValueVTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleValueVTableViewCell.xib; sourceTree = "<group>"; };
+		09F26BE22269DA7D00E9DF64 /* TaskDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskDetailViewController.h; sourceTree = "<group>"; };
+		09F26BE32269DA7D00E9DF64 /* TaskDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaskDetailViewController.m; sourceTree = "<group>"; };
 		0E13B1AB14BC54BF0B438978 /* Pods-KChecker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KChecker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KChecker/Pods-KChecker.debug.xcconfig"; sourceTree = "<group>"; };
 		144CC2C42E0EC80D76B18D18 /* Pods-KChecker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KChecker.release.xcconfig"; path = "Pods/Target Support Files/Pods-KChecker/Pods-KChecker.release.xcconfig"; sourceTree = "<group>"; };
 		76F0D7AC548AF54E233D8932 /* Pods_KChecker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KChecker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -516,6 +519,8 @@
 				0940C9FD221D34BB00C7697B /* TaskViewController.swift */,
 				0940CA05221D53EE00C7697B /* TaskListCell.swift */,
 				0940CA06221D53EE00C7697B /* TaskListCell.xib */,
+				09F26BE22269DA7D00E9DF64 /* TaskDetailViewController.h */,
+				09F26BE32269DA7D00E9DF64 /* TaskDetailViewController.m */,
 			);
 			path = Task;
 			sourceTree = "<group>";
@@ -832,6 +837,7 @@
 				BED676122269A3C900591AA2 /* NSArray+Ex.m in Sources */,
 				0940C9EA221D323400C7697B /* CommonBaseCell.swift in Sources */,
 				0940C959221D034800C7697B /* YYRoute.swift in Sources */,
+				09F26BE42269DA7D00E9DF64 /* TaskDetailViewController.m in Sources */,
 				BED675FA226973F200591AA2 /* OilingViewController.swift in Sources */,
 				0940C9F0221D323400C7697B /* TabbarView.swift in Sources */,
 				098B793F22630D4C003B893B /* YYNCache.swift in Sources */,

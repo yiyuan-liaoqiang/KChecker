@@ -1,63 +1,76 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-            <meta charset="UTF-8">
-                <title></title>
-                <style>
-                    *{
-                        margin: 0;
-                        padding: 0;
-                    }
-                html ,body {
-                    width: 100%;
-                    height: 100%;
-                    background-color: #f5f5f5;
-                }
-                .taskListCell {
-                    width: 100%-50px;
-                    margin: 15px 25px 0 25px;
-                    font-size: 15px;
-                    background-color: white;
-                    position: relative;
-                    border-radius: 6px;
-                    /*overflow: hidden;*/
-                    border: solid 1px rgba(0,0,0,0);
-                }
-                .taskType {
-                    position:relative;
-                }
-                .taskType >img {
-                    position: absolute;
-                    left: -5px;
-                    top: 10px;
-                    width: 44px;
-                }
-                
-                .taskTitle {
-                    /*margin-top: 40px;*/
-                    margin: 22px 20px 25px 60px;
-                }
-                
-                .taskTime {
-					position: absolute;
-                    color: #999;
-                    font-size: 13px;
-                    right: 10px;
-                    bottom: 5px;
-                }
-                
-                    </style>
-                </head>
-    <body>
-        
-    </body>
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			html,
+			body {
+				width: 100%;
+				height: 100%;
+				background-color: #f5f5f5;
+			}
+			
+			.taskListCell {
+				width: 100%-50px;
+				margin: 15px 25px 0 25px;
+				font-size: 15px;
+				background-color: white;
+				position: relative;
+				border-radius: 6px;
+				/*overflow: hidden;*/
+				border: solid 1px rgba(0, 0, 0, 0);
+			}
+			
+			.taskType {
+				position: relative;
+			}
+			
+			.taskType>img {
+				position: absolute;
+				left: -5px;
+				top: 10px;
+				width: 44px;
+			}
+			
+			.taskTitle {
+				/*margin-top: 40px;*/
+				margin: 22px 20px 25px 60px;
+			}
+			
+			.taskTime {
+				position: absolute;
+				color: #999;
+				font-size: 13px;
+				right: 10px;
+				bottom: 5px;
+			}
+		</style>
+	</head>
+
+	<body>
+		
+	</body>
+
 </html>
 
 <script>
-	
+	function didSelect() {
+		//传递点击时间给native
+		window.webkit.messageHandlers.didSelect.postMessage({
+			"data": "data"
+		});
+	}
+
 	function insertCell(data) {
-		var html = `<div class='taskListCell'> <div class="taskType"> <img src="dianj.png"/> <span style="position: absolute;color: white;font-size: 11px;left: 9px;top: 11px;">${data.tag}</span> </div> <div class="taskTitle"><span>${data.facilityName}</span></div> <div class="taskTime"><span>${data.date}</span></div> </div>`
+		var html = `<div class='taskListCell' onclick="didSelect()"> <div class="taskType"> <img src="dianj.png"/> <span style="position: absolute;color: white;font-size: 11px;left: 9px;top: 11px;">${data.tag}</span> </div> <div class="taskTitle"><span>${data.facilityName}</span></div> <div class="taskTime"><span>${data.date}</span></div> </div>`
 		var body = document.getElementsByTagName("body")[0]
 		body.innerHTML = body.innerHTML + html
 	}
