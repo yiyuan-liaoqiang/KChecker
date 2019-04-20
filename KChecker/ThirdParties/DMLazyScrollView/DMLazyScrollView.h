@@ -8,7 +8,11 @@
 //
 
 #import <UIKit/UIKit.h>
+<<<<<<< HEAD
 //#import "AFURLRequestSerialization.h"
+=======
+#import "AFURLRequestSerialization.h"
+>>>>>>> d2bb362d62ce1e5a9388709e86c5ce6118d52b5c
 
 @class DMLazyScrollView;
 

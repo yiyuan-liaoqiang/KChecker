@@ -68,10 +68,17 @@ enum {
 }
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
+<<<<<<< HEAD
     if(self.frame.size.width != [[UIScreen mainScreen] bounds].size.width)
     {
         CGRect rect = self.frame;
         rect.size.width = [[UIScreen mainScreen] bounds].size.width;
+=======
+    if(self.frame.size.width != MAIN_SCREEN_WIDTH)
+    {
+        CGRect rect = self.frame;
+        rect.size.width = MAIN_SCREEN_WIDTH;
+>>>>>>> d2bb362d62ce1e5a9388709e86c5ce6118d52b5c
         rect.size.height = self.height;
         self.frame = rect;
     }

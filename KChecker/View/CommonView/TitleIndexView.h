@@ -34,9 +34,12 @@ typedef void (^TitleIndexViewCallback)(NSInteger tag);
 
 @property (nonatomic, strong)NSDictionary *normalAttri;
 @property (nonatomic, strong)NSDictionary *highlightAttri;
+<<<<<<< HEAD
 //把label添加到一个数组方便以后用好获取
 @property (nonatomic ,strong) NSMutableArray *lblArray;
 
+=======
+>>>>>>> d2bb362d62ce1e5a9388709e86c5ce6118d52b5c
 
 - (void)updateTitlesWithArray:(NSArray *)titleArray;
 

@@ -63,7 +63,7 @@ class TaskViewController: BaseWebViewController {
     }
     
     override func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
-        YYRoute.pushToController("TaskDetailViewController", data: nil)
+        YYRoute.pushToController("TaskDetailViewController", data: message.body as AnyObject)
     }
     
     func reloadData() {
