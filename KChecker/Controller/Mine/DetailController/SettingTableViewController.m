@@ -28,6 +28,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.navigationItem.title = @"设置";
+    
+    
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, NAV_BAR_HEIGHT, MAIN_SCREEN_WIDTH, 44 * self.dataArray.count) style:UITableViewStylePlain];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
