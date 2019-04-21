@@ -25,4 +25,34 @@ class YYRoute: NSObject {
             vc.setValue(data!, forKey: "baseData")
         }
     }
+    
+    //pop应该也可以写在这里面，似乎没什么不好
+    static func pop2() {
+        let app = UIApplication.shared.delegate as? AppDelegate
+        let vcs = app?.nav.viewControllers
+        if let vcs = vcs {
+            app?.nav.popToViewController(vcs[vcs.count-3], animated: true)
+        }
+        else {
+            print("层级不够，无法跳转到爷爷vc")
+        }
+    }
+    
+    //pop应该也可以写在这里面，似乎没什么不好
+    static func pop() {
+        let app = UIApplication.shared.delegate as? AppDelegate
+        let vcs = app?.nav.viewControllers
+        if let vcs = vcs,vcs.count >= 2 {
+            app?.nav.popToViewController(vcs[vcs.count-2], animated: true)
+        }
+        else {
+            print("层级不够，无法跳转到爸爸vc")
+        }
+    }
+    
+    //pop到根目录
+    static func popToRoot() {
+        let app = UIApplication.shared.delegate as? AppDelegate
+        app?.nav.popToRootViewController(animated: true)
+    }
 }

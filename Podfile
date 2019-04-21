@@ -9,6 +9,10 @@ target 'KChecker' do
 
 inhibit_all_warnings!
 
+    source 'https://github.com/CocoaPods/Specs.git'
+    source 'https://github.com/aliyun/aliyun-specs.git'
+    pod 'AlicloudPush', '~> 1.9.8'
+    
     pod 'AFNetworking', '~> 3.2.1'
     pod "FMDB", "~>2.6.2"
     pod "MJExtension","~>3.0.13"
@@ -27,8 +31,6 @@ inhibit_all_warnings!
     pod "HandyJSON",'5.0.0-beta'
     pod "EGOImageLoading","0.0.1"
     pod "Masonry","1.1.0"
-#    source 'https://github.com/aliyun/aliyun-specs.git'
-    pod 'AlicloudPush', '~> 1.9.8'
     
 #   A UITextView subclass that adds support for multiline placeholder written in swift
     pod "KMPlaceholderTextView","1.4.0"

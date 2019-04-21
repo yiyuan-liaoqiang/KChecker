@@ -8,6 +8,7 @@
 #import "CheckUPViewController.h"
 #import "CheckUPDeviceInfoCell.h"
 #import "CheckUPStandardsCell.h"
+#import "KChecker-Swift.h"
 
 @interface CheckUPViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -81,6 +82,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    [YYRoute pushToController:@"PlanFormInputController" data:@{@"model":self.model.standards[indexPath.row],@"checkId":@(self.model.checkId)}];
 }
 
 //获取当前设备点检计划

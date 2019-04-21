@@ -14,12 +14,16 @@ class BaseFormViewController: BaseViewController,UITableViewDelegate,UITableView
     var tableView:UITableView!
     var temModel:CommonCellDataModel?
     var keyHeaderView = KeyboardHeaderView(frame: CGRect(x: 0, y: MyConst.MAIN_SCREEN_HEIGHT, width: MyConst.MAIN_SCREEN_WIDTH, height: 40))
+    var dataModel:AnyObject?
     var picker:YYNPickerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.setupTableView()
+        if let dataModel = self.dataModel {
+            CommonCellUtil.setValue(dataModel, self.dataArray)
+        }
         
         if #available(iOS 11.0, *) {
             self.tableView.contentInsetAdjustmentBehavior = .never
@@ -293,6 +297,9 @@ class BaseFormViewController: BaseViewController,UITableViewDelegate,UITableView
         weak var weakSelf = self
         self.picker.callback = {(index) in
             weakSelf?.temModel?.localValue = weakSelf?.temModel?.options![index]["name"] as? String
+            if let id = weakSelf?.temModel?.options![index]["id"] as? String,id.count > 0 {
+                weakSelf?.temModel?.serverValue = id
+            }
             weakSelf?.tableView.reloadData()
         }
     }

@@ -23,6 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        //推送
+        PushUtils.shared().registerAPNS(application)
+        print(NSStringFromClass(type(of: CommonBaseCell())))
         if AccountHelper.isLogin {
             self.nav = UINavigationController(rootViewController: MainViewController())
             self.nav.toolbar.isHidden = true
@@ -31,9 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.nav = UINavigationController(rootViewController: LoginViewController())
             self.nav.toolbar.isHidden = true
         }
-        
         self.window?.rootViewController = self.nav
-//        self.window?.backgroundColor = UIColor.white;
         
         return true
     }
@@ -58,6 +59,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        PushUtils.shared().application(application, didReceiveRemoteNotification: userInfo)
+    }
+    
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        PushUtils.shared().application(application, didRegisterForRemoteNotificationsWithDeviceToken: deviceToken)
     }
 
 }
