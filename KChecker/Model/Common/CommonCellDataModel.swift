@@ -25,7 +25,7 @@ class CommonCellDataModel: HandyJSON {
     var inputPlaceholder:String?                //跳转到下一页输入的提示
     var lineInsetsOffset:NSNumber?              //分割线缩进
     var action:String?                          //点击调用方法名
-    var enable:Bool?                            //textfield是否可编辑
+    var enable:Bool?                            //textfield是否可bianji
     var required:Bool?                          //是否必填
     var format:NSNumber?                        //时间选择格式--1:date 2:date&time 3:time
     var keyboardType:NSNumber?                  //键盘类型  4-数字键盘 7-email地址

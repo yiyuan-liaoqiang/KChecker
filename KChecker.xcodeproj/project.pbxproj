@@ -88,6 +88,12 @@
 		098B794D22632D99003B893B /* CommonOptionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098B794C22632D99003B893B /* CommonOptionsModel.swift */; };
 		098B795022633E52003B893B /* TitleValueVTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098B794E22633E52003B893B /* TitleValueVTableViewCell.swift */; };
 		098B795122633E52003B893B /* TitleValueVTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 098B794F22633E52003B893B /* TitleValueVTableViewCell.xib */; };
+		0990C9D5226C7E7400276373 /* PlanFormInput.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0990C9D4226C7E7400276373 /* PlanFormInput.plist */; };
+		0990C9DA226C849400276373 /* PlanFormInputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0990C9D9226C849400276373 /* PlanFormInputController.swift */; };
+		0990C9DD226CAFF900276373 /* NSObject+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0990C9DC226CAFF900276373 /* NSObject+Utils.m */; };
+		0990C9E2226CB13000276373 /* MultipleInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0990C9E1226CB13000276373 /* MultipleInputCell.swift */; };
+		0990C9E4226CB17D00276373 /* MultipleInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0990C9E3226CB17D00276373 /* MultipleInputCell.xib */; };
+		09A476E5226AE13600C5F922 /* HandyJson+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A476E4226AE13600C5F922 /* HandyJson+Extension.swift */; };
 		09B7F440226A231D0096F056 /* DMLazyScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B7F43E226A231D0096F056 /* DMLazyScrollView.m */; };
 		09B7F444226A23DB0096F056 /* CheckUPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B7F443226A23DB0096F056 /* CheckUPViewController.m */; };
 		09B7F448226A2D6E0096F056 /* CheckUPDeviceInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B7F446226A2D6E0096F056 /* CheckUPDeviceInfoCell.m */; };
@@ -98,6 +104,11 @@
 		09F26BE42269DA7D00E9DF64 /* TaskDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F26BE32269DA7D00E9DF64 /* TaskDetailViewController.m */; };
 		09F687B5226A31450016D0B4 /* JsonStringTransfer.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F687B4226A31450016D0B4 /* JsonStringTransfer.m */; };
 		09F687B8226A32E20016D0B4 /* UILabel+YYNExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F687B7226A32E20016D0B4 /* UILabel+YYNExtension.m */; };
+		09F687BE226ABCF20016D0B4 /* UTDID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F687BA226ABCF10016D0B4 /* UTDID.framework */; };
+		09F687BF226ABCF20016D0B4 /* AlicloudUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F687BB226ABCF10016D0B4 /* AlicloudUtils.framework */; };
+		09F687C0226ABCF20016D0B4 /* CloudPushSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F687BC226ABCF10016D0B4 /* CloudPushSDK.framework */; };
+		09F687C1226ABCF20016D0B4 /* UTMini.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F687BD226ABCF10016D0B4 /* UTMini.framework */; };
+		09F687C4226ABE540016D0B4 /* PushUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F687C3226ABE540016D0B4 /* PushUtils.m */; };
 		4CCC1DF0FCF8C789A8954F12 /* Pods_KChecker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F0D7AC548AF54E233D8932 /* Pods_KChecker.framework */; };
 		BEC078752269F25C00327423 /* NSString+CalculateSize.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC078732269F25B00327423 /* NSString+CalculateSize.m */; };
 		BECD4077226D9EFF00FFF07C /* OilingPlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BECD4076226D9EFF00FFF07C /* OilingPlanViewController.m */; };
@@ -216,6 +227,14 @@
 		098B794C22632D99003B893B /* CommonOptionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonOptionsModel.swift; sourceTree = "<group>"; };
 		098B794E22633E52003B893B /* TitleValueVTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleValueVTableViewCell.swift; sourceTree = "<group>"; };
 		098B794F22633E52003B893B /* TitleValueVTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleValueVTableViewCell.xib; sourceTree = "<group>"; };
+		0990C9D4226C7E7400276373 /* PlanFormInput.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PlanFormInput.plist; sourceTree = "<group>"; };
+		0990C9D9226C849400276373 /* PlanFormInputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanFormInputController.swift; sourceTree = "<group>"; };
+		0990C9DB226CAFF900276373 /* NSObject+Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Utils.h"; sourceTree = "<group>"; };
+		0990C9DC226CAFF900276373 /* NSObject+Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Utils.m"; sourceTree = "<group>"; };
+		0990C9E1226CB13000276373 /* MultipleInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleInputCell.swift; sourceTree = "<group>"; };
+		0990C9E3226CB17D00276373 /* MultipleInputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MultipleInputCell.xib; sourceTree = "<group>"; };
+		09A476E3226AC89500C5F922 /* KChecker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KChecker.entitlements; sourceTree = "<group>"; };
+		09A476E4226AE13600C5F922 /* HandyJson+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HandyJson+Extension.swift"; sourceTree = "<group>"; };
 		09B7F43E226A231D0096F056 /* DMLazyScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMLazyScrollView.m; sourceTree = "<group>"; };
 		09B7F43F226A231D0096F056 /* DMLazyScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMLazyScrollView.h; sourceTree = "<group>"; };
 		09B7F442226A23DB0096F056 /* CheckUPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckUPViewController.h; sourceTree = "<group>"; };
@@ -234,6 +253,12 @@
 		09F687B4226A31450016D0B4 /* JsonStringTransfer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonStringTransfer.m; sourceTree = "<group>"; };
 		09F687B6226A32E20016D0B4 /* UILabel+YYNExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+YYNExtension.h"; sourceTree = "<group>"; };
 		09F687B7226A32E20016D0B4 /* UILabel+YYNExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+YYNExtension.m"; sourceTree = "<group>"; };
+		09F687BA226ABCF10016D0B4 /* UTDID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UTDID.framework; sourceTree = "<group>"; };
+		09F687BB226ABCF10016D0B4 /* AlicloudUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlicloudUtils.framework; sourceTree = "<group>"; };
+		09F687BC226ABCF10016D0B4 /* CloudPushSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CloudPushSDK.framework; sourceTree = "<group>"; };
+		09F687BD226ABCF10016D0B4 /* UTMini.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UTMini.framework; sourceTree = "<group>"; };
+		09F687C2226ABE530016D0B4 /* PushUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PushUtils.h; sourceTree = "<group>"; };
+		09F687C3226ABE540016D0B4 /* PushUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushUtils.m; sourceTree = "<group>"; };
 		0E13B1AB14BC54BF0B438978 /* Pods-KChecker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KChecker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KChecker/Pods-KChecker.debug.xcconfig"; sourceTree = "<group>"; };
 		144CC2C42E0EC80D76B18D18 /* Pods-KChecker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KChecker.release.xcconfig"; path = "Pods/Target Support Files/Pods-KChecker/Pods-KChecker.release.xcconfig"; sourceTree = "<group>"; };
 		76F0D7AC548AF54E233D8932 /* Pods_KChecker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KChecker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -268,6 +293,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CCC1DF0FCF8C789A8954F12 /* Pods_KChecker.framework in Frameworks */,
+				09F687BE226ABCF20016D0B4 /* UTDID.framework in Frameworks */,
+				09F687BF226ABCF20016D0B4 /* AlicloudUtils.framework in Frameworks */,
+				09F687C0226ABCF20016D0B4 /* CloudPushSDK.framework in Frameworks */,
+				09F687C1226ABCF20016D0B4 /* UTMini.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +324,7 @@
 		0940C928221CF97F00C7697B /* KChecker */ = {
 			isa = PBXGroup;
 			children = (
+				09A476E3226AC89500C5F922 /* KChecker.entitlements */,
 				0922CE3F226A15F10042A220 /* AliyunEmasServices-Info.plist */,
 				0940C9CD221D323300C7697B /* View */,
 				0940C9C9221D320700C7697B /* Model */,
@@ -332,6 +362,8 @@
 				0940C94B221D034800C7697B /* ActivityIndicator */,
 				0940C94F221D034800C7697B /* CommonUtils.swift */,
 				0940C950221D034800C7697B /* YYDateUtil.swift */,
+				09F687C2226ABE530016D0B4 /* PushUtils.h */,
+				09F687C3226ABE540016D0B4 /* PushUtils.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -348,6 +380,7 @@
 		0940C940221D034800C7697B /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				09A476E4226AE13600C5F922 /* HandyJson+Extension.swift */,
 				BEC078742269F25C00327423 /* NSString+CalculateSize.h */,
 				BEC078732269F25B00327423 /* NSString+CalculateSize.m */,
 				BED676102269A3C900591AA2 /* NSArray+Ex.h */,
@@ -358,6 +391,8 @@
 				0940C941221D034800C7697B /* UIColor+Extension.swift */,
 				0940C942221D034800C7697B /* UIController+SelectImage.swift */,
 				09434FFD22681985000A7777 /* Array+Utils.swift */,
+				0990C9DB226CAFF900276373 /* NSObject+Utils.h */,
+				0990C9DC226CAFF900276373 /* NSObject+Utils.m */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -401,6 +436,7 @@
 		0940C951221D034800C7697B /* ThirdParties */ = {
 			isa = PBXGroup;
 			children = (
+				09F687B9226ABCF10016D0B4 /* OneSDK */,
 				09B7F43D226A231D0096F056 /* DMLazyScrollView */,
 				0940C952221D034800C7697B /* TIPProgressHUD */,
 			);
@@ -585,6 +621,9 @@
 				0940CA06221D53EE00C7697B /* TaskListCell.xib */,
 				09F26BE22269DA7D00E9DF64 /* TaskDetailViewController.h */,
 				09F26BE32269DA7D00E9DF64 /* TaskDetailViewController.m */,
+				0990C9D9226C849400276373 /* PlanFormInputController.swift */,
+				0990C9E1226CB13000276373 /* MultipleInputCell.swift */,
+				0990C9E3226CB17D00276373 /* MultipleInputCell.xib */,
 			);
 			path = Task;
 			sourceTree = "<group>";
@@ -608,6 +647,7 @@
 				0940CA0D221D609300C7697B /* Mine.plist */,
 				098B79452263272C003B893B /* DaylyRecord.plist */,
 				BED6760722699F5900591AA2 /* Setting.plist */,
+				0990C9D4226C7E7400276373 /* PlanFormInput.plist */,
 			);
 			path = Plist;
 			sourceTree = "<group>";
@@ -712,6 +752,17 @@
 			path = CheckUP;
 			sourceTree = "<group>";
 		};
+		09F687B9226ABCF10016D0B4 /* OneSDK */ = {
+			isa = PBXGroup;
+			children = (
+				09F687BA226ABCF10016D0B4 /* UTDID.framework */,
+				09F687BB226ABCF10016D0B4 /* AlicloudUtils.framework */,
+				09F687BC226ABCF10016D0B4 /* CloudPushSDK.framework */,
+				09F687BD226ABCF10016D0B4 /* UTMini.framework */,
+			);
+			path = OneSDK;
+			sourceTree = "<group>";
+		};
 		5A553AD827CF499E637DD147 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -776,6 +827,14 @@
 				TargetAttributes = {
 					0940C925221CF97F00C7697B = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -824,8 +883,10 @@
 				0940CA0C221D5B7400C7697B /* dianj.png in Resources */,
 				0940C9E8221D323400C7697B /* TitleValueTableViewCell.xib in Resources */,
 				0940C9E5221D323400C7697B /* 说明.txt in Resources */,
+				0990C9E4226CB17D00276373 /* MultipleInputCell.xib in Resources */,
 				09483FB6221EA931002D4937 /* 日报@2x.png in Resources */,
 				0922CE40226A15F10042A220 /* AliyunEmasServices-Info.plist in Resources */,
+				0990C9D5226C7E7400276373 /* PlanFormInput.plist in Resources */,
 				0940CA0E221D609300C7697B /* Mine.plist in Resources */,
 				09B7F449226A2D6E0096F056 /* CheckUPDeviceInfoCell.xib in Resources */,
 				0940C9C3221D249C00C7697B /* Login.html in Resources */,
@@ -911,6 +972,7 @@
 				0940C95F221D034800C7697B /* CommonUtils.swift in Sources */,
 				098B793C22630D03003B893B /* SMSHelper.swift in Sources */,
 				0940CA11221D61DB00C7697B /* IconTitleCell.swift in Sources */,
+				0990C9DA226C849400276373 /* PlanFormInputController.swift in Sources */,
 				09B7F44D226A2D9E0096F056 /* CheckUPStandardsCell.m in Sources */,
 				0940C95C221D034800C7697B /* JsonTransfer.swift in Sources */,
 				0940C92C221CF97F00C7697B /* ViewController.swift in Sources */,
@@ -944,6 +1006,7 @@
 				09F687B8226A32E20016D0B4 /* UILabel+YYNExtension.m in Sources */,
 				0940C9F0221D323400C7697B /* TabbarView.swift in Sources */,
 				098B793F22630D4C003B893B /* YYNCache.swift in Sources */,
+				0990C9E2226CB13000276373 /* MultipleInputCell.swift in Sources */,
 				09483FD2221EAE92002D4937 /* ECQRCodeScanView.m in Sources */,
 				09434FFE22681985000A7777 /* Array+Utils.swift in Sources */,
 				0940C960221D034800C7697B /* YYDateUtil.swift in Sources */,
@@ -954,12 +1017,14 @@
 				0940C9F3221D32C300C7697B /* AppDelegate.swift in Sources */,
 				0922CE46226A20450042A220 /* TitleIndexView.m in Sources */,
 				0940C9F6221D32E700C7697B /* MainViewController.swift in Sources */,
+				0990C9DD226CAFF900276373 /* NSObject+Utils.m in Sources */,
 				BED675F822696F0200591AA2 /* CheckViewController.swift in Sources */,
 				09483FD1221EAE92002D4937 /* ECScanResultView.m in Sources */,
 				0940CA01221D34D000C7697B /* MineViewController.swift in Sources */,
 				098B795022633E52003B893B /* TitleValueVTableViewCell.swift in Sources */,
 				09B7F440226A231D0096F056 /* DMLazyScrollView.m in Sources */,
 				0940C957221D034800C7697B /* UIColor+Extension.swift in Sources */,
+				09A476E5226AE13600C5F922 /* HandyJson+Extension.swift in Sources */,
 				0940C9EE221D323400C7697B /* TitleSwitchTableViewCell.swift in Sources */,
 				0940C961221D034800C7697B /* ProgressHUD.m in Sources */,
 				098B7935226309E6003B893B /* LoginViewController.swift in Sources */,
@@ -984,6 +1049,7 @@
 				0940C95B221D034800C7697B /* CommonCellUtil.swift in Sources */,
 				09B7F451226A2FE00096F056 /* CheckUPModel.m in Sources */,
 				09B7F444226A23DB0096F056 /* CheckUPViewController.m in Sources */,
+				09F687C4226ABE540016D0B4 /* PushUtils.m in Sources */,
 				0922CE43226A1CBC0042A220 /* BaseOCViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1131,8 +1197,13 @@
 			baseConfigurationReference = 0E13B1AB14BC54BF0B438978 /* Pods-KChecker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KChecker/KChecker.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = WCYQSY2P5P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KChecker/ThirdParties/OneSDK",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Definition.pch";
 				INFOPLIST_FILE = KChecker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1154,8 +1225,13 @@
 			baseConfigurationReference = 144CC2C42E0EC80D76B18D18 /* Pods-KChecker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KChecker/KChecker.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = WCYQSY2P5P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KChecker/ThirdParties/OneSDK",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Definition.pch";
 				INFOPLIST_FILE = KChecker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

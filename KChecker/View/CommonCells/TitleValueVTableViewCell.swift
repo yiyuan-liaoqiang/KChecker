@@ -22,9 +22,15 @@ class TitleValueVTableViewCell: CommonBaseCell {
         self.valueTf.addObserver(self, forKeyPath: "text", options: .new, context: nil)
     }
     
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if (textField.text?.count ?? 0) > 0 && textField == self.valueTf {
+            self.model.localValue = textField.text
+        }
+    }
+    
     @objc func textfieldDidChange() {
         
-        if self.titleLabel.isHidden {
+        if self.titleLabel.isHidden && self.valueTf.text?.count ?? 0 > 0 {
             self.titleLabel.isHidden = false
             UIView.animate(withDuration: 0.15) {
                 self.titleLabel.frame = CGRect(x: 15, y: 2, width: MyConst.MAIN_SCREEN_WIDTH-30, height: 20)

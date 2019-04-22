@@ -7,37 +7,37 @@
 		<array>
 			<dict>
 				<key>id</key>
-				<string>1</string>
+				<string>0</string>
 				<key>name</key>
 				<string>点检</string>
 			</dict>
 			<dict>
 				<key>id</key>
-				<string>2</string>
+				<string>1</string>
 				<key>name</key>
 				<string>润滑</string>
 			</dict>
 			<dict>
 				<key>id</key>
-				<string>3</string>
+				<string>2</string>
 				<key>name</key>
 				<string>维修</string>
 			</dict>
 			<dict>
 				<key>id</key>
-				<string>4</string>
+				<string>3</string>
 				<key>name</key>
 				<string>紧固</string>
 			</dict>
 			<dict>
 				<key>id</key>
-				<string>5</string>
+				<string>4</string>
 				<key>name</key>
 				<string>调整</string>
 			</dict>
 			<dict>
 				<key>id</key>
-				<string>6</string>
+				<string>5</string>
 				<key>name</key>
 				<string>更换</string>
 			</dict>
@@ -53,9 +53,11 @@
 		<key>showAccessory</key>
 		<true/>
 		<key>serverKey</key>
-		<string>industry</string>
+		<string>workType</string>
 		<key>showSepLine</key>
 		<true/>
+		<key>required</key>
+		<string>1</string>
 	</dict>
 	<dict>
 		<key>showSepLine</key>
@@ -70,8 +72,12 @@
 		<false/>
 		<key>showAccessory</key>
 		<true/>
+		<key>serverValue</key>
+		<string>10</string>
 		<key>serverKey</key>
-		<string>industry</string>
+		<string>componentId</string>
+		<key>required</key>
+		<string>1</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -87,9 +93,13 @@
 		<key>showAccessory</key>
 		<true/>
 		<key>serverKey</key>
-		<string>industry</string>
+		<string>startTime</string>
 		<key>action</key>
 		<string>selectTime</string>
+		<key>format</key>
+		<string>3</string>
+		<key>required</key>
+		<string>1</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -105,9 +115,13 @@
 		<key>showAccessory</key>
 		<true/>
 		<key>serverKey</key>
-		<string>industry</string>
+		<string>endTime</string>
 		<key>action</key>
 		<string>selectTime</string>
+		<key>format</key>
+		<string>3</string>
+		<key>required</key>
+		<string>1</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -123,9 +137,11 @@
 		<key>showAccessory</key>
 		<false/>
 		<key>serverKey</key>
-		<string>industry</string>
+		<string>maintenance</string>
 		<key>selectStyle</key>
 		<string>none</string>
+		<key>required</key>
+		<string>1</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -141,9 +157,11 @@
 		<key>showAccessory</key>
 		<false/>
 		<key>serverKey</key>
-		<string>industry</string>
+		<string>question</string>
 		<key>selectStyle</key>
 		<string>none</string>
+		<key>required</key>
+		<string>1</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -159,9 +177,11 @@
 		<key>showAccessory</key>
 		<false/>
 		<key>serverKey</key>
-		<string>industry</string>
+		<string>deal</string>
 		<key>selectStyle</key>
 		<string>none</string>
+		<key>required</key>
+		<string>1</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -177,9 +197,11 @@
 		<key>showAccessory</key>
 		<false/>
 		<key>serverKey</key>
-		<string>industry</string>
+		<string>reason</string>
 		<key>selectStyle</key>
 		<string>none</string>
+		<key>required</key>
+		<string>1</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -195,9 +217,11 @@
 		<key>showAccessory</key>
 		<false/>
 		<key>serverKey</key>
-		<string>industry</string>
+		<string>spareParts</string>
 		<key>selectStyle</key>
 		<string>none</string>
+		<key>required</key>
+		<string>1</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -213,9 +237,13 @@
 		<key>showAccessory</key>
 		<true/>
 		<key>serverKey</key>
-		<string>industry</string>
+		<string>stopTime</string>
 		<key>action</key>
 		<string>selectTime</string>
+		<key>format</key>
+		<string>3</string>
+		<key>required</key>
+		<string>1</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -231,22 +259,26 @@
 		<key>showAccessory</key>
 		<true/>
 		<key>serverKey</key>
-		<string>industry</string>
+		<string>workflowStopTime</string>
 		<key>action</key>
 		<string>selectTime</string>
+		<key>format</key>
+		<string>3</string>
+		<key>required</key>
+		<string>1</string>
 	</dict>
 	<dict>
 		<key>options</key>
 		<array>
 			<dict>
 				<key>id</key>
-				<string>1</string>
+				<string>0</string>
 				<key>name</key>
 				<string>已解决</string>
 			</dict>
 			<dict>
 				<key>id</key>
-				<string>2</string>
+				<string>1</string>
 				<key>name</key>
 				<string>待处理</string>
 			</dict>
@@ -262,9 +294,11 @@
 		<key>showAccessory</key>
 		<true/>
 		<key>serverKey</key>
-		<string>industry</string>
+		<string>state</string>
 		<key>showSepLine</key>
 		<true/>
+		<key>required</key>
+		<string>1</string>
 	</dict>
 	<dict>
 		<key>options</key>
@@ -277,7 +311,7 @@
 			</dict>
 			<dict>
 				<key>id</key>
-				<string>2</string>
+				<string>0</string>
 				<key>name</key>
 				<string>否</string>
 			</dict>
@@ -293,9 +327,11 @@
 		<key>showAccessory</key>
 		<true/>
 		<key>serverKey</key>
-		<string>industry</string>
+		<string>upgradeState</string>
 		<key>showSepLine</key>
 		<true/>
+		<key>required</key>
+		<string>1</string>
 	</dict>
 </array>
 </plist>
