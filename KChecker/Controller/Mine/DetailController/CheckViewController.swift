@@ -34,7 +34,7 @@ class CheckViewController: BaseWebViewController {
     
     func checkList(_ page:Int) {
         ActivityIndicatorManager.showActivityIndicator(in: self.dataArray.count > 0 ? nil:self.view)
-        AccountHelper.taskList(["page":String(page) as AnyObject,"size":"15" as AnyObject]) { (err, obj) in
+        AccountHelper.checkList(["page":String(page) as AnyObject,"size":"15" as AnyObject]) { (err, obj) in
             ActivityIndicatorManager.hideActivityIndicator(in: self.dataArray.count > 0 ? nil:self.view)
             
             if let arr = obj as? [[String:AnyObject]], err == nil {

@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UILabel *partNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *styleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *standardLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *contentId;
 
 @property (nonatomic, strong)StandardListModel *model;
 @end

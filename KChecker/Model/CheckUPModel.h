@@ -42,6 +42,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign)CGFloat height;
 
 @property (nonatomic, strong)NSAttributedString *attriStandard;
+
+@property (nonatomic ,copy)NSString *contentId;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

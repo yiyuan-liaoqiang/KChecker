@@ -28,6 +28,15 @@
     [attri addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, [attri length])];
     self.standardLabel.attributedText = attri;
     [self.styleLabel autoSetWidthConstraint:4];
+    
+    if(model.contentId)
+    {
+        self.contentId.image = [UIImage imageNamed:@"dagou"];
+    }
+    else
+    {
+        self.contentId.image = [UIImage imageNamed:@"selected"];
+    }
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

@@ -16,6 +16,9 @@
     }
 }
 
+- (void)setValue:(id)value forUndefinedKey:(NSString *)key{}
+
+
 @end
 
 @implementation StandardListModel
@@ -46,5 +49,7 @@
     
     return _attriStandard;
 }
+
+- (void)setValue:(id)value forUndefinedKey:(NSString *)key{}
 
 @end

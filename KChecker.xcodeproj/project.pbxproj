@@ -100,6 +100,9 @@
 		09F687B8226A32E20016D0B4 /* UILabel+YYNExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F687B7226A32E20016D0B4 /* UILabel+YYNExtension.m */; };
 		4CCC1DF0FCF8C789A8954F12 /* Pods_KChecker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F0D7AC548AF54E233D8932 /* Pods_KChecker.framework */; };
 		BEC078752269F25C00327423 /* NSString+CalculateSize.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC078732269F25B00327423 /* NSString+CalculateSize.m */; };
+		BECD4077226D9EFF00FFF07C /* OilingPlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BECD4076226D9EFF00FFF07C /* OilingPlanViewController.m */; };
+		BECD407A226DA69D00FFF07C /* OilingStandardsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BECD4079226DA69D00FFF07C /* OilingStandardsCell.m */; };
+		BECD407E226DAA9B00FFF07C /* OilingStandardsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BECD407D226DAA9B00FFF07C /* OilingStandardsCell.xib */; };
 		BED675F822696F0200591AA2 /* CheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED675F722696F0200591AA2 /* CheckViewController.swift */; };
 		BED675FA226973F200591AA2 /* OilingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED675F9226973F100591AA2 /* OilingViewController.swift */; };
 		BED675FC2269748000591AA2 /* MaintainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED675FB2269748000591AA2 /* MaintainViewController.swift */; };
@@ -236,6 +239,11 @@
 		76F0D7AC548AF54E233D8932 /* Pods_KChecker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KChecker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEC078732269F25B00327423 /* NSString+CalculateSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CalculateSize.m"; sourceTree = "<group>"; };
 		BEC078742269F25C00327423 /* NSString+CalculateSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CalculateSize.h"; sourceTree = "<group>"; };
+		BECD4075226D9EFF00FFF07C /* OilingPlanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OilingPlanViewController.h; sourceTree = "<group>"; };
+		BECD4076226D9EFF00FFF07C /* OilingPlanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OilingPlanViewController.m; sourceTree = "<group>"; };
+		BECD4078226DA69D00FFF07C /* OilingStandardsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OilingStandardsCell.h; sourceTree = "<group>"; };
+		BECD4079226DA69D00FFF07C /* OilingStandardsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OilingStandardsCell.m; sourceTree = "<group>"; };
+		BECD407D226DAA9B00FFF07C /* OilingStandardsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OilingStandardsCell.xib; sourceTree = "<group>"; };
 		BED675F722696F0200591AA2 /* CheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckViewController.swift; sourceTree = "<group>"; };
 		BED675F9226973F100591AA2 /* OilingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OilingViewController.swift; sourceTree = "<group>"; };
 		BED675FB2269748000591AA2 /* MaintainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaintainViewController.swift; sourceTree = "<group>"; };
@@ -689,6 +697,11 @@
 			children = (
 				09B7F442226A23DB0096F056 /* CheckUPViewController.h */,
 				09B7F443226A23DB0096F056 /* CheckUPViewController.m */,
+				BECD4075226D9EFF00FFF07C /* OilingPlanViewController.h */,
+				BECD4076226D9EFF00FFF07C /* OilingPlanViewController.m */,
+				BECD4078226DA69D00FFF07C /* OilingStandardsCell.h */,
+				BECD4079226DA69D00FFF07C /* OilingStandardsCell.m */,
+				BECD407D226DAA9B00FFF07C /* OilingStandardsCell.xib */,
 				09B7F445226A2D6E0096F056 /* CheckUPDeviceInfoCell.h */,
 				09B7F446226A2D6E0096F056 /* CheckUPDeviceInfoCell.m */,
 				09B7F447226A2D6E0096F056 /* CheckUPDeviceInfoCell.xib */,
@@ -816,6 +829,7 @@
 				0940CA0E221D609300C7697B /* Mine.plist in Resources */,
 				09B7F449226A2D6E0096F056 /* CheckUPDeviceInfoCell.xib in Resources */,
 				0940C9C3221D249C00C7697B /* Login.html in Resources */,
+				BECD407E226DAA9B00FFF07C /* OilingStandardsCell.xib in Resources */,
 				0940C92F221CF97F00C7697B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -911,6 +925,7 @@
 				0940C9BA221D037300C7697B /* BaseFormViewController.swift in Sources */,
 				0940C9BC221D037300C7697B /* BaseWebViewController.swift in Sources */,
 				BED675FE2269749000591AA2 /* LogViewController.swift in Sources */,
+				BECD4077226D9EFF00FFF07C /* OilingPlanViewController.m in Sources */,
 				0940C95D221D034800C7697B /* ActivityIndicator.swift in Sources */,
 				0940C9B9221D037300C7697B /* BaseViewController.swift in Sources */,
 				0940C95E221D034800C7697B /* ActivityIndicatorManager.m in Sources */,
@@ -964,6 +979,7 @@
 				BED676132269A3C900591AA2 /* NSDictionary+EX.m in Sources */,
 				0940C9E3221D323300C7697B /* KeyboardHeaderView.m in Sources */,
 				09483FD0221EAE92002D4937 /* ECScanResultWebView.m in Sources */,
+				BECD407A226DA69D00FFF07C /* OilingStandardsCell.m in Sources */,
 				09434FFC226810E4000A7777 /* CGFloat+Utils.swift in Sources */,
 				0940C95B221D034800C7697B /* CommonCellUtil.swift in Sources */,
 				09B7F451226A2FE00096F056 /* CheckUPModel.m in Sources */,

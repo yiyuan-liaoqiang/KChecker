@@ -1,35 +1,34 @@
 //
-//  CheckUPViewController.m
+//  OilingPlanViewController.m
 //  KChecker
 //
-//  Created by LiaoQiang on 2019/4/19.
+//  Created by YanTing Zhang on 2019/4/22.
 //
 
-#import "CheckUPViewController.h"
+#import "OilingPlanViewController.h"
 #import "CheckUPDeviceInfoCell.h"
 #import "CheckUPStandardsCell.h"
-
-@interface CheckUPViewController ()<UITableViewDelegate,UITableViewDataSource>
+#import "OilingStandardsCell.h"
+@interface OilingPlanViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong)UITableView *tableView;
 @property (nonatomic, strong)CheckUPModel *model;
 
 @end
 
-@implementation CheckUPViewController
+@implementation OilingPlanViewController
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-   
+    
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    
-     [self getPlan];
+    [self oilingPlan];
     [self setupTableView];
     
     
@@ -43,7 +42,7 @@
         return cell;
     }
     else {
-        CheckUPStandardsCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell2"];
+        OilingStandardsCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell2"];
         cell.model = self.model.standards[indexPath.row];
         return cell;
     }
@@ -64,7 +63,8 @@
     if (indexPath.section == 0) {
         return 85;
     }
-    return self.model.standards[indexPath.row].height;
+    return 90;
+//    return self.model.standards[indexPath.row].height;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
@@ -92,11 +92,10 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
-//获取当前设备点检计划
-- (void)getPlan {
-    NSLog(@"%@",self.baseData);
-    //
-    NSString *urlString = [NSString stringWithFormat:@"http://106.12.101.46:9094/facility/%@/plan/check",self.baseData[@"facilityId"]];
+//获取当前设备润滑计划
+- (void)oilingPlan
+{
+    NSString *urlString = [NSString stringWithFormat:@"http://106.12.101.46:9094/facility/%@/plan/lubrication",self.baseData[@"facilityId"]];
     [YYNSessionManager.defaultSessionManager method:@"get" URLString:urlString andParams:nil andHttpHeaders:nil success:^(id ret) {
         NSLog(@"%@",ret);
         self.model = [JsonStringTransfer dictionary:ret ToModel:@"CheckUPModel"];
@@ -111,10 +110,11 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.tableView registerNib:[UINib nibWithNibName:@"CheckUPDeviceInfoCell" bundle:nil] forCellReuseIdentifier:@"cell1"];
-    [self.tableView registerNib:[UINib nibWithNibName:@"CheckUPStandardsCell" bundle:nil] forCellReuseIdentifier:@"cell2"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"OilingStandardsCell" bundle:nil] forCellReuseIdentifier:@"cell2"];
     self.tableView.separatorStyle = UITableViewCellSelectionStyleNone;
     self.tableView.backgroundColor = kUIColorFromRGB(0xf5f5f5);
     [self.view addSubview:self.tableView];
 }
+
 
 @end

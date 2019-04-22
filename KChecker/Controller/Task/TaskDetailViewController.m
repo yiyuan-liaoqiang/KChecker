@@ -8,7 +8,7 @@
 #import "TaskDetailViewController.h"
 #import "CheckUPViewController.h"
 #import "DMLazyScrollView.h"
-
+#import "OilingPlanViewController.h"
 @interface TaskDetailViewController ()<DMLazyScrollViewDelegate>
 {
     DMLazyScrollView *_lazyScrollView;
@@ -64,7 +64,7 @@
             vc = [[CheckUPViewController alloc] init];
         }
         else {
-            vc = [[CheckUPViewController alloc] init];
+            vc = [[OilingPlanViewController alloc] init];
         }
         [vc setValue:self.baseData forKey:@"baseData"];
         [_viewControllerArray replaceObjectAtIndex:index withObject:vc];
