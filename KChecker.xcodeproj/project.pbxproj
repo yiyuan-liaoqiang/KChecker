@@ -110,6 +110,7 @@
 		09F687C1226ABCF20016D0B4 /* UTMini.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F687BD226ABCF10016D0B4 /* UTMini.framework */; };
 		09F687C4226ABE540016D0B4 /* PushUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F687C3226ABE540016D0B4 /* PushUtils.m */; };
 		4CCC1DF0FCF8C789A8954F12 /* Pods_KChecker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F0D7AC548AF54E233D8932 /* Pods_KChecker.framework */; };
+		BEC078752269F25C00327423 /* NSString+CalculateSize.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC078732269F25B00327423 /* NSString+CalculateSize.m */; };
 		BED675F822696F0200591AA2 /* CheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED675F722696F0200591AA2 /* CheckViewController.swift */; };
 		BED675FA226973F200591AA2 /* OilingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED675F9226973F100591AA2 /* OilingViewController.swift */; };
 		BED675FC2269748000591AA2 /* MaintainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED675FB2269748000591AA2 /* MaintainViewController.swift */; };
@@ -258,6 +259,8 @@
 		0E13B1AB14BC54BF0B438978 /* Pods-KChecker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KChecker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KChecker/Pods-KChecker.debug.xcconfig"; sourceTree = "<group>"; };
 		144CC2C42E0EC80D76B18D18 /* Pods-KChecker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KChecker.release.xcconfig"; path = "Pods/Target Support Files/Pods-KChecker/Pods-KChecker.release.xcconfig"; sourceTree = "<group>"; };
 		76F0D7AC548AF54E233D8932 /* Pods_KChecker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KChecker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEC078732269F25B00327423 /* NSString+CalculateSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CalculateSize.m"; sourceTree = "<group>"; };
+		BEC078742269F25C00327423 /* NSString+CalculateSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CalculateSize.h"; sourceTree = "<group>"; };
 		BED675F722696F0200591AA2 /* CheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckViewController.swift; sourceTree = "<group>"; };
 		BED675F9226973F100591AA2 /* OilingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OilingViewController.swift; sourceTree = "<group>"; };
 		BED675FB2269748000591AA2 /* MaintainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaintainViewController.swift; sourceTree = "<group>"; };
@@ -370,6 +373,8 @@
 			isa = PBXGroup;
 			children = (
 				09A476E4226AE13600C5F922 /* HandyJson+Extension.swift */,
+				BEC078742269F25C00327423 /* NSString+CalculateSize.h */,
+				BEC078732269F25B00327423 /* NSString+CalculateSize.m */,
 				BED676102269A3C900591AA2 /* NSArray+Ex.h */,
 				BED6760E2269A3C900591AA2 /* NSArray+Ex.m */,
 				BED676112269A3C900591AA2 /* NSDictionary+EX.h */,
@@ -959,6 +964,7 @@
 				0940C92C221CF97F00C7697B /* ViewController.swift in Sources */,
 				0940C9E4221D323300C7697B /* YYPickerView.swift in Sources */,
 				0940C956221D034800C7697B /* MyMD5.m in Sources */,
+				BEC078752269F25C00327423 /* NSString+CalculateSize.m in Sources */,
 				BED676162269A8A600591AA2 /* SettingModel.m in Sources */,
 				09F687B5226A31450016D0B4 /* JsonStringTransfer.m in Sources */,
 				09483FCF221EAE92002D4937 /* ECScanResultVC.m in Sources */,

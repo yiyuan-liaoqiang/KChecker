@@ -37,13 +37,16 @@ class TaskViewController: BaseWebViewController {
     func taskList(_ page:Int) {
         ActivityIndicatorManager.showActivityIndicator(in: self.dataArray.count > 0 ? nil:self.view)
         AccountHelper.taskList(["page":String(page) as AnyObject,"size":"15" as AnyObject]) { (err, obj) in
+//
             ActivityIndicatorManager.hideActivityIndicator(in: self.dataArray.count > 0 ? nil:self.view)
             
             if let arr = obj as? [[String:AnyObject]], err == nil {
                 if page == 1 {
                     self.dataArray.removeAll()
                 }
+                
                 self.dataArray.addObjectFromArray(arr)
+                print(self.dataArray)
                 self.reloadData()
                 
                 self.webView.scrollView.header?.endRefreshing()

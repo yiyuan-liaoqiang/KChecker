@@ -13,6 +13,7 @@
 
 - (id)initWithFrame:(CGRect)frame andTitleArray:(NSArray *)titleArray
 {
+
     NSMutableDictionary *normalDic = [[NSMutableDictionary alloc] init];
     UIFont *normalFont = [UIFont systemFontOfSize:16*SystemRatio];
     UIColor *normalColor = kUIColorFromRGB(0x333333);
@@ -63,7 +64,7 @@
             label.userInteractionEnabled = YES;
             [self setState:YES WithLabel:label];
             [self.scroll addSubview:label];
-            
+
             if (isAverage) {
                 //如果是平均分割长度
                 label.frame = CGRectMake(totalWidth, 0, per_width, frame.size.height);
@@ -82,6 +83,7 @@
         }
         self.scroll.contentSize = CGSizeMake(totalWidth, 0);
         
+
         UIView *sepLine = [[UIView alloc] initWithFrame:CGRectMake(-10, frame.size.height-1, MAIN_SCREEN_WIDTH+20, 1)];
         sepLine.backgroundColor = kUIColorFromRGB(0xe5e5e5);
         [self addSubview:sepLine];
@@ -152,17 +154,5 @@
         label.font = [self.highlightAttri objectForKey:@"font"];
     }
 }
-
-//- (void)setSelectedTag:(NSInteger)selectedTag
-//{
-//    NSLog(@"点击了 pageindex %ld",selectedTag);
-//}
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
 
 @end

@@ -15,7 +15,7 @@ class LogViewController: BaseWebViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.title = "日报记录"
+        self.title = "日志记录"
         let filePath = Bundle.main.path(forResource: "TaskList.html", ofType: nil)
         self.webView.frame = CGRect(x: .zero, y: .NAV_BAR_HEIGHT, width: .MAIN_SCREEN_WIDTH, height: .MAIN_SCREEN_HEIGHT - .NAV_BAR_HEIGHT - .TAB_BAR_HEIGHT)
         self.webView.load(URLRequest(url: URL(fileURLWithPath: filePath!)))
