@@ -13,11 +13,7 @@
 
 - (id)initWithFrame:(CGRect)frame andTitleArray:(NSArray *)titleArray
 {
-<<<<<<< HEAD
-    
-    
-=======
->>>>>>> d2bb362d62ce1e5a9388709e86c5ce6118d52b5c
+
     NSMutableDictionary *normalDic = [[NSMutableDictionary alloc] init];
     UIFont *normalFont = [UIFont systemFontOfSize:16*SystemRatio];
     UIColor *normalColor = kUIColorFromRGB(0x333333);
@@ -59,10 +55,6 @@
         self.scroll.showsHorizontalScrollIndicator = NO;
         [self addSubview:self.scroll];
         
-<<<<<<< HEAD
-        self.lblArray = [NSMutableArray arrayWithCapacity:10];
-=======
->>>>>>> d2bb362d62ce1e5a9388709e86c5ce6118d52b5c
         CGFloat totalWidth = 0;
         for (int i = 0; i<self.scrollTitleArray.count; i++) {
             UILabel *label = [[UILabel alloc] init];
@@ -72,11 +64,7 @@
             label.userInteractionEnabled = YES;
             [self setState:YES WithLabel:label];
             [self.scroll addSubview:label];
-<<<<<<< HEAD
-            [self.lblArray addObject:label];
-=======
-            
->>>>>>> d2bb362d62ce1e5a9388709e86c5ce6118d52b5c
+
             if (isAverage) {
                 //如果是平均分割长度
                 label.frame = CGRectMake(totalWidth, 0, per_width, frame.size.height);
@@ -95,17 +83,11 @@
         }
         self.scroll.contentSize = CGSizeMake(totalWidth, 0);
         
-<<<<<<< HEAD
-//        UIView *sepLine = [[UIView alloc] initWithFrame:CGRectMake(-10, frame.size.height-1, MAIN_SCREEN_WIDTH+20, 1)];
-//        sepLine.backgroundColor = kUIColorFromRGB(0xe5e5e5);
-//        [self addSubview:sepLine];
-//        self.sepLine = sepLine;
-=======
+
         UIView *sepLine = [[UIView alloc] initWithFrame:CGRectMake(-10, frame.size.height-1, MAIN_SCREEN_WIDTH+20, 1)];
         sepLine.backgroundColor = kUIColorFromRGB(0xe5e5e5);
         [self addSubview:sepLine];
         self.sepLine = sepLine;
->>>>>>> d2bb362d62ce1e5a9388709e86c5ce6118d52b5c
         
         self.line = [[UIView alloc] init];
         self.line.frame = CGRectMake(10, frame.size.height-2, 40, 3);
@@ -173,19 +155,4 @@
     }
 }
 
-<<<<<<< HEAD
-=======
-//- (void)setSelectedTag:(NSInteger)selectedTag
-//{
-//    NSLog(@"点击了 pageindex %ld",selectedTag);
-//}
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
-
->>>>>>> d2bb362d62ce1e5a9388709e86c5ce6118d52b5c
 @end
