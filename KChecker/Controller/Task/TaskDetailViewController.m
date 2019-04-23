@@ -9,6 +9,7 @@
 #import "CheckUPViewController.h"
 #import "DMLazyScrollView.h"
 #import "OilingPlanViewController.h"
+
 @interface TaskDetailViewController ()<DMLazyScrollViewDelegate>
 {
     DMLazyScrollView *_lazyScrollView;
@@ -77,11 +78,19 @@
     if (_titleView == nil) {
         _titleView = [[TitleIndexView alloc] initWithFrame:CGRectMake(0, NAV_BAR_HEIGHT, MAIN_SCREEN_WIDTH, 46) andTitleArray:@[@"点检计划",@"润滑计划",@"维修计划",@"紧固计划",@"调整计划",@"更换计划"]andNormalAttri:@{@"color":kUIColorFromRGB(0x808080),@"font":[UIFont systemFontOfSize:15]} andHighlightAttri:@{@"color":MAIN_THEME_COLOR,@"font":[UIFont systemFontOfSize:15]} andIsAverageDivision:false];
         [_titleView.sepLine removeFromSuperview];
+        
+        __weak typeof(self) weakSelf = self;
         _titleView.callback = ^(NSInteger tag) {
-            
+            [weakSelf handleIndexViewCallback:tag];
         };
     }
     return _titleView;
+}
+
+- (void)handleIndexViewCallback:(NSInteger)index
+{
+    NSInteger currentIndex = [_lazyScrollView currentPage];
+    [_lazyScrollView moveByPages:index-currentIndex animated:YES];
 }
 
 /*

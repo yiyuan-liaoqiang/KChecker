@@ -5,11 +5,11 @@
 //  Created by YanTing Zhang on 2019/4/19.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseOCViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SettingTableViewController : UIViewController
+@interface SettingTableViewController : BaseOCViewController
 
 @end
 

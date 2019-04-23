@@ -78,6 +78,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    [tableView deselectRowAtIndexPath:indexPath animated:true];
     if(indexPath.row == 2)
     {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"确定是否退出账号" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定",nil];
@@ -92,6 +93,7 @@
     {
         LoginViewController *vc = [[LoginViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
+        [YYNCache clearCache];
     }
 }
 

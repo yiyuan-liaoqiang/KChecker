@@ -7,6 +7,7 @@
 
 #import "PushUtils.h"
 #import <CloudPushSDK/CloudPushSDK.h>
+#import "KChecker-Swift.h"
 
 @implementation PushUtils
 static PushUtils *_util;

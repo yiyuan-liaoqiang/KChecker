@@ -61,11 +61,13 @@ class LoginViewController: BaseViewController,UITextFieldDelegate {
         AccountHelper.loginWithPwd(["username":self.phoneTf.text as AnyObject,"password":self.passwordTf.text as AnyObject]) { (err, data) in
             guard err != nil else {
                 //用户信息保存在本地
-//                let user = UserModel.deserialize(from: data as? [String:Any])
-//                AccountHelper.synchronizeUserInfo(user)
-              try? YYNCache.userRelatedStorage?.setObject(JSON(true), forKey: "isLogin")
+                try? YYNCache.userRelatedStorage?.setObject(JSON(true), forKey: "isLogin")
                 try? YYNCache.userRelatedStorage?.setObject(JSON(data as Any), forKey: "token")
                 YYRoute.pushToController(MainViewController(), data: nil)
+                //获取用户信息
+                AccountHelper.userInfo([:], { (err, obj) in
+                    
+                })
                 return
             }
             ProgressHUD.showMessage(err!)
