@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import CloudPushSDK
+import SwiftyJSON
+import UserNotifications
+
 /*
  加载所有html文件的base
  网络请求封装，失败返回
@@ -15,25 +19,35 @@ import UIKit
  mvvm
  */
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDelegate {
     
     var window: UIWindow?
     var nav:UINavigationController!
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-        //推送
-        PushUtils.shared().registerAPNS(application)
-        print(NSStringFromClass(type(of: CommonBaseCell())))
+
         if AccountHelper.isLogin {
             self.nav = UINavigationController(rootViewController: MainViewController())
             self.nav.toolbar.isHidden = true
+            
+            //推送
+            PushUtils.shared().registerAPNS(application)
+            //绑定账号到阿里云推送
+            let info = (try? YYNCache.userRelatedStorage?.object(forKey: "userInfo").dictionary)
+            if let userInfo = info as? [String:Any] {
+                let userId = userInfo["userId"] as? JSON
+                CloudPushSDK.bindAccount((userId?.stringValue)!) { (res) in }
+            }
+            else {
+                AccountHelper.userInfo([:]) { (err, obj) in }
+            }
         }
         else {
             self.nav = UINavigationController(rootViewController: LoginViewController())
             self.nav.toolbar.isHidden = true
         }
+        print(CloudPushSDK.isChannelOpened())
         self.window?.rootViewController = self.nav
         
         return true
@@ -65,9 +79,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         PushUtils.shared().application(application, didReceiveRemoteNotification: userInfo)
     }
     
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        // 通知弹出，且带有声音、内容和角标（App处于前台时不建议弹出通知）
+        completionHandler(UNNotificationPresentationOptions(rawValue: UNNotificationPresentationOptions.sound.rawValue | UNNotificationPresentationOptions.badge.rawValue | UNNotificationPresentationOptions.alert.rawValue));
+    }
+    
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         PushUtils.shared().application(application, didRegisterForRemoteNotificationsWithDeviceToken: deviceToken)
     }
-
 }
 

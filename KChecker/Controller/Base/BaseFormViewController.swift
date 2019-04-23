@@ -76,7 +76,7 @@ class BaseFormViewController: BaseViewController,UITableViewDelegate,UITableView
             return CGFloat(truncating: model.height!)
         }
         else {
-            return 50
+            return 60
         }
     }
     

@@ -9,6 +9,7 @@
 import UIKit
 import Cache
 import SwiftyJSON
+import CloudPushSDK
 
 class YYNCache: NSObject {
     //用户相关缓存
@@ -19,4 +20,13 @@ class YYNCache: NSObject {
         memoryConfig: MemoryConfig(expiry: .never, countLimit: 10, totalCostLimit: 10),
         transformer: TransformerFactory.forCodable(ofType: JSON.self) // Storage<User>
     )
+    
+    @objc static func clearCache() {
+        try? self.userRelatedStorage?.removeObject(forKey: "isLogin")
+        try? self.userRelatedStorage?.removeObject(forKey: "token")
+        try? self.userRelatedStorage?.removeObject(forKey: "userInfo")
+        CloudPushSDK.unbindAccount { (res) in
+            
+        }
+    }
 }

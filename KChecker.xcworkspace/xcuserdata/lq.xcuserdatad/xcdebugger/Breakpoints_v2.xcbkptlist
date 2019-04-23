@@ -9,24 +9,8 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "KChecker/Controller/Mine/MineViewController.swift"
-            timestampString = "577357521.431393"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "log()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "KChecker/Controller/Base/BaseFormViewController.swift"
-            timestampString = "577552080.13621"
+            timestampString = "577637712.353995"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "249"
@@ -42,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KChecker/Controller/Base/BaseFormViewController.swift"
-            timestampString = "577552080.136276"
+            timestampString = "577637712.354055"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "248"
@@ -58,12 +42,12 @@
                   moduleName = "KChecker"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/lq/Desktop/%E4%B8%AD%E4%B9%85/KChecker/KChecker/Controller/Base/BaseFormViewController.swift"
-                  timestampString = "577592879.650362"
+                  timestampString = "577637712.754419"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "248"
                   endingLineNumber = "248"
-                  offsetFromSymbolStart = "212">
+                  offsetFromSymbolStart = "202">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -73,12 +57,12 @@
                   moduleName = "KChecker"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/lq/Desktop/%E4%B8%AD%E4%B9%85/KChecker/KChecker/Controller/Base/BaseFormViewController.swift"
-                  timestampString = "577592879.6522681"
+                  timestampString = "577637712.756264"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "247"
                   endingLineNumber = "247"
-                  offsetFromSymbolStart = "96">
+                  offsetFromSymbolStart = "129">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -90,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KChecker/Controller/Task/PlanFormInputController.swift"
-            timestampString = "577592879.154724"
+            timestampString = "577637712.3541"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "51"
@@ -106,7 +90,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KChecker/Controller/Task/PlanFormInputController.swift"
-            timestampString = "577592879.155089"
+            timestampString = "577637712.3544"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "48"
@@ -153,14 +137,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "KChecker/Controller/Mine/Login/LoginViewController.swift"
-            timestampString = "577592928.4034081"
+            filePath = "KChecker/Controller/Mine/MineViewController.swift"
+            timestampString = "577637051.647517"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "LoginViewController"
-            landmarkType = "3">
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

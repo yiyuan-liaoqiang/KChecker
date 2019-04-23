@@ -26,7 +26,7 @@ class PlanFormInputController: BaseFormViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if let cellName = self.modelForIndexPath(indexPath).cellName,cellName == "MultipleInputCell" {
             if let value = (self.modelForIndexPath(indexPath).localValue as NSString?) {
-                return value.size(with: UIFont.systemFont(ofSize: 15), constrainedTo: CGSize(width: .MAIN_SCREEN_WIDTH-30, height: 10000)).height + 32
+                return value.size(with: UIFont.systemFont(ofSize: 15), constrainedTo: CGSize(width: .MAIN_SCREEN_WIDTH-30, height: 10000)).height + 42
             }
             return 50;
             

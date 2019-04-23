@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftyJSON
+import CloudPushSDK
 
 class AccountHelper: NSObject {
     
@@ -155,17 +156,23 @@ class AccountHelper: NSObject {
         })
     }
     
-    //job finder登录，获取简历信息
-    static func resumeInfo(_ param:Dictionary<String,AnyObject>,_ callback:@escaping ((_ err:String?,_ ret:AnyObject?)->())){
-        YYNSessionManager.default()?.method("get", urlString: "resume/resumeInfo", andParams: param, andHttpHeaders: nil, success: { (ret) in
-            var ret0 = ret as? [String:AnyObject]
-            guard ret0 != nil, Int(truncating: ret0!["code"] as! NSNumber) == 200 else {
-                callback(ret0!["msg"] as? String, nil)
-                return
+    //user info
+    static func userInfo(_ param:Dictionary<String,AnyObject>,_ callback:@escaping ((_ err:String?,_ ret:AnyObject?)->())){
+        YYNSessionManager.default()?.method("get", urlString: "http://106.12.101.46:9094/user", andParams: param, andHttpHeaders: nil, success: { (ret) in
+            if let ret = ret as? [String:AnyObject] {
+                let json = JSON(ret)
+                try? YYNCache.userRelatedStorage?.setObject(json, forKey: "userInfo")
+                callback(nil, json as AnyObject)
+                
+                CloudPushSDK.bindAccount((ret["userId"] as? String) ?? "1") { (res) in }
             }
-            callback(nil, ret0!["data"] as AnyObject)
+            else {
+                
+            }
+            
         }, failure: { (error) in
             callback(error as? String, nil)
         })
     }
+    
 }
