@@ -9,6 +9,8 @@
 #import "CheckUPViewController.h"
 #import "DMLazyScrollView.h"
 #import "OilingPlanViewController.h"
+#import "FaultViewController.h"
+#import "FacilityInforController.h"
 @interface TaskDetailViewController ()<DMLazyScrollViewDelegate>
 {
     DMLazyScrollView *_lazyScrollView;
@@ -22,12 +24,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.navigationItem.title = @"故障历史";
+    
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"故障历史" style:UIBarButtonItemStylePlain target:self action:@selector(itemClick)];
+    self.navigationItem.rightBarButtonItem = item;
+    
     // Do any additional setup after loading the view.
     self.title = self.baseData[@"facilityName"];
     [self.view addSubview:self.titleView];
     [self lazyViewInital];
 }
 
+- (void)itemClick
+{
+//    FaultViewController *view = [[FaultViewController alloc] init];
+//    [self.navigationController pushViewController:view animated:YES];
+    
+    FacilityInforController *viewController = [[FacilityInforController alloc] init];
+    [self.navigationController pushViewController:viewController animated:YES];
+}
 
 - (void)lazyViewInital
 {

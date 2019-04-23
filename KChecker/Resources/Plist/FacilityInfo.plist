@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>设备所在车间</string>
+		<key>serverKey</key>
+		<string>workshop</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>设备名称</string>
+		<key>serverKey</key>
+		<string>name</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>设备编号</string>
+		<key>serverKey</key>
+		<string>identifier</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>规格型号</string>
+		<key>serverKey</key>
+		<string>model</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>设备品牌</string>
+		<key>serverKey</key>
+		<string>brand</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>设备状态</string>
+		<key>serverKey</key>
+		<string>status</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>制造单位</string>
+		<key>serverKey</key>
+		<string>madeCompany</string>
+	</dict>
+</array>
+</plist>
