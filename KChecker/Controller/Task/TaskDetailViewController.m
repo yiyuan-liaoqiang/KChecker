@@ -9,12 +9,9 @@
 #import "CheckUPViewController.h"
 #import "DMLazyScrollView.h"
 #import "OilingPlanViewController.h"
-<<<<<<< HEAD
 #import "FaultViewController.h"
 #import "FacilityInforController.h"
-=======
 
->>>>>>> b3783e77e9d9db9d7f624e88ba0f556263dfdffe
 @interface TaskDetailViewController ()<DMLazyScrollViewDelegate>
 {
     DMLazyScrollView *_lazyScrollView;
