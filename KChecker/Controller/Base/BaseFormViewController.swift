@@ -84,6 +84,7 @@ class BaseFormViewController: BaseViewController,UITableViewDelegate,UITableView
         tableView.deselectRow(at: indexPath, animated: true)
         self.temModel = modelForIndexPath(indexPath)
         if self.temModel?.action != nil {
+            self.view.endEditing(true)
             let selector = NSSelectorFromString((self.temModel?.action)!)
             if self.responds(to: selector) {
                 self.perform(selector, with: nil)
@@ -91,6 +92,7 @@ class BaseFormViewController: BaseViewController,UITableViewDelegate,UITableView
         }
         else if (self.temModel?.options?.count ?? 0) > 0 {
             //从自己选项里面选择
+            self.view.endEditing(true)
             selectFromOptions()
         }
         else if self.temModel?.enable == true {
