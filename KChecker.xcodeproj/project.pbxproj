@@ -121,6 +121,11 @@
 		BED676122269A3C900591AA2 /* NSArray+Ex.m in Sources */ = {isa = PBXBuildFile; fileRef = BED6760E2269A3C900591AA2 /* NSArray+Ex.m */; };
 		BED676132269A3C900591AA2 /* NSDictionary+EX.m in Sources */ = {isa = PBXBuildFile; fileRef = BED6760F2269A3C900591AA2 /* NSDictionary+EX.m */; };
 		BED676162269A8A600591AA2 /* SettingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BED676152269A8A600591AA2 /* SettingModel.m */; };
+		BEF764E8226DECE4009237B3 /* FaultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF764E7226DECE4009237B3 /* FaultViewController.m */; };
+		BEF764EB226DED4C009237B3 /* FacilityInforController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF764EA226DED4C009237B3 /* FacilityInforController.m */; };
+		BEF764EE226DF3E2009237B3 /* FaultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF764ED226DF3E2009237B3 /* FaultModel.m */; };
+		BEF764F2226E8BFD009237B3 /* FacilityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF764F1226E8BFD009237B3 /* FacilityModel.m */; };
+		BEF764FA226EA277009237B3 /* FacilityInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BEF764F9226EA277009237B3 /* FacilityInfo.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -277,6 +282,15 @@
 		BED676112269A3C900591AA2 /* NSDictionary+EX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+EX.h"; sourceTree = "<group>"; };
 		BED676142269A8A600591AA2 /* SettingModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingModel.h; sourceTree = "<group>"; };
 		BED676152269A8A600591AA2 /* SettingModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingModel.m; sourceTree = "<group>"; };
+		BEF764E6226DECE4009237B3 /* FaultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaultViewController.h; sourceTree = "<group>"; };
+		BEF764E7226DECE4009237B3 /* FaultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaultViewController.m; sourceTree = "<group>"; };
+		BEF764E9226DED4C009237B3 /* FacilityInforController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FacilityInforController.h; sourceTree = "<group>"; };
+		BEF764EA226DED4C009237B3 /* FacilityInforController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FacilityInforController.m; sourceTree = "<group>"; };
+		BEF764EC226DF3E2009237B3 /* FaultModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaultModel.h; sourceTree = "<group>"; };
+		BEF764ED226DF3E2009237B3 /* FaultModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaultModel.m; sourceTree = "<group>"; };
+		BEF764F0226E8BFD009237B3 /* FacilityModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FacilityModel.h; sourceTree = "<group>"; };
+		BEF764F1226E8BFD009237B3 /* FacilityModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FacilityModel.m; sourceTree = "<group>"; };
+		BEF764F9226EA277009237B3 /* FacilityInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = FacilityInfo.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -499,9 +513,8 @@
 		0940C9C9221D320700C7697B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BEF764EF226E8B97009237B3 /* Task */,
 				098B794022630DD6003B893B /* Common */,
-				09B7F44F226A2FE00096F056 /* CheckUPModel.h */,
-				09B7F450226A2FE00096F056 /* CheckUPModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -602,6 +615,7 @@
 		0940C9FC221D34AE00C7697B /* Task */ = {
 			isa = PBXGroup;
 			children = (
+				BEF764E5226DEC9F009237B3 /* More */,
 				09B7F441226A239C0096F056 /* CheckUP */,
 				0940C9FD221D34BB00C7697B /* TaskViewController.swift */,
 				0940CA05221D53EE00C7697B /* TaskListCell.swift */,
@@ -635,6 +649,7 @@
 				098B79452263272C003B893B /* DaylyRecord.plist */,
 				BED6760722699F5900591AA2 /* Setting.plist */,
 				0990C9D4226C7E7400276373 /* PlanFormInput.plist */,
+				BEF764F9226EA277009237B3 /* FacilityInfo.plist */,
 			);
 			path = Plist;
 			sourceTree = "<group>";
@@ -770,6 +785,30 @@
 			path = DetailController;
 			sourceTree = "<group>";
 		};
+		BEF764E5226DEC9F009237B3 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				BEF764E6226DECE4009237B3 /* FaultViewController.h */,
+				BEF764E7226DECE4009237B3 /* FaultViewController.m */,
+				BEF764E9226DED4C009237B3 /* FacilityInforController.h */,
+				BEF764EA226DED4C009237B3 /* FacilityInforController.m */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		BEF764EF226E8B97009237B3 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				09B7F44F226A2FE00096F056 /* CheckUPModel.h */,
+				09B7F450226A2FE00096F056 /* CheckUPModel.m */,
+				BEF764EC226DF3E2009237B3 /* FaultModel.h */,
+				BEF764ED226DF3E2009237B3 /* FaultModel.m */,
+				BEF764F0226E8BFD009237B3 /* FacilityModel.h */,
+				BEF764F1226E8BFD009237B3 /* FacilityModel.m */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -850,6 +889,7 @@
 				0940CA12221D61DB00C7697B /* IconTitleCell.xib in Resources */,
 				0940C931221CF98100C7697B /* Assets.xcassets in Resources */,
 				0940C9EC221D323400C7697B /* TitleTimeRangeTableViewCell.xib in Resources */,
+				BEF764FA226EA277009237B3 /* FacilityInfo.plist in Resources */,
 				0940CA08221D53EE00C7697B /* TaskListCell.xib in Resources */,
 				098B795122633E52003B893B /* TitleValueVTableViewCell.xib in Resources */,
 				0940C9C8221D30EA00C7697B /* yhming.png in Resources */,
@@ -951,6 +991,7 @@
 				0990C9DA226C849400276373 /* PlanFormInputController.swift in Sources */,
 				09B7F44D226A2D9E0096F056 /* CheckUPStandardsCell.m in Sources */,
 				0940C95C221D034800C7697B /* JsonTransfer.swift in Sources */,
+				BEF764F2226E8BFD009237B3 /* FacilityModel.m in Sources */,
 				0940C92C221CF97F00C7697B /* ViewController.swift in Sources */,
 				0940C9E4221D323300C7697B /* YYPickerView.swift in Sources */,
 				0940C956221D034800C7697B /* MyMD5.m in Sources */,
@@ -1002,9 +1043,11 @@
 				0940C957221D034800C7697B /* UIColor+Extension.swift in Sources */,
 				09A476E5226AE13600C5F922 /* HandyJson+Extension.swift in Sources */,
 				0940C9EE221D323400C7697B /* TitleSwitchTableViewCell.swift in Sources */,
+				BEF764EE226DF3E2009237B3 /* FaultModel.m in Sources */,
 				0940C961221D034800C7697B /* ProgressHUD.m in Sources */,
 				098B7935226309E6003B893B /* LoginViewController.swift in Sources */,
 				09483FCB221EAE92002D4937 /* ECQRCodeScanVC.m in Sources */,
+				BEF764E8226DECE4009237B3 /* FaultViewController.m in Sources */,
 				0922CE49226A206B0042A220 /* NSString+CalculateSize.m in Sources */,
 				0940CA07221D53EE00C7697B /* TaskListCell.swift in Sources */,
 				098B794D22632D99003B893B /* CommonOptionsModel.swift in Sources */,
@@ -1015,6 +1058,7 @@
 				0940C958221D034800C7697B /* UIController+SelectImage.swift in Sources */,
 				0940C9FB221D34A500C7697B /* HomePageViewController.swift in Sources */,
 				0940C9FE221D34BB00C7697B /* TaskViewController.swift in Sources */,
+				BEF764EB226DED4C009237B3 /* FacilityInforController.m in Sources */,
 				0940CA15221D647E00C7697B /* MineHeaderCell.swift in Sources */,
 				BED676002269749E00591AA2 /* SettingViewController.swift in Sources */,
 				BED676132269A3C900591AA2 /* NSDictionary+EX.m in Sources */,

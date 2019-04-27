@@ -96,7 +96,7 @@
         return @[];
     }
 }
-
+//字典转成数组model
 +(NSArray *)dictionaryArray:(NSArray *)dicArray ToModelArrayWithClass:(Class)modelClass
 {
     if ([dicArray isKindOfClass:NSArray.class]) {
