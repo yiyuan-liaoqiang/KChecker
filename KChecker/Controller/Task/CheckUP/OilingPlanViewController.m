@@ -29,9 +29,6 @@
     // Do any additional setup after loading the view.
     
     [self oilingPlan];
-    [self setupTableView];
-    
-    
     
 }
 
@@ -97,10 +94,12 @@
 {
     NSString *urlString = [NSString stringWithFormat:@"http://106.12.101.46:9094/facility/%@/plan/lubrication",self.baseData[@"facilityId"]];
     [YYNSessionManager.defaultSessionManager method:@"get" URLString:urlString andParams:nil andHttpHeaders:nil success:^(id ret) {
-        NSLog(@"%@",ret);
         self.model = [JsonStringTransfer dictionary:ret ToModel:@"CheckUPModel"];
-        [self.tableView reloadData];
+        [self setupTableView];
     } failure:^(id error) {
+        //没有找到润滑计划
+        self.model = nil;
+        [self.view showWarningWithIcon:nil andTitle:@"该设备没有润滑计划" andTopSpace:140];
         NSLog(@"");
     }];
 }

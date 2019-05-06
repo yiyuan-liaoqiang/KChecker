@@ -46,7 +46,6 @@ class TaskViewController: BaseWebViewController {
                 }
                 
                 self.dataArray.addObjectFromArray(arr)
-                print(self.dataArray)
                 self.reloadData()
                 
                 self.webView.scrollView.header?.endRefreshing()

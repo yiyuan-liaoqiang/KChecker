@@ -29,11 +29,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    
-     [self getPlan];
-    [self setupTableView];
-    
-    
+    [self getPlan];
     
 }
 
@@ -97,15 +93,16 @@
 
 //获取当前设备点检计划
 - (void)getPlan {
-    NSLog(@"%@",self.baseData);
     //
     NSString *urlString = [NSString stringWithFormat:@"http://106.12.101.46:9094/facility/%@/plan/check",self.baseData[@"facilityId"]];
+    [ActivityIndicatorManager showActivityIndicatorInView:self.view];
     [YYNSessionManager.defaultSessionManager method:@"get" URLString:urlString andParams:nil andHttpHeaders:nil success:^(id ret) {
-        NSLog(@"%@",ret);
         self.model = [JsonStringTransfer dictionary:ret ToModel:@"CheckUPModel"];
-        [self.tableView reloadData];
+        [self setupTableView];
+        [ActivityIndicatorManager hideActivityIndicatorInView:self.view];
     } failure:^(id error) {
-        NSLog(@"");
+        [self.view showWarningWithIcon:nil andTitle:@"该设备没有点检计划" andTopSpace:140];
+        [ActivityIndicatorManager hideActivityIndicatorInView:self.view];
     }];
 }
 

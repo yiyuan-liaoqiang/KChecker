@@ -38,7 +38,6 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.tableView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
-    NSLog(@"%@",self.dataArray);
     
 }
 

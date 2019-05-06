@@ -33,7 +33,6 @@
     
     NSString *path = [[NSBundle mainBundle] pathForResource:@"FacilityInfo.plist" ofType:nil];
     self.dataArray = [JsonStringTransfer dictionaryArray:[NSArray arrayWithContentsOfFile:path] ToModelArrayWithClass:TmpModel.class].mutableCopy;
-    NSLog(@"%@",self.dataArray);
     
     
     [[YYNSessionManager defaultSessionManager] method:@"get" URLString:@"facility/999988/info" andParams:@{@"facilityId":@(999988) , @"page":@"1" , @"size": @"15"} andHttpHeaders:nil success:^(NSDictionary *ret) {

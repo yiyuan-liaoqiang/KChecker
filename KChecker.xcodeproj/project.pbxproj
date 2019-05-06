@@ -93,6 +93,7 @@
 		0990C9DD226CAFF900276373 /* NSObject+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0990C9DC226CAFF900276373 /* NSObject+Utils.m */; };
 		0990C9E2226CB13000276373 /* MultipleInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0990C9E1226CB13000276373 /* MultipleInputCell.swift */; };
 		0990C9E4226CB17D00276373 /* MultipleInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0990C9E3226CB17D00276373 /* MultipleInputCell.xib */; };
+		0997AD7C2280725300301CEF /* UIView+NoDataWarning.m in Sources */ = {isa = PBXBuildFile; fileRef = 0997AD7A2280725200301CEF /* UIView+NoDataWarning.m */; };
 		09A476E5226AE13600C5F922 /* HandyJson+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A476E4226AE13600C5F922 /* HandyJson+Extension.swift */; };
 		09B7F440226A231D0096F056 /* DMLazyScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B7F43E226A231D0096F056 /* DMLazyScrollView.m */; };
 		09B7F444226A23DB0096F056 /* CheckUPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B7F443226A23DB0096F056 /* CheckUPViewController.m */; };
@@ -234,6 +235,8 @@
 		0990C9DC226CAFF900276373 /* NSObject+Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Utils.m"; sourceTree = "<group>"; };
 		0990C9E1226CB13000276373 /* MultipleInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleInputCell.swift; sourceTree = "<group>"; };
 		0990C9E3226CB17D00276373 /* MultipleInputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MultipleInputCell.xib; sourceTree = "<group>"; };
+		0997AD7A2280725200301CEF /* UIView+NoDataWarning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NoDataWarning.m"; sourceTree = "<group>"; };
+		0997AD7B2280725200301CEF /* UIView+NoDataWarning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NoDataWarning.h"; sourceTree = "<group>"; };
 		09A476E3226AC89500C5F922 /* KChecker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KChecker.entitlements; sourceTree = "<group>"; };
 		09A476E4226AE13600C5F922 /* HandyJson+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HandyJson+Extension.swift"; sourceTree = "<group>"; };
 		09B7F43E226A231D0096F056 /* DMLazyScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMLazyScrollView.m; sourceTree = "<group>"; };
@@ -349,6 +352,8 @@
 		0940C93B221D034800C7697B /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				0997AD7B2280725200301CEF /* UIView+NoDataWarning.h */,
+				0997AD7A2280725200301CEF /* UIView+NoDataWarning.m */,
 				09F687B6226A32E20016D0B4 /* UILabel+YYNExtension.h */,
 				09F687B7226A32E20016D0B4 /* UILabel+YYNExtension.m */,
 				09F687B3226A31450016D0B4 /* JsonStringTransfer.h */,
@@ -1063,6 +1068,7 @@
 				BED676002269749E00591AA2 /* SettingViewController.swift in Sources */,
 				BED676132269A3C900591AA2 /* NSDictionary+EX.m in Sources */,
 				0940C9E3221D323300C7697B /* KeyboardHeaderView.m in Sources */,
+				0997AD7C2280725300301CEF /* UIView+NoDataWarning.m in Sources */,
 				09483FD0221EAE92002D4937 /* ECScanResultWebView.m in Sources */,
 				BECD407A226DA69D00FFF07C /* OilingStandardsCell.m in Sources */,
 				09434FFC226810E4000A7777 /* CGFloat+Utils.swift in Sources */,
