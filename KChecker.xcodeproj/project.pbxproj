@@ -102,6 +102,7 @@
 		09B7F44D226A2D9E0096F056 /* CheckUPStandardsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B7F44B226A2D9E0096F056 /* CheckUPStandardsCell.m */; };
 		09B7F44E226A2D9E0096F056 /* CheckUPStandardsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09B7F44C226A2D9E0096F056 /* CheckUPStandardsCell.xib */; };
 		09B7F451226A2FE00096F056 /* CheckUPModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B7F450226A2FE00096F056 /* CheckUPModel.m */; };
+		09EB079A2283C79000E6B12D /* ResendRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EB07992283C79000E6B12D /* ResendRequest.swift */; };
 		09F26BE42269DA7D00E9DF64 /* TaskDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F26BE32269DA7D00E9DF64 /* TaskDetailViewController.m */; };
 		09F687B5226A31450016D0B4 /* JsonStringTransfer.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F687B4226A31450016D0B4 /* JsonStringTransfer.m */; };
 		09F687B8226A32E20016D0B4 /* UILabel+YYNExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F687B7226A32E20016D0B4 /* UILabel+YYNExtension.m */; };
@@ -251,6 +252,7 @@
 		09B7F44C226A2D9E0096F056 /* CheckUPStandardsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckUPStandardsCell.xib; sourceTree = "<group>"; };
 		09B7F44F226A2FE00096F056 /* CheckUPModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckUPModel.h; sourceTree = "<group>"; };
 		09B7F450226A2FE00096F056 /* CheckUPModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckUPModel.m; sourceTree = "<group>"; };
+		09EB07992283C79000E6B12D /* ResendRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResendRequest.swift; sourceTree = "<group>"; };
 		09F26BE22269DA7D00E9DF64 /* TaskDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskDetailViewController.h; sourceTree = "<group>"; };
 		09F26BE32269DA7D00E9DF64 /* TaskDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaskDetailViewController.m; sourceTree = "<group>"; };
 		09F687B3226A31450016D0B4 /* JsonStringTransfer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonStringTransfer.h; sourceTree = "<group>"; };
@@ -371,6 +373,7 @@
 				0940C950221D034800C7697B /* YYDateUtil.swift */,
 				09F687C2226ABE530016D0B4 /* PushUtils.h */,
 				09F687C3226ABE540016D0B4 /* PushUtils.m */,
+				09EB07992283C79000E6B12D /* ResendRequest.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1046,6 +1049,7 @@
 				098B795022633E52003B893B /* TitleValueVTableViewCell.swift in Sources */,
 				09B7F440226A231D0096F056 /* DMLazyScrollView.m in Sources */,
 				0940C957221D034800C7697B /* UIColor+Extension.swift in Sources */,
+				09EB079A2283C79000E6B12D /* ResendRequest.swift in Sources */,
 				09A476E5226AE13600C5F922 /* HandyJson+Extension.swift in Sources */,
 				0940C9EE221D323400C7697B /* TitleSwitchTableViewCell.swift in Sources */,
 				BEF764EE226DF3E2009237B3 /* FaultModel.m in Sources */,

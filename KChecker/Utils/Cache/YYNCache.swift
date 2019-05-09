@@ -21,6 +21,12 @@ class YYNCache: NSObject {
         transformer: TransformerFactory.forCodable(ofType: JSON.self) // Storage<User>
     )
     
+    static let requestStorage = try? Storage(
+        diskConfig: DiskConfig(name: "requestStorage"),
+        memoryConfig: MemoryConfig(expiry: .never, countLimit: 10, totalCostLimit: 10),
+        transformer: TransformerFactory.forCodable(ofType: JSON.self) // Storage<User>
+    )
+    
     @objc static func clearCache() {
         try? self.userRelatedStorage?.removeObject(forKey: "isLogin")
         try? self.userRelatedStorage?.removeObject(forKey: "token")

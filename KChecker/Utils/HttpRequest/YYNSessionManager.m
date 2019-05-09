@@ -173,14 +173,7 @@
     NSLog(@"url--%@",urlString);
     NSLog(@"%@",error);
     if (failure) {
-        failure(error.description);
-    }
-    if (error.code == 401) {
-        //未登录
-#ifdef TARGET_OA
-        [CommonUtils provideUserLogin];
-#endif
-        
+        failure(error);
     }
 }
 

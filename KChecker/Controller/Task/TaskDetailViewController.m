@@ -48,7 +48,7 @@
 
 - (void)lazyViewInital
 {
-    NSUInteger numberOfPages = 6;
+    NSUInteger numberOfPages = 5;
     _viewControllerArray = [[NSMutableArray alloc] initWithCapacity:numberOfPages];
     for (NSUInteger k = 0; k < numberOfPages; ++k) {
         [_viewControllerArray addObject:[NSNull null]];
@@ -92,7 +92,7 @@
 
 - (TitleIndexView *)titleView {
     if (_titleView == nil) {
-        _titleView = [[TitleIndexView alloc] initWithFrame:CGRectMake(0, NAV_BAR_HEIGHT, MAIN_SCREEN_WIDTH, 46) andTitleArray:@[@"点检计划",@"润滑计划",@"维修计划",@"紧固计划",@"调整计划",@"更换计划"]andNormalAttri:@{@"color":kUIColorFromRGB(0x808080),@"font":[UIFont systemFontOfSize:15]} andHighlightAttri:@{@"color":MAIN_THEME_COLOR,@"font":[UIFont systemFontOfSize:15]} andIsAverageDivision:false];
+        _titleView = [[TitleIndexView alloc] initWithFrame:CGRectMake(0, NAV_BAR_HEIGHT, MAIN_SCREEN_WIDTH, 46) andTitleArray:@[@"点检计划",@"润滑计划",@"紧固计划",@"调整计划",@"更换计划"]andNormalAttri:@{@"color":kUIColorFromRGB(0x808080),@"font":[UIFont systemFontOfSize:15]} andHighlightAttri:@{@"color":MAIN_THEME_COLOR,@"font":[UIFont systemFontOfSize:15]} andIsAverageDivision:false];
         [_titleView.sepLine removeFromSuperview];
         
         __weak typeof(self) weakSelf = self;

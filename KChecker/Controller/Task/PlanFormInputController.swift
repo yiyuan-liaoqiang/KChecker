@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class PlanFormInputController: BaseFormViewController {
     var checkId:AnyObject!
@@ -29,7 +30,6 @@ class PlanFormInputController: BaseFormViewController {
                 return value.size(with: UIFont.systemFont(ofSize: 15), constrainedTo: CGSize(width: .MAIN_SCREEN_WIDTH-30, height: 10000)).height + 42
             }
             return 50;
-            
         }
         else {
             return super.tableView(tableView, heightForRowAt: indexPath)
@@ -56,7 +56,28 @@ class PlanFormInputController: BaseFormViewController {
             }
         }, failure: { (err) in
             ActivityIndicatorManager.hideActivityIndicator(in: self.view)
-            ProgressHUD.showMessage(err as? String)
+            if let error = err as? NSError {
+                if error.code == -1009 || error.code == -1004 {
+                    //The Internet connection appears to be offline.
+                    ProgressHUD.showMessage("网络连接中断，已将请求缓存在本地，待有网络再次提交")
+                    var localRequest:[String:JSON]?
+                    do {
+                        localRequest = try YYNCache.requestStorage?.object(forKey: "request").dictionaryValue
+                    }
+                    catch {
+                        localRequest = [String:JSON]()
+                    }
+                    param!["localTitle"] = "点检填报"
+                    localRequest?["http://106.12.101.46:9094/facility/check"] = JSON(param ?? [:])
+                    try? YYNCache.requestStorage?.setObject(JSON(localRequest!), forKey: "request")
+                }
+                else {
+                    ProgressHUD.showMessage(error.localizedDescription)
+                }
+            }
+            else {
+                ProgressHUD.showMessage(err as? String)
+            }
         })
     }
 }

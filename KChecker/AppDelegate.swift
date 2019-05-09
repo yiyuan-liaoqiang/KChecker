@@ -11,13 +11,6 @@ import CloudPushSDK
 import SwiftyJSON
 import UserNotifications
 
-/*
- 加载所有html文件的base
- 网络请求封装，失败返回
- 系统nav
- 会话-翻译，多选，删除
- mvvm
- */
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDelegate {
     
@@ -68,7 +61,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        ResendRequest().resendRequest()
     }
 
     func applicationWillTerminate(_ application: UIApplication) {

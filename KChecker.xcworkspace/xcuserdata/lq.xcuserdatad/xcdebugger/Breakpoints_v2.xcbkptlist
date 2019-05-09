@@ -42,7 +42,7 @@
                   moduleName = "KChecker"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/lq/Desktop/%E4%B8%AD%E4%B9%85/KChecker/KChecker/Controller/Base/BaseFormViewController.swift"
-                  timestampString = "578844619.5203249"
+                  timestampString = "579063372.497905"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "250"
@@ -57,7 +57,7 @@
                   moduleName = "KChecker"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/lq/Desktop/%E4%B8%AD%E4%B9%85/KChecker/KChecker/Controller/Base/BaseFormViewController.swift"
-                  timestampString = "578844619.5221471"
+                  timestampString = "579063372.5002019"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "249"
@@ -65,38 +65,6 @@
                   offsetFromSymbolStart = "129">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "KChecker/Controller/Task/PlanFormInputController.swift"
-            timestampString = "578843444.996205"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "publish()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "KChecker/Controller/Task/PlanFormInputController.swift"
-            timestampString = "578843444.996684"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "publish()"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -138,7 +106,7 @@
                   moduleName = "KChecker"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/lq/Desktop/%E4%B8%AD%E4%B9%85/KChecker/KChecker/Controller/Mine/DetailController/CheckViewController.swift"
-                  timestampString = "578844619.535799"
+                  timestampString = "579063372.555383"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "68"
@@ -153,7 +121,7 @@
                   moduleName = "KChecker"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/lq/Desktop/%E4%B8%AD%E4%B9%85/KChecker/KChecker/Controller/Mine/DetailController/CheckViewController.swift"
-                  timestampString = "578844619.537347"
+                  timestampString = "579063372.55767"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "70"
@@ -161,6 +129,102 @@
                   offsetFromSymbolStart = "28">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KChecker/Controller/Task/PlanFormInputController.swift"
+            timestampString = "579063372.264954"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "publish()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KChecker/Utils/ResendRequest.swift"
+            timestampString = "579063372.265417"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "resendRequest()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; () in KChecker.ResendRequest.resendRequest() -&gt; ()"
+                  moduleName = "KChecker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lq/Desktop/%E4%B8%AD%E4%B9%85/KChecker/KChecker/Utils/ResendRequest.swift"
+                  timestampString = "579063372.580541"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "563">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Any&gt;) -&gt; () in closure #1 (Swift.String) -&gt; () in KChecker.ResendRequest.resendRequest() -&gt; ()"
+                  moduleName = "KChecker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lq/Desktop/%E4%B8%AD%E4%B9%85/KChecker/KChecker/Utils/ResendRequest.swift"
+                  timestampString = "579063372.582981"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "317">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KChecker/Utils/ResendRequest.swift"
+            timestampString = "579063385.952229"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "resendRequest()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KChecker/Utils/ResendRequest.swift"
+            timestampString = "579063387.684399"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "resendRequest()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
