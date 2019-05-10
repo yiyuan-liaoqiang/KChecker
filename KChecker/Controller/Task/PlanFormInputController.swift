@@ -68,6 +68,7 @@ class PlanFormInputController: BaseFormViewController {
                         localRequest = [String:JSON]()
                     }
                     param!["localTitle"] = "点检填报"
+                    param!["style"] = "AFJSONRequestSerializer"
                     localRequest?["http://106.12.101.46:9094/facility/check"] = JSON(param ?? [:])
                     try? YYNCache.requestStorage?.setObject(JSON(localRequest!), forKey: "request")
                 }

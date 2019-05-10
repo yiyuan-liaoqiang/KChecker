@@ -24,13 +24,7 @@ class MyConst: NSObject {
     
     static func NAV_BAR_HEIGHT()->CGFloat
     {
-        if (UIScreen.main.bounds.size.height==812 || UIScreen.main.bounds.size.height==896) {
-            return 88;
-        }
-        else
-        {
-            return 64;
-        }
+        return UIApplication.shared.statusBarFrame.height + 44
     }
     
     static func TAB_BAR_HEIGHT() ->CGFloat

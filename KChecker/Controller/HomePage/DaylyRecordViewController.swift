@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class DaylyRecordViewController: BaseFormViewController {
 
@@ -22,7 +23,7 @@ class DaylyRecordViewController: BaseFormViewController {
     }
     
     @objc func publish(){
-        let param = CommonCellUtil.paramWithArray(models: self.dataArray as! [CommonCellDataModel])
+        var param = CommonCellUtil.paramWithArray(models: self.dataArray as! [CommonCellDataModel])
         let session = YYNSessionManager.default()
         session?.requestSerializer = AFJSONRequestSerializer()
         ActivityIndicatorManager.showActivityIndicator(in: self.view)
@@ -35,8 +36,30 @@ class DaylyRecordViewController: BaseFormViewController {
                 }
             }
         }, failure: { (err) in
+            if let error = err as? NSError {
+                if error.code == -1009 || error.code == -1004 {
+                    //The Internet connection appears to be offline.
+                    ProgressHUD.showMessage("网络连接中断，已将请求缓存在本地，待有网络再次提交")
+                    var localRequest:[String:JSON]?
+                    do {
+                        localRequest = try YYNCache.requestStorage?.object(forKey: "request").dictionaryValue
+                    }
+                    catch {
+                        localRequest = [String:JSON]()
+                    }
+                    param!["localTitle"] = "日报填写"
+                    param!["style"] = "AFJSONRequestSerializer"
+                    localRequest?["http://106.12.101.46:9094/day/report"] = JSON(param ?? [:])
+                    try? YYNCache.requestStorage?.setObject(JSON(localRequest!), forKey: "request")
+                }
+                else {
+                    ProgressHUD.showMessage(error.localizedDescription)
+                }
+            }
+            else {
+                ProgressHUD.showMessage(err as? String)
+            }
             ActivityIndicatorManager.hideActivityIndicator(in: self.view)
-            ProgressHUD.showMessage(err as? String)
         })
     }
 

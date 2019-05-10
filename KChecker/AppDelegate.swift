@@ -61,7 +61,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
-        ResendRequest().resendRequest()
+        
+        ResendRequest.shared.resendRequest()
     }
 
     func applicationWillTerminate(_ application: UIApplication) {

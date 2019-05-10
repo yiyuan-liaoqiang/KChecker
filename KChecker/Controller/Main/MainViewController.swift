@@ -13,7 +13,7 @@ class MainViewController: UITabBarController {
     var tabbarArray:Array<[String:String]>!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         let filePath = CommonUtils.bundlePathWithFileName(fileName: "WorkFinderTabbar.plist")
         self.tabbarArray = NSArray(contentsOfFile: filePath) as? Array<[String : String]>
         

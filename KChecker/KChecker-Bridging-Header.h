@@ -15,3 +15,4 @@
 #import "SettingTableViewController.h"
 #import "PushUtils.h"
 #import "NSString+CalculateSize.h"
+#import "Reachability.h"
