@@ -94,7 +94,10 @@
 //获取当前设备点检计划
 - (void)getPlan {
     //
-    NSString *urlString = [NSString stringWithFormat:@"http://111.229.39.85:9094/facility/%@/plan/check",self.baseData[@"facilityId"]];
+    NSString *urlString = [NSString stringWithFormat:@"http://111.229.39.85:9094/v2/facility/%@/plan/check",self.baseData[@"facilityId"]];
+    NSString * nickname = [urlString stringByAddingPercentEncodingWithAllowedCharacters:NSCharacterSet.letterCharacterSet];
+    NSLog(@"%@",nickname);
+
     [ActivityIndicatorManager showActivityIndicatorInView:self.view];
     [YYNSessionManager.defaultSessionManager method:@"get" URLString:urlString andParams:nil andHttpHeaders:nil success:^(id ret) {
         self.model = [JsonStringTransfer dictionary:ret ToModel:@"CheckUPModel"];
