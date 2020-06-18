@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
         if AccountHelper.isLogin {
             self.nav = UINavigationController(rootViewController: MainViewController())
             self.nav.toolbar.isHidden = true
-            
+
             //推送
             PushUtils.shared().registerAPNS(application)
             //绑定账号到阿里云推送
@@ -62,7 +62,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         
-        ResendRequest.shared.resendRequest()
+//        ResendRequest.shared.resendRequest()
     }
 
     func applicationWillTerminate(_ application: UIApplication) {

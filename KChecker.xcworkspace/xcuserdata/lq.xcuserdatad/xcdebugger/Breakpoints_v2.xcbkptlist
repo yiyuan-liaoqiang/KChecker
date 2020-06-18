@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
+   uuid = "D73E920E-6F9D-4C60-958E-E91195D5C805"
    type = "0"
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            uuid = "6A916F9D-2BA9-40EF-A0D0-DF4A54AD11B6"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -22,6 +24,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            uuid = "299B0969-EF22-4D5F-93BF-812402212555"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -35,6 +38,7 @@
             landmarkType = "7">
             <Locations>
                <Location
+                  uuid = "299B0969-EF22-4D5F-93BF-812402212555 - c65475b11bf89b9c"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -42,14 +46,14 @@
                   moduleName = "KChecker"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/lq/Desktop/%E4%B8%AD%E4%B9%85/KChecker/KChecker/Controller/Base/BaseFormViewController.swift"
-                  timestampString = "579148091.194373"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "250"
                   endingLineNumber = "250"
-                  offsetFromSymbolStart = "202">
+                  offsetFromSymbolStart = "208">
                </Location>
                <Location
+                  uuid = "299B0969-EF22-4D5F-93BF-812402212555 - 591f8b9cb2e0cb1b"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -57,12 +61,11 @@
                   moduleName = "KChecker"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/lq/Desktop/%E4%B8%AD%E4%B9%85/KChecker/KChecker/Controller/Base/BaseFormViewController.swift"
-                  timestampString = "579148091.197109"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "249"
                   endingLineNumber = "249"
-                  offsetFromSymbolStart = "129">
+                  offsetFromSymbolStart = "115">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -70,6 +73,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            uuid = "0198343C-1C1B-4E44-B15C-55EBCCD0E6BC"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -86,49 +90,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            uuid = "E172123D-F535-4D89-BF01-6C53BE5E3D89"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "KChecker/Controller/Mine/DetailController/CheckViewController.swift"
-            timestampString = "578844619.212532"
+            filePath = "KChecker/Controller/Task/PlanFormInputController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "reloadData()"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "publish()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "KChecker.CheckViewController.reloadData() -&gt; ()"
-                  moduleName = "KChecker"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/lq/Desktop/%E4%B8%AD%E4%B9%85/KChecker/KChecker/Controller/Mine/DetailController/CheckViewController.swift"
-                  timestampString = "579148091.208553"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "68"
-                  endingLineNumber = "68"
-                  offsetFromSymbolStart = "1961">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Any&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in KChecker.CheckViewController.reloadData() -&gt; ()"
-                  moduleName = "KChecker"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/lq/Desktop/%E4%B8%AD%E4%B9%85/KChecker/KChecker/Controller/Mine/DetailController/CheckViewController.swift"
-                  timestampString = "579148091.211117"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "70"
-                  endingLineNumber = "70"
-                  offsetFromSymbolStart = "28">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

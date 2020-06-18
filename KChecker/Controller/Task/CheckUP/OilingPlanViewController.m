@@ -92,7 +92,7 @@
 //获取当前设备润滑计划
 - (void)oilingPlan
 {
-    NSString *urlString = [NSString stringWithFormat:@"http://111.229.39.85:9094/facility/%@/plan/lubrication",self.baseData[@"facilityId"]];
+    NSString *urlString = [NSString stringWithFormat:@"http://111.229.39.85:9094/v2/facility/%@/plan/lubrication",self.baseData[@"facilityId"]];
     [YYNSessionManager.defaultSessionManager method:@"get" URLString:urlString andParams:nil andHttpHeaders:nil success:^(id ret) {
         self.model = [JsonStringTransfer dictionary:ret ToModel:@"CheckUPModel"];
         [self setupTableView];

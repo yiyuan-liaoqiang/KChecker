@@ -25,6 +25,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong)NSArray<StandardListModel *> *standards;
 
+//new
+@property (nonatomic, strong)NSString *partName;
+
+@property (nonatomic, strong)NSString *contentId;
+
+@property (nonatomic, assign)NSInteger type;
+
+@property (nonatomic, strong)NSString *componentName;
+
+
 @end
 
 @interface StandardListModel : NSObject

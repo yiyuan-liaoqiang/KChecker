@@ -14,8 +14,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
-@property (weak, nonatomic) IBOutlet UILabel *modelLabel;
-@property (weak, nonatomic) IBOutlet UILabel *cycleLabel;
 
 @property (nonatomic, strong)CheckUPModel *model;
 

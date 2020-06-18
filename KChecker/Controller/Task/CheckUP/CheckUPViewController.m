@@ -13,8 +13,7 @@
 @interface CheckUPViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong)UITableView *tableView;
-@property (nonatomic, strong)CheckUPModel *model;
-
+@property (nonatomic, strong)NSArray<CheckUPModel *> *dataArray;
 @end
 
 @implementation CheckUPViewController
@@ -34,38 +33,21 @@
 }
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    if (indexPath.section == 0) {
-        CheckUPDeviceInfoCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell1"];
-        cell.model = self.model;
-        return cell;
-    }
-    else {
-        CheckUPStandardsCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell2"];
-        cell.model = self.model.standards[indexPath.row];
-        return cell;
-    }
-}
-
-- (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    if (section == 0) {
-        return 1;
-    }
-    return self.model.standards.count;
+    CheckUPDeviceInfoCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell1"];
+    cell.model = self.dataArray[indexPath.section];
+    return cell;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 2;
+    return self.dataArray.count;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.section == 0) {
-        return 85;
-    }
-    return self.model.standards[indexPath.row].height;
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 1;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 0.01;
+    return 10;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
@@ -73,10 +55,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-    if (section == 0) {
-        return 26;
-    }
-    return 0.01;
+    return 10;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
@@ -88,19 +67,17 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    [YYRoute pushToController:@"PlanFormInputController" data:@{@"model":self.model.standards[indexPath.row],@"checkId":@(self.model.checkId)}];
+//    [YYRoute pushToController:@"PlanFormInputController" data:@{@"model":self.model.standards[indexPath.row],@"checkId":@(self.model.checkId)}];
 }
 
 //获取当前设备点检计划
 - (void)getPlan {
     //
     NSString *urlString = [NSString stringWithFormat:@"http://111.229.39.85:9094/v2/facility/%@/plan/check",self.baseData[@"facilityId"]];
-    NSString * nickname = [urlString stringByAddingPercentEncodingWithAllowedCharacters:NSCharacterSet.letterCharacterSet];
-    NSLog(@"%@",nickname);
 
     [ActivityIndicatorManager showActivityIndicatorInView:self.view];
     [YYNSessionManager.defaultSessionManager method:@"get" URLString:urlString andParams:nil andHttpHeaders:nil success:^(id ret) {
-        self.model = [JsonStringTransfer dictionary:ret ToModel:@"CheckUPModel"];
+        self.dataArray = [JsonStringTransfer dictionaryArray:ret ToModelArray:@"CheckUPModel"];
         [self setupTableView];
         [ActivityIndicatorManager hideActivityIndicatorInView:self.view];
     } failure:^(id error) {
@@ -113,6 +90,7 @@
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, MAIN_SCREEN_WIDTH, MAIN_SCREEN_HEIGHT) style:UITableViewStyleGrouped];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    self.tableView.rowHeight = 70;
     [self.tableView registerNib:[UINib nibWithNibName:@"CheckUPDeviceInfoCell" bundle:nil] forCellReuseIdentifier:@"cell1"];
     [self.tableView registerNib:[UINib nibWithNibName:@"CheckUPStandardsCell" bundle:nil] forCellReuseIdentifier:@"cell2"];
     self.tableView.separatorStyle = UITableViewCellSelectionStyleNone;

@@ -13,6 +13,7 @@
 
 - (void)method:(NSString *)method URLString:(NSString *)urlStr andParams:(NSDictionary *)params andHttpHeaders:(NSDictionary *)headers success:(success)success failure:(failure)failure
 {
+    urlStr = [urlStr stringByReplacingOccurrencesOfString:@"#" withString:@"%23"];
     params = [self handleParams:params andUrlStr:urlStr];
     if(self.timeOutTime == 0)
         self.requestSerializer.timeoutInterval = 25;

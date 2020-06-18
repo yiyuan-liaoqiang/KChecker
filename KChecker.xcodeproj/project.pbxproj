@@ -93,6 +93,7 @@
 		0990C9DD226CAFF900276373 /* NSObject+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0990C9DC226CAFF900276373 /* NSObject+Utils.m */; };
 		0990C9E2226CB13000276373 /* MultipleInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0990C9E1226CB13000276373 /* MultipleInputCell.swift */; };
 		0990C9E4226CB17D00276373 /* MultipleInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0990C9E3226CB17D00276373 /* MultipleInputCell.xib */; };
+		0991183A249BC265002C6D3B /* selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 09911839249BC265002C6D3B /* selected.png */; };
 		0997AD7C2280725300301CEF /* UIView+NoDataWarning.m in Sources */ = {isa = PBXBuildFile; fileRef = 0997AD7A2280725200301CEF /* UIView+NoDataWarning.m */; };
 		09A476E5226AE13600C5F922 /* HandyJson+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A476E4226AE13600C5F922 /* HandyJson+Extension.swift */; };
 		09B7F440226A231D0096F056 /* DMLazyScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B7F43E226A231D0096F056 /* DMLazyScrollView.m */; };
@@ -236,6 +237,7 @@
 		0990C9DC226CAFF900276373 /* NSObject+Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Utils.m"; sourceTree = "<group>"; };
 		0990C9E1226CB13000276373 /* MultipleInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleInputCell.swift; sourceTree = "<group>"; };
 		0990C9E3226CB17D00276373 /* MultipleInputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MultipleInputCell.xib; sourceTree = "<group>"; };
+		09911839249BC265002C6D3B /* selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selected.png; sourceTree = "<group>"; };
 		0997AD7A2280725200301CEF /* UIView+NoDataWarning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NoDataWarning.m"; sourceTree = "<group>"; };
 		0997AD7B2280725200301CEF /* UIView+NoDataWarning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NoDataWarning.h"; sourceTree = "<group>"; };
 		09A476E3226AC89500C5F922 /* KChecker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KChecker.entitlements; sourceTree = "<group>"; };
@@ -489,6 +491,7 @@
 		0940C9C0221D247500C7697B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				09911839249BC265002C6D3B /* selected.png */,
 				0940CA02221D350E00C7697B /* Plist */,
 				0940C9C4221D309800C7697B /* image */,
 				0940C9C1221D247E00C7697B /* H5 */,
@@ -911,6 +914,7 @@
 				09483FB6221EA931002D4937 /* 日报@2x.png in Resources */,
 				0922CE40226A15F10042A220 /* AliyunEmasServices-Info.plist in Resources */,
 				0990C9D5226C7E7400276373 /* PlanFormInput.plist in Resources */,
+				0991183A249BC265002C6D3B /* selected.png in Resources */,
 				0940CA0E221D609300C7697B /* Mine.plist in Resources */,
 				09B7F449226A2D6E0096F056 /* CheckUPDeviceInfoCell.xib in Resources */,
 				0940C9C3221D249C00C7697B /* Login.html in Resources */,
@@ -1228,9 +1232,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = KChecker/KChecker.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = WCYQSY2P5P;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XXN3Q49J5H;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/KChecker/ThirdParties/OneSDK",
@@ -1241,9 +1245,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.KChecker.liaoqiang;
+				PRODUCT_BUNDLE_IDENTIFIER = com.KChecker.liaoqiang1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = KChecker;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/KChecker-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1270,7 +1274,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.KChecker.liaoqiang;
+				PRODUCT_BUNDLE_IDENTIFIER = com.KChecker.liaoqiang1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "kchecker-hd";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/KChecker-Bridging-Header.h";
