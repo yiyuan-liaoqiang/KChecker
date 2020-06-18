@@ -27,6 +27,7 @@ class TitleValueTableViewCell: CommonBaseCell {
         }
         else if (model.placeholder != nil)
         {
+            self.valueTf.text = ""
             self.valueTf.placeholder = model.placeholder;
         }
         

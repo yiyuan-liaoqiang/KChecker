@@ -25,6 +25,9 @@ class AccountHelper: NSObject {
                 token = try YYNCache.userRelatedStorage?.object(forKey: "token").string
             }
             catch {
+                
+            }
+            if token == nil {
                 token = ""
             }
             return token!
@@ -110,7 +113,7 @@ class AccountHelper: NSObject {
             }
             callback(nil, ret0?["data"])
         }, failure: { (error) in
-            callback(error as? String, nil)
+            callback("登录失败！", nil)
         })
     }
     
@@ -158,7 +161,7 @@ class AccountHelper: NSObject {
     
     //user info
     static func userInfo(_ param:Dictionary<String,AnyObject>,_ callback:@escaping ((_ err:String?,_ ret:AnyObject?)->())){
-        YYNSessionManager.default()?.method("get", urlString: "http://106.12.101.46:9094/user", andParams: param, andHttpHeaders: nil, success: { (ret) in
+        YYNSessionManager.default()?.method("get", urlString: "http://111.229.39.85:9094/user", andParams: param, andHttpHeaders: nil, success: { (ret) in
             if let ret = ret as? [String:AnyObject] {
                 let json = JSON(ret)
                 try? YYNCache.userRelatedStorage?.setObject(json, forKey: "userInfo")

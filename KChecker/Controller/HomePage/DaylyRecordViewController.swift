@@ -24,10 +24,13 @@ class DaylyRecordViewController: BaseFormViewController {
     
     @objc func publish(){
         var param = CommonCellUtil.paramWithArray(models: self.dataArray as! [CommonCellDataModel])
+        guard param != nil else {
+            return
+        }
         let session = YYNSessionManager.default()
         session?.requestSerializer = AFJSONRequestSerializer()
         ActivityIndicatorManager.showActivityIndicator(in: self.view)
-        session?.method("post", urlString: "http://106.12.101.46:9094/day/report", andParams: param, andHttpHeaders: [:], success: { (ret) in
+        session?.method("post", urlString: "http://111.229.39.85:9094/day/report", andParams: param, andHttpHeaders: [:], success: { (ret) in
             ActivityIndicatorManager.hideActivityIndicator(in: self.view)
             if let ret = ret as? [String:Any] {
                 ProgressHUD.showMessage(ret["msg"] as? String)
@@ -49,7 +52,7 @@ class DaylyRecordViewController: BaseFormViewController {
                     }
                     param!["localTitle"] = "日报填写"
                     param!["style"] = "AFJSONRequestSerializer"
-                    localRequest?["http://106.12.101.46:9094/day/report"] = JSON(param ?? [:])
+                    localRequest?["http://111.229.39.85:9094/day/report"] = JSON(param ?? [:])
                     try? YYNCache.requestStorage?.setObject(JSON(localRequest!), forKey: "request")
                 }
                 else {

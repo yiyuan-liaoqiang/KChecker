@@ -46,7 +46,7 @@ class PlanFormInputController: BaseFormViewController {
         let session = YYNSessionManager.default()
         session?.requestSerializer = AFJSONRequestSerializer()
         ActivityIndicatorManager.showActivityIndicator(in: self.view)
-        session?.method("post", urlString: "http://106.12.101.46:9094/facility/check", andParams: param, andHttpHeaders: [:], success: { (ret) in
+        session?.method("post", urlString: "http://111.229.39.85:9094/facility/check", andParams: param, andHttpHeaders: [:], success: { (ret) in
             ActivityIndicatorManager.hideActivityIndicator(in: self.view)
             if let ret = ret as? [String:Any] {
                 ProgressHUD.showMessage(ret["msg"] as? String)
@@ -69,7 +69,7 @@ class PlanFormInputController: BaseFormViewController {
                     }
                     param!["localTitle"] = "点检填报"
                     param!["style"] = "AFJSONRequestSerializer"
-                    localRequest?["http://106.12.101.46:9094/facility/check"] = JSON(param ?? [:])
+                    localRequest?["http://111.229.39.85:9094/facility/check"] = JSON(param ?? [:])
                     try? YYNCache.requestStorage?.setObject(JSON(localRequest!), forKey: "request")
                 }
                 else {
