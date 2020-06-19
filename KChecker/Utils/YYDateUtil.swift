@@ -51,6 +51,7 @@ class YYDateUtil: NSObject {
         
         let formatter = DateFormatter()
         formatter.dateFormat = formatStyle
-        return formatter.date(from: dateStr)!
+        let date = formatter.date(from: dateStr)
+        return date!
     }
 }

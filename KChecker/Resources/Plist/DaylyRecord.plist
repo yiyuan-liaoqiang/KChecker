@@ -60,26 +60,6 @@
 		<string>1</string>
 	</dict>
 	<dict>
-		<key>showSepLine</key>
-		<true/>
-		<key>title</key>
-		<string>填报组件</string>
-		<key>type</key>
-		<string>title_value</string>
-		<key>placeholder</key>
-		<string>请选择</string>
-		<key>enable</key>
-		<false/>
-		<key>showAccessory</key>
-		<true/>
-		<key>serverValue</key>
-		<string>10</string>
-		<key>serverKey</key>
-		<string>componentId</string>
-		<key>required</key>
-		<string>1</string>
-	</dict>
-	<dict>
 		<key>title</key>
 		<string>开始时间</string>
 		<key>showSepLine</key>
@@ -120,6 +100,66 @@
 		<string>selectTime</string>
 		<key>format</key>
 		<string>3</string>
+		<key>required</key>
+		<string>1</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>设备名称</string>
+		<key>type</key>
+		<string>title_value_v</string>
+		<key>showSepLine</key>
+		<true/>
+		<key>placeholder</key>
+		<string>设备名称</string>
+		<key>enable</key>
+		<true/>
+		<key>showAccessory</key>
+		<false/>
+		<key>serverKey</key>
+		<string>facilityName</string>
+		<key>selectStyle</key>
+		<string>none</string>
+		<key>required</key>
+		<string>1</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>部件名称</string>
+		<key>type</key>
+		<string>title_value_v</string>
+		<key>showSepLine</key>
+		<true/>
+		<key>placeholder</key>
+		<string>部件名称</string>
+		<key>enable</key>
+		<true/>
+		<key>showAccessory</key>
+		<false/>
+		<key>serverKey</key>
+		<string>componentName</string>
+		<key>selectStyle</key>
+		<string>none</string>
+		<key>required</key>
+		<string>1</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>部位名称</string>
+		<key>type</key>
+		<string>title_value_v</string>
+		<key>showSepLine</key>
+		<true/>
+		<key>placeholder</key>
+		<string>部位名称</string>
+		<key>enable</key>
+		<true/>
+		<key>showAccessory</key>
+		<false/>
+		<key>serverKey</key>
+		<string>partName</string>
+		<key>selectStyle</key>
+		<string>none</string>
 		<key>required</key>
 		<string>1</string>
 	</dict>

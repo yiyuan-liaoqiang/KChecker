@@ -32,6 +32,7 @@ class MainViewController: UITabBarController {
         }
         self.viewControllers = controllers
         self.title = self.tabbarArray.first!["title"]
+        self.navigationItem.setHidesBackButton(true, animated: false)
         
     }
     
