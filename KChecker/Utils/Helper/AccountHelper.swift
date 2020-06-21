@@ -91,6 +91,48 @@ class AccountHelper: NSObject {
         })
     }
     
+    //获取紧固记录列表
+    
+    static func fastenList(_ param:Dictionary<String,AnyObject>,_ callback:@escaping ((_ err:String?,_ ret:AnyObject?)->())){
+        YYNSessionManager.default()?.method("get", urlString: "fasten/history", andParams: param, andHttpHeaders: nil, success: { (ret) in
+            guard let data = ret as? [AnyObject] else {
+                callback("请求失败", nil)
+                return
+            }
+            callback(nil, data as AnyObject)
+        }, failure: { (error) in
+            callback(error as? String, nil)
+        })
+    }
+    
+    //获取调整记录列表
+    
+    static func adjustList(_ param:Dictionary<String,AnyObject>,_ callback:@escaping ((_ err:String?,_ ret:AnyObject?)->())){
+        YYNSessionManager.default()?.method("get", urlString: "adjust/history", andParams: param, andHttpHeaders: nil, success: { (ret) in
+            guard let data = ret as? [AnyObject] else {
+                callback("请求失败", nil)
+                return
+            }
+            callback(nil, data as AnyObject)
+        }, failure: { (error) in
+            callback(error as? String, nil)
+        })
+    }
+    
+    //获取调整记录列表
+    
+    static func replaceList(_ param:Dictionary<String,AnyObject>,_ callback:@escaping ((_ err:String?,_ ret:AnyObject?)->())){
+        YYNSessionManager.default()?.method("get", urlString: "replace/history", andParams: param, andHttpHeaders: nil, success: { (ret) in
+            guard let data = ret as? [AnyObject] else {
+                callback("请求失败", nil)
+                return
+            }
+            callback(nil, data as AnyObject)
+        }, failure: { (error) in
+            callback(error as? String, nil)
+        })
+    }
+    
     //    获取当前设备点检计划
     static func checkProject(_ param:Dictionary<String,AnyObject>,_ callback:@escaping ((_ err:String?,_ ret:AnyObject?)->())){
         YYNSessionManager.default()?.method("get", urlString: "facility/{facilityId}/plan/check", andParams: param, andHttpHeaders: nil, success: { (ret) in

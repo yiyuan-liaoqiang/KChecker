@@ -31,6 +31,7 @@ inhibit_all_warnings!
     pod "HandyJSON",'5.0.0-beta'
     pod "EGOImageLoading","0.0.1"
     pod "Masonry","1.1.0"
+    pod "SDWebImage"
     
 #   A UITextView subclass that adds support for multiline placeholder written in swift
     pod "KMPlaceholderTextView","1.4.0"

@@ -282,7 +282,7 @@ class BaseFormViewController: BaseViewController,UITableViewDelegate,UITableView
     }
     
     func setupTableView() {
-        self.tableView = UITableView(frame: CGRect(x: 0, y: MyConst.NAV_BAR_HEIGHT(), width: MyConst.MAIN_SCREEN_WIDTH, height: MyConst.MAIN_SCREEN_HEIGHT-MyConst.NAV_BAR_HEIGHT()), style: .plain)
+        self.tableView = UITableView(frame: CGRect(x: 0, y: MyConst.NAV_BAR_HEIGHT(), width: MyConst.MAIN_SCREEN_WIDTH, height: MyConst.MAIN_SCREEN_HEIGHT-MyConst.NAV_BAR_HEIGHT()-MyConst.TAB_BAR_HEIGHT()), style: .plain)
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.separatorStyle = .none

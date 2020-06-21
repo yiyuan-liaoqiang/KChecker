@@ -16,6 +16,7 @@
 {
     DMLazyScrollView *_lazyScrollView;
     NSMutableArray *_viewControllerArray;
+    NSArray *categorys;
 }
 @property (nonatomic, strong)TitleIndexView *titleView;
 
@@ -34,6 +35,7 @@
     // Do any additional setup after loading the view.
     self.title = self.baseData[@"facilityName"];
     [self.view addSubview:self.titleView];
+    categorys = @[@"check",@"lubrication",@"fasten",@"adjust",@"replace"];
     [self lazyViewInital];
 }
 
@@ -77,12 +79,13 @@
     if (res == [NSNull null])
     {
         BaseOCViewController *vc;
-        if (index == 0) {
+//        if (index == 0) {
             vc = [[CheckUPViewController alloc] init];
-        }
-        else {
-            vc = [[OilingPlanViewController alloc] init];
-        }
+        ((CheckUPViewController *)vc).category = categorys[index];
+//        }
+//        else {
+//            vc = [[OilingPlanViewController alloc] init];
+//        }
         [vc setValue:self.baseData forKey:@"baseData"];
         [_viewControllerArray replaceObjectAtIndex:index withObject:vc];
         return vc;

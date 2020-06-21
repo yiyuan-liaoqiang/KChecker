@@ -9,19 +9,19 @@ import UIKit
 import SwiftyJSON
 
 class PlanFormInputController: BaseFormViewController {
-    var checkId:AnyObject!
     override func viewDidLoad() {
         
         let filePath = CommonUtils.bundlePathWithFileName(fileName: "PlanFormInput.plist")
         self.dataArray = [CommonCellDataModel].deserialize(from: NSArray(contentsOfFile: filePath)) as Array<AnyObject>?
         self.dataModel = self.baseData?["model"] as AnyObject?
-        self.checkId = self.baseData?["checkId"] as AnyObject?
         super.viewDidLoad()
-        self.title = "点检填报"
+        self.title = "设备数据填报"
         self.tableView.separatorStyle = .singleLine
         
         let item = UIBarButtonItem(title: "提交", style: UIBarButtonItem.Style.plain, target: self, action: #selector(publish))
         self.navigationItem.rightBarButtonItem = item
+        
+        getData()
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -35,6 +35,51 @@ class PlanFormInputController: BaseFormViewController {
             return super.tableView(tableView, heightForRowAt: indexPath)
         }
     }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = super.tableView(tableView, cellForRowAt: indexPath)
+        if let c = cell as? PlanInputHeaderCell {
+            if let contentId = self.dataModel?.value(forKey: "contentId") as? String {
+                let key = "planFormInput" + contentId
+                if let value = try? YYNCache.userRelatedStorage?.object(forKey: key) {
+                    c.timeLabel.text = "上一次填报时间：" + (value?.stringValue ?? "")
+                }
+                else {
+                    c.timeLabel.text = "上一次填报时间："
+                }
+            }
+        }
+        return cell
+    }
+    
+    func getData() {
+        if let contentId = self.dataModel?.value(forKey: "contentId") as? String {
+            let url = "http://111.229.39.85:9094/check/" + contentId
+                ActivityIndicatorManager.showActivityIndicator(in: self.view)
+                YYNSessionManager.default().method("get", urlString: url, andParams: [:], andHttpHeaders: [:], success: { (ret) in
+                    if let ret = ret as? [String:Any] {
+                        var r = ret["standard"] as? [String:Any]
+                        if let result = ret["result"] {
+                            r?["result"] = result
+                        }
+                        if let data = ret["data"] {
+                            r?["data"] = data
+                        }
+                        if let judge = ret["judge"] {
+                            r?["judge"] = judge
+                        }
+                        if let state = ret["state"] {
+                            r?["state"] = state
+                        }
+                        CommonCellUtil.setValue(r, self.dataArray)
+                        self.tableView.reloadData()
+                    }
+                    ActivityIndicatorManager.hideActivityIndicator(in: self.view)
+                }, failure: { (err) in
+                    ActivityIndicatorManager.hideActivityIndicator(in: self.view)
+            })
+        }
+    }
         
     @objc func publish(){
         self.view.endEditing(true)
@@ -42,7 +87,13 @@ class PlanFormInputController: BaseFormViewController {
         if param == nil {
             return
         }
-        param!["checkId"] = self.checkId
+        if let contentId = self.dataModel?.value(forKey: "contentId") as? String {
+            param!["contentId"] = contentId
+        }
+        else {
+            return
+        }
+        param!["executeDate"] = Date().timeStrWithFormat(format: "yyyy-MM-dd HH:mm:ss")
         let session = YYNSessionManager.default()
         session?.requestSerializer = AFJSONRequestSerializer()
         ActivityIndicatorManager.showActivityIndicator(in: self.view)
@@ -80,5 +131,13 @@ class PlanFormInputController: BaseFormViewController {
                 ProgressHUD.showMessage(err as? String)
             }
         })
+    }
+    
+    deinit {
+        if let contentId = self.dataModel?.value(forKey: "contentId") as? String {
+            let key = "planFormInput" + contentId
+            let value = Date().timeStrWithFormat(format: "yyyy-MM-dd HH:mm:ss")
+            try? YYNCache.userRelatedStorage?.setObject(JSON(value), forKey: key)
+        }
     }
 }

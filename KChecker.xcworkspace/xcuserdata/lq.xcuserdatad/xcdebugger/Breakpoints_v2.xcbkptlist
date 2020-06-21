@@ -73,33 +73,48 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "0198343C-1C1B-4E44-B15C-55EBCCD0E6BC"
+            uuid = "DADA8332-BFD8-4009-A444-BDB8EA455313"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "KChecker/Utils/Common/CommonCellUtil.swift"
-            timestampString = "578029265.770509"
+            filePath = "KChecker/Controller/Task/CheckUP/OilingPlanViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "setValue(_:_:)"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "-oilingPlan"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E172123D-F535-4D89-BF01-6C53BE5E3D89"
+            uuid = "0CD37C19-DAED-47EC-A5F0-AE036B5840FF"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "KChecker/Controller/Task/PlanFormInputController.swift"
+            filePath = "KChecker/Controller/Task/FastenInputViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
             landmarkName = "publish()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DD0AB5E8-44FC-45FD-8E6A-D5C242590BA3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KChecker/Controller/Task/AdjustFormInputController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "getData()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -67,6 +67,13 @@
 		0940CA16221D647E00C7697B /* MineHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0940CA14221D647E00C7697B /* MineHeaderCell.xib */; };
 		09434FFC226810E4000A7777 /* CGFloat+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09434FFB226810E4000A7777 /* CGFloat+Utils.swift */; };
 		09434FFE22681985000A7777 /* Array+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09434FFD22681985000A7777 /* Array+Utils.swift */; };
+		09449465249F2C2100C04C5B /* PlanInputHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09449463249F2C2100C04C5B /* PlanInputHeaderCell.swift */; };
+		09449466249F2C2100C04C5B /* PlanInputHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09449464249F2C2100C04C5B /* PlanInputHeaderCell.xib */; };
+		09449468249F3A4E00C04C5B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09449467249F3A4E00C04C5B /* Utils.swift */; };
+		0944946A249F52A200C04C5B /* LubricationInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09449469249F52A200C04C5B /* LubricationInputViewController.swift */; };
+		0944946C249F532200C04C5B /* lubrication.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0944946B249F532100C04C5B /* lubrication.plist */; };
+		0944946E249F5A3E00C04C5B /* FastenInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0944946D249F5A3E00C04C5B /* FastenInputViewController.swift */; };
+		09449470249F5AA100C04C5B /* fasten.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0944946F249F5AA100C04C5B /* fasten.plist */; };
 		09483FB2221EA3DD002D4937 /* HomePage.html in Resources */ = {isa = PBXBuildFile; fileRef = 09483FB1221EA3DD002D4937 /* HomePage.html */; };
 		09483FB5221EA931002D4937 /* 扫一扫@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09483FB3221EA931002D4937 /* 扫一扫@2x.png */; };
 		09483FB6221EA931002D4937 /* 日报@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09483FB4221EA931002D4937 /* 日报@2x.png */; };
@@ -95,6 +102,14 @@
 		0990C9E4226CB17D00276373 /* MultipleInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0990C9E3226CB17D00276373 /* MultipleInputCell.xib */; };
 		0991183A249BC265002C6D3B /* selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 09911839249BC265002C6D3B /* selected.png */; };
 		0997AD7C2280725300301CEF /* UIView+NoDataWarning.m in Sources */ = {isa = PBXBuildFile; fileRef = 0997AD7A2280725200301CEF /* UIView+NoDataWarning.m */; };
+		09A2CF14249F97DC0080CB70 /* AdjustFormInputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2CF13249F97DC0080CB70 /* AdjustFormInputController.swift */; };
+		09A2CF16249F98040080CB70 /* adjustFormInput.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09A2CF15249F98040080CB70 /* adjustFormInput.plist */; };
+		09A2CF18249F9A080080CB70 /* ReplaceFormInputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2CF17249F9A080080CB70 /* ReplaceFormInputController.swift */; };
+		09A2CF1A249F9A360080CB70 /* replaceFormInput.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09A2CF19249F9A360080CB70 /* replaceFormInput.plist */; };
+		09A2CF1C249F9B090080CB70 /* tuxiangimages20.png in Resources */ = {isa = PBXBuildFile; fileRef = 09A2CF1B249F9B080080CB70 /* tuxiangimages20.png */; };
+		09A2CF20249FA2810080CB70 /* ReplaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2CF1D249FA2810080CB70 /* ReplaceViewController.swift */; };
+		09A2CF21249FA2810080CB70 /* AdjustViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2CF1E249FA2810080CB70 /* AdjustViewController.swift */; };
+		09A2CF22249FA2810080CB70 /* FastenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2CF1F249FA2810080CB70 /* FastenViewController.swift */; };
 		09A476E5226AE13600C5F922 /* HandyJson+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A476E4226AE13600C5F922 /* HandyJson+Extension.swift */; };
 		09B7F440226A231D0096F056 /* DMLazyScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B7F43E226A231D0096F056 /* DMLazyScrollView.m */; };
 		09B7F444226A23DB0096F056 /* CheckUPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B7F443226A23DB0096F056 /* CheckUPViewController.m */; };
@@ -204,6 +219,13 @@
 		0940CA14221D647E00C7697B /* MineHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineHeaderCell.xib; sourceTree = "<group>"; };
 		09434FFB226810E4000A7777 /* CGFloat+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Utils.swift"; sourceTree = "<group>"; };
 		09434FFD22681985000A7777 /* Array+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Utils.swift"; sourceTree = "<group>"; };
+		09449463249F2C2100C04C5B /* PlanInputHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanInputHeaderCell.swift; sourceTree = "<group>"; };
+		09449464249F2C2100C04C5B /* PlanInputHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanInputHeaderCell.xib; sourceTree = "<group>"; };
+		09449467249F3A4E00C04C5B /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		09449469249F52A200C04C5B /* LubricationInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LubricationInputViewController.swift; sourceTree = "<group>"; };
+		0944946B249F532100C04C5B /* lubrication.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = lubrication.plist; sourceTree = "<group>"; };
+		0944946D249F5A3E00C04C5B /* FastenInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FastenInputViewController.swift; sourceTree = "<group>"; };
+		0944946F249F5AA100C04C5B /* fasten.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = fasten.plist; sourceTree = "<group>"; };
 		09483FB1221EA3DD002D4937 /* HomePage.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = HomePage.html; sourceTree = "<group>"; };
 		09483FB3221EA931002D4937 /* 扫一扫@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "扫一扫@2x.png"; sourceTree = "<group>"; };
 		09483FB4221EA931002D4937 /* 日报@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "日报@2x.png"; sourceTree = "<group>"; };
@@ -240,6 +262,14 @@
 		09911839249BC265002C6D3B /* selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selected.png; sourceTree = "<group>"; };
 		0997AD7A2280725200301CEF /* UIView+NoDataWarning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NoDataWarning.m"; sourceTree = "<group>"; };
 		0997AD7B2280725200301CEF /* UIView+NoDataWarning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NoDataWarning.h"; sourceTree = "<group>"; };
+		09A2CF13249F97DC0080CB70 /* AdjustFormInputController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdjustFormInputController.swift; sourceTree = "<group>"; };
+		09A2CF15249F98040080CB70 /* adjustFormInput.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = adjustFormInput.plist; sourceTree = "<group>"; };
+		09A2CF17249F9A080080CB70 /* ReplaceFormInputController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplaceFormInputController.swift; sourceTree = "<group>"; };
+		09A2CF19249F9A360080CB70 /* replaceFormInput.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = replaceFormInput.plist; sourceTree = "<group>"; };
+		09A2CF1B249F9B080080CB70 /* tuxiangimages20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tuxiangimages20.png; sourceTree = "<group>"; };
+		09A2CF1D249FA2810080CB70 /* ReplaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplaceViewController.swift; sourceTree = "<group>"; };
+		09A2CF1E249FA2810080CB70 /* AdjustViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdjustViewController.swift; sourceTree = "<group>"; };
+		09A2CF1F249FA2810080CB70 /* FastenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FastenViewController.swift; sourceTree = "<group>"; };
 		09A476E3226AC89500C5F922 /* KChecker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KChecker.entitlements; sourceTree = "<group>"; };
 		09A476E4226AE13600C5F922 /* HandyJson+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HandyJson+Extension.swift"; sourceTree = "<group>"; };
 		09B7F43E226A231D0096F056 /* DMLazyScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMLazyScrollView.m; sourceTree = "<group>"; };
@@ -343,6 +373,7 @@
 				0940C93B221D034800C7697B /* Utils */,
 				0940C92B221CF97F00C7697B /* ViewController.swift */,
 				0940C9F2221D32C300C7697B /* AppDelegate.swift */,
+				09449467249F3A4E00C04C5B /* Utils.swift */,
 				0940C9F8221D343500C7697B /* Definition.pch */,
 				0940C9F7221D334F00C7697B /* KChecker-Bridging-Header.h */,
 				0940C92D221CF97F00C7697B /* Main.storyboard */,
@@ -492,6 +523,7 @@
 			isa = PBXGroup;
 			children = (
 				09911839249BC265002C6D3B /* selected.png */,
+				09A2CF1B249F9B080080CB70 /* tuxiangimages20.png */,
 				0940CA02221D350E00C7697B /* Plist */,
 				0940C9C4221D309800C7697B /* image */,
 				0940C9C1221D247E00C7697B /* H5 */,
@@ -633,7 +665,13 @@
 				0940CA06221D53EE00C7697B /* TaskListCell.xib */,
 				09F26BE22269DA7D00E9DF64 /* TaskDetailViewController.h */,
 				09F26BE32269DA7D00E9DF64 /* TaskDetailViewController.m */,
+				09A2CF17249F9A080080CB70 /* ReplaceFormInputController.swift */,
 				0990C9D9226C849400276373 /* PlanFormInputController.swift */,
+				09A2CF13249F97DC0080CB70 /* AdjustFormInputController.swift */,
+				09449469249F52A200C04C5B /* LubricationInputViewController.swift */,
+				0944946D249F5A3E00C04C5B /* FastenInputViewController.swift */,
+				09449463249F2C2100C04C5B /* PlanInputHeaderCell.swift */,
+				09449464249F2C2100C04C5B /* PlanInputHeaderCell.xib */,
 				0990C9E1226CB13000276373 /* MultipleInputCell.swift */,
 				0990C9E3226CB17D00276373 /* MultipleInputCell.xib */,
 			);
@@ -655,6 +693,10 @@
 		0940CA02221D350E00C7697B /* Plist */ = {
 			isa = PBXGroup;
 			children = (
+				0944946F249F5AA100C04C5B /* fasten.plist */,
+				09A2CF15249F98040080CB70 /* adjustFormInput.plist */,
+				09A2CF19249F9A360080CB70 /* replaceFormInput.plist */,
+				0944946B249F532100C04C5B /* lubrication.plist */,
 				0940CA03221D353400C7697B /* WorkFinderTabbar.plist */,
 				0940CA0D221D609300C7697B /* Mine.plist */,
 				098B79452263272C003B893B /* DaylyRecord.plist */,
@@ -788,6 +830,9 @@
 				BED675F722696F0200591AA2 /* CheckViewController.swift */,
 				BED675F9226973F100591AA2 /* OilingViewController.swift */,
 				BED675FB2269748000591AA2 /* MaintainViewController.swift */,
+				09A2CF1E249FA2810080CB70 /* AdjustViewController.swift */,
+				09A2CF1F249FA2810080CB70 /* FastenViewController.swift */,
+				09A2CF1D249FA2810080CB70 /* ReplaceViewController.swift */,
 				BED675FD2269749000591AA2 /* LogViewController.swift */,
 				BED675FF2269749E00591AA2 /* SettingViewController.swift */,
 				BED6760422699E4600591AA2 /* SettingTableViewController.h */,
@@ -889,9 +934,12 @@
 			files = (
 				BED6760822699F5900591AA2 /* Setting.plist in Resources */,
 				09483FB2221EA3DD002D4937 /* HomePage.html in Resources */,
+				09449466249F2C2100C04C5B /* PlanInputHeaderCell.xib in Resources */,
 				0940C9EF221D323400C7697B /* TitleTextViewTableViewCell.xib in Resources */,
+				09A2CF1A249F9A360080CB70 /* replaceFormInput.plist in Resources */,
 				098B7934226309E6003B893B /* LoginViewController.xib in Resources */,
 				0940CA16221D647E00C7697B /* MineHeaderCell.xib in Resources */,
+				0944946C249F532200C04C5B /* lubrication.plist in Resources */,
 				0940C934221CF98100C7697B /* LaunchScreen.storyboard in Resources */,
 				0940C9C7221D30EA00C7697B /* mima.png in Resources */,
 				09483FB5221EA931002D4937 /* 扫一扫@2x.png in Resources */,
@@ -907,15 +955,18 @@
 				09B7F44E226A2D9E0096F056 /* CheckUPStandardsCell.xib in Resources */,
 				0940C9E7221D323400C7697B /* TitleSwitchTableViewCell.xib in Resources */,
 				0940CA04221D353400C7697B /* WorkFinderTabbar.plist in Resources */,
+				09A2CF16249F98040080CB70 /* adjustFormInput.plist in Resources */,
 				0940CA0C221D5B7400C7697B /* dianj.png in Resources */,
 				0940C9E8221D323400C7697B /* TitleValueTableViewCell.xib in Resources */,
 				0940C9E5221D323400C7697B /* 说明.txt in Resources */,
 				0990C9E4226CB17D00276373 /* MultipleInputCell.xib in Resources */,
+				09A2CF1C249F9B090080CB70 /* tuxiangimages20.png in Resources */,
 				09483FB6221EA931002D4937 /* 日报@2x.png in Resources */,
 				0922CE40226A15F10042A220 /* AliyunEmasServices-Info.plist in Resources */,
 				0990C9D5226C7E7400276373 /* PlanFormInput.plist in Resources */,
 				0991183A249BC265002C6D3B /* selected.png in Resources */,
 				0940CA0E221D609300C7697B /* Mine.plist in Resources */,
+				09449470249F5AA100C04C5B /* fasten.plist in Resources */,
 				09B7F449226A2D6E0096F056 /* CheckUPDeviceInfoCell.xib in Resources */,
 				0940C9C3221D249C00C7697B /* Login.html in Resources */,
 				BECD407E226DAA9B00FFF07C /* OilingStandardsCell.xib in Resources */,
@@ -949,45 +1000,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-KChecker/Pods-KChecker-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
-				"${BUILT_PRODUCTS_DIR}/Cache/Cache.framework",
-				"${BUILT_PRODUCTS_DIR}/EGOCache/EGOCache.framework",
-				"${BUILT_PRODUCTS_DIR}/EGOImageLoading/EGOImageLoading.framework",
-				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
-				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
-				"${BUILT_PRODUCTS_DIR}/JSONKit-NoWarning/JSONKit_NoWarning.framework",
-				"${BUILT_PRODUCTS_DIR}/KMPlaceholderTextView/KMPlaceholderTextView.framework",
-				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
-				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
-				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
-				"${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-				"${BUILT_PRODUCTS_DIR}/UzysAssetsPickerController/UzysAssetsPickerController.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KChecker/Pods-KChecker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cache.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EGOCache.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EGOImageLoading.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONKit_NoWarning.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KMPlaceholderTextView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UzysAssetsPickerController.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KChecker/Pods-KChecker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KChecker/Pods-KChecker-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KChecker/Pods-KChecker-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1019,7 +1041,9 @@
 				BECD4077226D9EFF00FFF07C /* OilingPlanViewController.m in Sources */,
 				0940C95D221D034800C7697B /* ActivityIndicator.swift in Sources */,
 				0940C9B9221D037300C7697B /* BaseViewController.swift in Sources */,
+				09A2CF14249F97DC0080CB70 /* AdjustFormInputController.swift in Sources */,
 				0940C95E221D034800C7697B /* ActivityIndicatorManager.m in Sources */,
+				0944946A249F52A200C04C5B /* LubricationInputViewController.swift in Sources */,
 				098B793B22630D03003B893B /* AccountHelper.swift in Sources */,
 				BED6760622699E4600591AA2 /* SettingTableViewController.m in Sources */,
 				0940C9EB221D323400C7697B /* TitleTextViewTableViewCell.swift in Sources */,
@@ -1039,6 +1063,7 @@
 				09483FD2221EAE92002D4937 /* ECQRCodeScanView.m in Sources */,
 				09434FFE22681985000A7777 /* Array+Utils.swift in Sources */,
 				0940C960221D034800C7697B /* YYDateUtil.swift in Sources */,
+				09A2CF20249FA2810080CB70 /* ReplaceViewController.swift in Sources */,
 				0940C9F1221D323400C7697B /* YYDatePickerView.swift in Sources */,
 				BED675FC2269748000591AA2 /* MaintainViewController.swift in Sources */,
 				0940C9E6221D323400C7697B /* YYAlertController.swift in Sources */,
@@ -1052,15 +1077,19 @@
 				0940CA01221D34D000C7697B /* MineViewController.swift in Sources */,
 				098B795022633E52003B893B /* TitleValueVTableViewCell.swift in Sources */,
 				09B7F440226A231D0096F056 /* DMLazyScrollView.m in Sources */,
+				09449465249F2C2100C04C5B /* PlanInputHeaderCell.swift in Sources */,
 				0940C957221D034800C7697B /* UIColor+Extension.swift in Sources */,
 				09EB079A2283C79000E6B12D /* ResendRequest.swift in Sources */,
+				09A2CF18249F9A080080CB70 /* ReplaceFormInputController.swift in Sources */,
 				09A476E5226AE13600C5F922 /* HandyJson+Extension.swift in Sources */,
+				09A2CF21249FA2810080CB70 /* AdjustViewController.swift in Sources */,
 				0940C9EE221D323400C7697B /* TitleSwitchTableViewCell.swift in Sources */,
 				BEF764EE226DF3E2009237B3 /* FaultModel.m in Sources */,
 				0940C961221D034800C7697B /* ProgressHUD.m in Sources */,
 				098B7935226309E6003B893B /* LoginViewController.swift in Sources */,
 				09483FCB221EAE92002D4937 /* ECQRCodeScanVC.m in Sources */,
 				BEF764E8226DECE4009237B3 /* FaultViewController.m in Sources */,
+				09449468249F3A4E00C04C5B /* Utils.swift in Sources */,
 				0922CE49226A206B0042A220 /* NSString+CalculateSize.m in Sources */,
 				0940CA07221D53EE00C7697B /* TaskListCell.swift in Sources */,
 				098B794D22632D99003B893B /* CommonOptionsModel.swift in Sources */,
@@ -1073,6 +1102,7 @@
 				0940C9FE221D34BB00C7697B /* TaskViewController.swift in Sources */,
 				BEF764EB226DED4C009237B3 /* FacilityInforController.m in Sources */,
 				0940CA15221D647E00C7697B /* MineHeaderCell.swift in Sources */,
+				09A2CF22249FA2810080CB70 /* FastenViewController.swift in Sources */,
 				BED676002269749E00591AA2 /* SettingViewController.swift in Sources */,
 				BED676132269A3C900591AA2 /* NSDictionary+EX.m in Sources */,
 				0940C9E3221D323300C7697B /* KeyboardHeaderView.m in Sources */,
@@ -1084,6 +1114,7 @@
 				09B7F451226A2FE00096F056 /* CheckUPModel.m in Sources */,
 				09B7F444226A23DB0096F056 /* CheckUPViewController.m in Sources */,
 				09F687C4226ABE540016D0B4 /* PushUtils.m in Sources */,
+				0944946E249F5A3E00C04C5B /* FastenInputViewController.swift in Sources */,
 				0922CE43226A1CBC0042A220 /* BaseOCViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

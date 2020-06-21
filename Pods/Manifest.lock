@@ -37,6 +37,9 @@ PODS:
   - MJExtension (3.0.15.1)
   - MJRefresh (2.4.12)
   - Reachability (3.2)
+  - SDWebImage (5.7.0):
+    - SDWebImage/Core (= 5.7.0)
+  - SDWebImage/Core (5.7.0)
   - SwiftyJSON (4.1.0)
   - UzysAssetsPickerController (0.9.9)
 
@@ -54,6 +57,7 @@ DEPENDENCIES:
   - MJExtension (~> 3.0.13)
   - MJRefresh (~> 2.4.12)
   - Reachability (~> 3.2)
+  - SDWebImage
   - SwiftyJSON (= 4.1.0)
   - UzysAssetsPickerController (= 0.9.9)
 
@@ -77,6 +81,7 @@ SPEC REPOS:
     - MJExtension
     - MJRefresh
     - Reachability
+    - SDWebImage
     - SwiftyJSON
     - UzysAssetsPickerController
 
@@ -98,9 +103,10 @@ SPEC CHECKSUMS:
   MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
   MJRefresh: ca8e9589895977df32d379d46e6b8a5450b3ff44
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SDWebImage: a99471f452bdfa0ca52ddf5b1adf2b61cab1d1eb
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
   UzysAssetsPickerController: 47c27bd96955467925f3d4d80b1e2e8aaeff766d
 
-PODFILE CHECKSUM: 9ab95d0b1fe64d496935e1a6ad856b0223ed5e92
+PODFILE CHECKSUM: 8640c0501f182d74463c3cb7dd8328bde22eaf75
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.7.1

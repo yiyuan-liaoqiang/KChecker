@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1020"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ECA401E4F7B212C0952DD189A1B47955"
+               BlueprintIdentifier = "E5ED4B0CFD11F61CFD2008AD7A741245"
+               BuildableName = "UzysAssetsPickerController.framework"
                BlueprintName = "UzysAssetsPickerController"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "UzysAssetsPickerController.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

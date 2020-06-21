@@ -66,14 +66,30 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
-//    [YYRoute pushToController:@"PlanFormInputController" data:@{@"model":self.model.standards[indexPath.row],@"checkId":@(self.model.checkId)}];
+    if ([self.category isEqualToString:@"check"]) {
+        [YYRoute pushToController:@"PlanFormInputController" data:@{@"model":self.dataArray[indexPath.section]}];
+    }
+    else if ([self.category isEqualToString:@"lubrication"]) {
+        [YYRoute pushToController:@"LubricationInputViewController" data:@{@"model":self.dataArray[indexPath.section]}];
+    }
+    else if ([self.category isEqualToString:@"fasten"]) {
+        [YYRoute pushToController:@"FastenInputViewController" data:@{@"model":self.dataArray[indexPath.section]}];
+    }
+    else if ([self.category isEqualToString:@"adjust"]) {
+        [YYRoute pushToController:@"AdjustFormInputController" data:@{@"model":self.dataArray[indexPath.section]}];
+    }
+    else if ([self.category isEqualToString:@"replace"]) {
+        [YYRoute pushToController:@"ReplaceFormInputController" data:@{@"model":self.dataArray[indexPath.section]}];
+    }
+    else {
+        [YYRoute pushToController:@"LubricationInputViewController" data:@{@"model":self.dataArray[indexPath.section]}];
+    }
 }
 
 //获取当前设备点检计划
 - (void)getPlan {
     //
-    NSString *urlString = [NSString stringWithFormat:@"http://111.229.39.85:9094/v2/facility/%@/plan/check",self.baseData[@"facilityId"]];
+    NSString *urlString = [NSString stringWithFormat:@"http://111.229.39.85:9094/v2/facility/%@/plan/%@",self.baseData[@"facilityId"],self.category];
 
     [ActivityIndicatorManager showActivityIndicatorInView:self.view];
     [YYNSessionManager.defaultSessionManager method:@"get" URLString:urlString andParams:nil andHttpHeaders:nil success:^(id ret) {

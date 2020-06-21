@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CheckUPViewController : BaseOCViewController
 
+@property (nonatomic, strong)NSString *category;
+
 @end
 
 NS_ASSUME_NONNULL_END

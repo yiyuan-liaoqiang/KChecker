@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1020"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2ACF5D540CA648331F6BEB9DB7B5FF0B"
+               BlueprintIdentifier = "65D3366435225232358F480A8DB24AA5"
+               BuildableName = "EGOCache.framework"
                BlueprintName = "EGOCache"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "EGOCache.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

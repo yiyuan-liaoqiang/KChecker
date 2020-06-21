@@ -26,6 +26,15 @@ class MineViewController: BaseFormViewController {
     @objc func oiling() {
         YYRoute.pushToController("OilingViewController", data: nil)
     }
+    @objc func fasten() {
+        YYRoute.pushToController("FastenViewController", data: nil)
+    }
+    @objc func adjust() {
+        YYRoute.pushToController("AdjustViewController", data: nil)
+    }
+    @objc func replace() {
+        YYRoute.pushToController("ReplaceViewController", data: nil)
+    }
     @objc func maintain(){
         YYRoute.pushToController("MaintainViewController", data: nil)
     }

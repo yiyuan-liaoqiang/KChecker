@@ -17,7 +17,7 @@ class LogViewController: BaseWebViewController {
 
         self.title = "日志记录"
         let filePath = Bundle.main.path(forResource: "TaskList.html", ofType: nil)
-        self.webView.frame = CGRect(x: .zero, y: .NAV_BAR_HEIGHT, width: .MAIN_SCREEN_WIDTH, height: .MAIN_SCREEN_HEIGHT - .NAV_BAR_HEIGHT - .TAB_BAR_HEIGHT)
+        self.webView.frame = CGRect(x: .zero, y: .NAV_BAR_HEIGHT, width: .MAIN_SCREEN_WIDTH, height: .MAIN_SCREEN_HEIGHT - .NAV_BAR_HEIGHT)
         self.webView.load(URLRequest(url: URL(fileURLWithPath: filePath!)))
         
         weak var weakSelf = self

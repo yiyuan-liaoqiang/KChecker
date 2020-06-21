@@ -10,8 +10,8 @@ import UIKit
 import HandyJSON
 
 class UserModel: HandyJSON {
-    var id:NSNumber!
-    var name:String?
+    var userId:NSNumber!
+    var nick:String?
     var phone:String!
     var avatar:String?
     

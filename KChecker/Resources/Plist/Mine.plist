@@ -54,6 +54,54 @@
 	</dict>
 	<dict>
 		<key>title</key>
+		<string>紧固记录</string>
+		<key>icon</key>
+		<string>runhua</string>
+		<key>type</key>
+		<string>icon_title</string>
+		<key>showSepLine</key>
+		<true/>
+		<key>lineInsetsOffset</key>
+		<integer>90</integer>
+		<key>showAccessory</key>
+		<true/>
+		<key>action</key>
+		<string>fasten</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>调整记录</string>
+		<key>icon</key>
+		<string>runhua</string>
+		<key>type</key>
+		<string>icon_title</string>
+		<key>showSepLine</key>
+		<true/>
+		<key>lineInsetsOffset</key>
+		<integer>90</integer>
+		<key>showAccessory</key>
+		<true/>
+		<key>action</key>
+		<string>adjust</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>更换记录</string>
+		<key>icon</key>
+		<string>runhua</string>
+		<key>type</key>
+		<string>icon_title</string>
+		<key>showSepLine</key>
+		<true/>
+		<key>lineInsetsOffset</key>
+		<integer>90</integer>
+		<key>showAccessory</key>
+		<true/>
+		<key>action</key>
+		<string>replace</string>
+	</dict>
+	<dict>
+		<key>title</key>
 		<string>日志记录</string>
 		<key>icon</key>
 		<string>rbjl</string>
