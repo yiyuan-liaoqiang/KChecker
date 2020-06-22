@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FacilityInforController : UIViewController
+@interface FacilityInforController : BaseOCViewController
 
 @end
 

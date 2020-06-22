@@ -29,10 +29,6 @@
     self.dataArray = [NSMutableArray arrayWithCapacity:15];
     [self getRequest];
     [self initUI];
-    
-   
-    
-    
 }
 
 #pragma UITableViewDelegat---
@@ -52,29 +48,29 @@
     }
     FacilityModel *model = self.dataArray[indexPath.row];
     
-//    cell.textLabel.textColor = [UIColor b];
     cell.textLabel.text = model.questionType;
-    cell.textLabel.font = [UIFont systemFontOfSize:20];
-    cell.detailTextLabel.font = [UIFont systemFontOfSize:18];
+    cell.textLabel.font = [UIFont systemFontOfSize:17];
+    cell.textLabel.textColor = kUIColorFromRGB(0x333333);
+    cell.detailTextLabel.font = [UIFont systemFontOfSize:14];
     cell.detailTextLabel.textColor = [UIColor lightGrayColor];
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ %@ 到 %@",model.faultDate,model.startTime ,model.endTime];
-//    cell.spre
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:true];
 }
 
 - (void)getRequest
 {
-    [[YYNSessionManager defaultSessionManager] method:@"get" URLString:@"facility/999988/faults" andParams:@{@"page":@"1" , @"size": @"15"} andHttpHeaders:nil success:^(NSArray *ret) {
+    NSString *url = [NSString stringWithFormat:@"facility/%@/faults",self.baseData];
+    [[YYNSessionManager defaultSessionManager] method:@"get" URLString:url andParams:@{@"page":@"1" , @"size": @"15"} andHttpHeaders:nil success:^(NSArray *ret) {
         
         [ret enumerateObjectsUsingBlock:^(NSDictionary *obj, NSUInteger idx, BOOL * _Nonnull stop) {
             FacilityModel *model = [FacilityModel loadFacility:obj];
             [self.dataArray addObject:model];
         }];
         [self.tableView reloadData];
-//        NSArray *array = [JsonStringTransfer dictionaryArray:ret ToModelArray:@"FaultModel"];
-//        [self.dataArray addObjectsFromArray:array];
-//        [self.tableView reloadData];
-//        NSLog(@"%@",array);
         
     } failure:^(id error) {
         

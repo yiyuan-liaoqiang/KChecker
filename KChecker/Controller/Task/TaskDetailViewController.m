@@ -28,10 +28,7 @@
     [super viewDidLoad];
     
     self.navigationItem.title = @"故障历史";
-    
-    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"故障历史" style:UIBarButtonItemStylePlain target:self action:@selector(itemClick)];
-    self.navigationItem.rightBarButtonItem = item;
-    
+    self.navigationItem.rightBarButtonItems = @[self.infoItem,self.faultItem];
     // Do any additional setup after loading the view.
     self.title = self.baseData[@"facilityName"];
     [self.view addSubview:self.titleView];
@@ -39,13 +36,42 @@
     [self lazyViewInital];
 }
 
-- (void)itemClick
-{
-//    FaultViewController *view = [[FaultViewController alloc] init];
-//    [self.navigationController pushViewController:view animated:YES];
-    
+- (void)faultAction {
+    FaultViewController *view = [[FaultViewController alloc] init];
+    view.baseData = self.baseData[@"facilityId"];
+    [self.navigationController pushViewController:view animated:YES];
+}
+
+- (void)infoAction {
     FacilityInforController *viewController = [[FacilityInforController alloc] init];
+    viewController.baseData = self.baseData[@"facilityId"];
     [self.navigationController pushViewController:viewController animated:YES];
+}
+
+- (UIBarButtonItem *)faultItem {
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setImage:[UIImage imageNamed:@"xitongguzhang.png"] forState:UIControlStateNormal];
+    btn.imageView.contentMode = UIViewContentModeScaleAspectFit;
+    btn.frame = CGRectMake(0, 0, 40, 22);
+    [btn addTarget:self action:@selector(faultAction) forControlEvents:UIControlEventTouchUpInside];
+    UIView *view = [[UIView alloc] init];
+    view.frame = btn.frame;
+    [view addSubview:btn];
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:view];
+    return item;
+}
+
+- (UIBarButtonItem *)infoItem {
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setImage:[UIImage imageNamed:@"xinxi.png"] forState:UIControlStateNormal];
+    btn.imageView.contentMode = UIViewContentModeScaleAspectFit;
+    btn.frame = CGRectMake(0, 0, 40, 22);
+    [btn addTarget:self action:@selector(infoAction) forControlEvents:UIControlEventTouchUpInside];
+    UIView *view = [[UIView alloc] init];
+    view.frame = btn.frame;
+    [view addSubview:btn];
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:view];
+    return item;
 }
 
 - (void)lazyViewInital

@@ -34,8 +34,8 @@
     NSString *path = [[NSBundle mainBundle] pathForResource:@"FacilityInfo.plist" ofType:nil];
     self.dataArray = [JsonStringTransfer dictionaryArray:[NSArray arrayWithContentsOfFile:path] ToModelArrayWithClass:TmpModel.class].mutableCopy;
     
-    
-    [[YYNSessionManager defaultSessionManager] method:@"get" URLString:@"facility/999988/info" andParams:@{@"facilityId":@(999988) , @"page":@"1" , @"size": @"15"} andHttpHeaders:nil success:^(NSDictionary *ret) {
+    NSString *url = [NSString stringWithFormat:@"facility/%@/info",self.baseData];
+    [[YYNSessionManager defaultSessionManager] method:@"get" URLString:url andParams:nil andHttpHeaders:nil success:^(NSDictionary *ret) {
         NSMutableArray *array = [NSMutableArray arrayWithCapacity:10];
         for (TmpModel *model in self.dataArray) {
             model.serverValue = ret[model.serverKey];
@@ -76,14 +76,18 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:strId];
     }
     
-    
     TmpModel *model = self.dataArray[indexPath.row];
-    NSString *stri = self.mArray[indexPath.row];
 
     cell.textLabel.text = model.title;
+    cell.textLabel.font = [UIFont systemFontOfSize:15];
     cell.detailTextLabel.text = model.serverValue;
     cell.detailTextLabel.textColor = [UIColor blackColor];
+    cell.detailTextLabel.font = cell.textLabel.font;
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:true];
 }
 
 - (void)initUI

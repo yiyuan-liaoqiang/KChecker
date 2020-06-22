@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043AB71B24A07C8C00FD7056 /* xinxi.png in Resources */ = {isa = PBXBuildFile; fileRef = 043AB71924A07C8C00FD7056 /* xinxi.png */; };
+		043AB71C24A07C8C00FD7056 /* xitongguzhang.png in Resources */ = {isa = PBXBuildFile; fileRef = 043AB71A24A07C8C00FD7056 /* xitongguzhang.png */; };
 		0922CE40226A15F10042A220 /* AliyunEmasServices-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0922CE3F226A15F10042A220 /* AliyunEmasServices-Info.plist */; };
 		0922CE43226A1CBC0042A220 /* BaseOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0922CE42226A1CBC0042A220 /* BaseOCViewController.m */; };
 		0922CE46226A20450042A220 /* TitleIndexView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0922CE45226A20450042A220 /* TitleIndexView.m */; };
@@ -147,6 +149,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		043AB71924A07C8C00FD7056 /* xinxi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xinxi.png; sourceTree = "<group>"; };
+		043AB71A24A07C8C00FD7056 /* xitongguzhang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xitongguzhang.png; sourceTree = "<group>"; };
 		0922CE3F226A15F10042A220 /* AliyunEmasServices-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AliyunEmasServices-Info.plist"; sourceTree = "<group>"; };
 		0922CE41226A1CBC0042A220 /* BaseOCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseOCViewController.h; sourceTree = "<group>"; };
 		0922CE42226A1CBC0042A220 /* BaseOCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseOCViewController.m; sourceTree = "<group>"; };
@@ -523,6 +527,8 @@
 			isa = PBXGroup;
 			children = (
 				09911839249BC265002C6D3B /* selected.png */,
+				043AB71924A07C8C00FD7056 /* xinxi.png */,
+				043AB71A24A07C8C00FD7056 /* xitongguzhang.png */,
 				09A2CF1B249F9B080080CB70 /* tuxiangimages20.png */,
 				0940CA02221D350E00C7697B /* Plist */,
 				0940C9C4221D309800C7697B /* image */,
@@ -960,6 +966,7 @@
 				0940C9E8221D323400C7697B /* TitleValueTableViewCell.xib in Resources */,
 				0940C9E5221D323400C7697B /* 说明.txt in Resources */,
 				0990C9E4226CB17D00276373 /* MultipleInputCell.xib in Resources */,
+				043AB71B24A07C8C00FD7056 /* xinxi.png in Resources */,
 				09A2CF1C249F9B090080CB70 /* tuxiangimages20.png in Resources */,
 				09483FB6221EA931002D4937 /* 日报@2x.png in Resources */,
 				0922CE40226A15F10042A220 /* AliyunEmasServices-Info.plist in Resources */,
@@ -967,6 +974,7 @@
 				0991183A249BC265002C6D3B /* selected.png in Resources */,
 				0940CA0E221D609300C7697B /* Mine.plist in Resources */,
 				09449470249F5AA100C04C5B /* fasten.plist in Resources */,
+				043AB71C24A07C8C00FD7056 /* xitongguzhang.png in Resources */,
 				09B7F449226A2D6E0096F056 /* CheckUPDeviceInfoCell.xib in Resources */,
 				0940C9C3221D249C00C7697B /* Login.html in Resources */,
 				BECD407E226DAA9B00FFF07C /* OilingStandardsCell.xib in Resources */,
@@ -1292,9 +1300,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = KChecker/KChecker.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = WCYQSY2P5P;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XXN3Q49J5H;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/KChecker/ThirdParties/OneSDK",
@@ -1307,7 +1315,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.KChecker.liaoqiang1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "kchecker-hd";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/KChecker-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

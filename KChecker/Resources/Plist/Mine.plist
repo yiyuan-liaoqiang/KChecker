@@ -35,6 +35,8 @@
 		<true/>
 		<key>action</key>
 		<string>dianjian</string>
+		<key>height</key>
+		<string>46</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -51,6 +53,8 @@
 		<true/>
 		<key>action</key>
 		<string>oiling</string>
+		<key>height</key>
+		<string>46</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -67,6 +71,8 @@
 		<true/>
 		<key>action</key>
 		<string>fasten</string>
+		<key>height</key>
+		<string>46</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -83,6 +89,8 @@
 		<true/>
 		<key>action</key>
 		<string>adjust</string>
+		<key>height</key>
+		<string>46</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -99,6 +107,8 @@
 		<true/>
 		<key>action</key>
 		<string>replace</string>
+		<key>height</key>
+		<string>46</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -115,6 +125,8 @@
 		<true/>
 		<key>action</key>
 		<string>log</string>
+		<key>height</key>
+		<string>46</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -131,6 +143,8 @@
 		<true/>
 		<key>action</key>
 		<string>setting</string>
+		<key>height</key>
+		<string>46</string>
 	</dict>
 </array>
 </plist>

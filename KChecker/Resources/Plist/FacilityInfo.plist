@@ -28,18 +28,6 @@
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>设备品牌</string>
-		<key>serverKey</key>
-		<string>brand</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>设备状态</string>
-		<key>serverKey</key>
-		<string>status</string>
-	</dict>
-	<dict>
-		<key>title</key>
 		<string>制造单位</string>
 		<key>serverKey</key>
 		<string>madeCompany</string>

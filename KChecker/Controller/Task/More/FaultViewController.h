@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FaultViewController : UIViewController
+@interface FaultViewController : BaseOCViewController
 
 @end
 
