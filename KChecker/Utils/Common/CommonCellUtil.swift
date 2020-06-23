@@ -44,6 +44,16 @@ class CommonCellUtil: NSObject {
                             else {
                                 model.serverValue = serverValue as? String
                             }
+                            //如果有options
+                            if let options = model.options,options.count > 0 {
+                                for dic in options {
+                                    if let id = dic["id"] as? NSNumber {
+                                        if id.intValue == Int(model.serverValue ?? "0") {
+                                            model.localValue = dic["name"] as? String
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }

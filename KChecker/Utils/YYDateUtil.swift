@@ -41,7 +41,7 @@ class YYDateUtil: NSObject {
         }
         
         if timeStr != nil {
-            if timeStr!.components(separatedBy: "-").count == 3 {
+            if timeStr!.components(separatedBy: ":").count == 3 {
                 formatStyle = formatStyle + " " + "HH:mm:ss"
             }
             else {
@@ -51,7 +51,7 @@ class YYDateUtil: NSObject {
         
         let formatter = DateFormatter()
         formatter.dateFormat = formatStyle
-        let date = formatter.date(from: dateStr)
-        return date!
+        let date = formatter.date(from: dateStr) ?? Date()
+        return date
     }
 }
