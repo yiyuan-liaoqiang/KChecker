@@ -31,6 +31,10 @@ class TaskViewController: BaseWebViewController {
             weakSelf?.taskList(page)
         })
         
+        self.webView.scrollView.header = MJRefreshNormalHeader(refreshingBlock: {
+            weakSelf?.taskList(1)
+        })
+        
         self.taskList(1)
     }
     
@@ -43,6 +47,7 @@ class TaskViewController: BaseWebViewController {
             if let arr = obj as? [[String:AnyObject]], err == nil {
                 if page == 1 {
                     self.dataArray.removeAll()
+                    self.webView.evaluateJavaScript("remoteAllCell()", completionHandler: nil)
                 }
                 
                 self.dataArray.addObjectFromArray(arr)

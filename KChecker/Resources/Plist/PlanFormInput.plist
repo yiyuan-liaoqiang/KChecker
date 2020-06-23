@@ -107,8 +107,6 @@
 		<true/>
 		<key>showAccessory</key>
 		<false/>
-		<key>serverKey</key>
-		<string>result</string>
 		<key>selectStyle</key>
 		<string>none</string>
 		<key>localKey</key>
@@ -129,8 +127,6 @@
 		<true/>
 		<key>showAccessory</key>
 		<false/>
-		<key>serverKey</key>
-		<string>data</string>
 		<key>localKey</key>
 		<string>data</string>
 		<key>selectStyle</key>
