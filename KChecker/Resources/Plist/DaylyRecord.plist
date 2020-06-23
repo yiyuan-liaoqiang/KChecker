@@ -9,37 +9,19 @@
 				<key>id</key>
 				<string>0</string>
 				<key>name</key>
-				<string>点检</string>
+				<string>预防性维护</string>
 			</dict>
 			<dict>
 				<key>id</key>
 				<string>1</string>
 				<key>name</key>
-				<string>润滑</string>
+				<string>突发故障处理</string>
 			</dict>
 			<dict>
 				<key>id</key>
 				<string>2</string>
 				<key>name</key>
-				<string>维修</string>
-			</dict>
-			<dict>
-				<key>id</key>
-				<string>3</string>
-				<key>name</key>
-				<string>紧固</string>
-			</dict>
-			<dict>
-				<key>id</key>
-				<string>4</string>
-				<key>name</key>
-				<string>调整</string>
-			</dict>
-			<dict>
-				<key>id</key>
-				<string>5</string>
-				<key>name</key>
-				<string>更换</string>
+				<string>其他</string>
 			</dict>
 		</array>
 		<key>title</key>

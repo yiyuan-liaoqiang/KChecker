@@ -149,8 +149,6 @@
 		<true/>
 		<key>showAccessory</key>
 		<false/>
-		<key>serverKey</key>
-		<string>number</string>
 		<key>localKey</key>
 		<string>number</string>
 		<key>selectStyle</key>

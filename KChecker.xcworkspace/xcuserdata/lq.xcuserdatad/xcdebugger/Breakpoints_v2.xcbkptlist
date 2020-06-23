@@ -19,6 +19,38 @@
             endingLineNumber = "251"
             landmarkName = "selectDataFromOptions()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6A916F9D-2BA9-40EF-A0D0-DF4A54AD11B6 - c65475b11bf89b9c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KChecker.BaseFormViewController.selectDataFromOptions() -&gt; ()"
+                  moduleName = "KChecker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lq/Desktop/%E4%B8%AD%E4%B9%85/KChecker/KChecker/Controller/Base/BaseFormViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "251"
+                  endingLineNumber = "251"
+                  offsetFromSymbolStart = "208">
+               </Location>
+               <Location
+                  uuid = "6A916F9D-2BA9-40EF-A0D0-DF4A54AD11B6 - 591f8b9cb2e0cb1b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Int) -&gt; () in KChecker.BaseFormViewController.selectDataFromOptions() -&gt; ()"
+                  moduleName = "KChecker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lq/Desktop/%E4%B8%AD%E4%B9%85/KChecker/KChecker/Controller/Base/BaseFormViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "250"
+                  endingLineNumber = "250"
+                  offsetFromSymbolStart = "115">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -50,7 +82,7 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "250"
                   endingLineNumber = "250"
-                  offsetFromSymbolStart = "208">
+                  offsetFromSymbolStart = "137">
                </Location>
                <Location
                   uuid = "299B0969-EF22-4D5F-93BF-812402212555 - 591f8b9cb2e0cb1b"
@@ -63,8 +95,8 @@
                   urlString = "file:///Users/lq/Desktop/%E4%B8%AD%E4%B9%85/KChecker/KChecker/Controller/Base/BaseFormViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "249"
-                  endingLineNumber = "249"
+                  startingLineNumber = "250"
+                  endingLineNumber = "250"
                   offsetFromSymbolStart = "115">
                </Location>
             </Locations>
@@ -115,22 +147,6 @@
             startingLineNumber = "66"
             endingLineNumber = "66"
             landmarkName = "getData()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B6C299FC-AB32-4645-A9BF-0D82C11AEE04"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "KChecker/Utils/Common/CommonCellUtil.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "134"
-            endingLineNumber = "134"
-            landmarkName = "paramWithArray(models:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

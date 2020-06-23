@@ -17,7 +17,7 @@ class LubricationInputViewController: BaseFormViewController {
         super.viewDidLoad()
         self.title = "设备数据填报"
         self.tableView.separatorStyle = .singleLine
-        
+        self.tableView.frame = CGRect(x: 0, y: MyConst.NAV_BAR_HEIGHT(), width: MyConst.MAIN_SCREEN_WIDTH, height: MyConst.MAIN_SCREEN_HEIGHT-MyConst.NAV_BAR_HEIGHT())
         let item = UIBarButtonItem(title: "提交", style: UIBarButtonItem.Style.plain, target: self, action: #selector(publish))
         self.navigationItem.rightBarButtonItem = item
         
