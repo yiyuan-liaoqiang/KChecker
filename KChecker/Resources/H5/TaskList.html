@@ -71,7 +71,8 @@
 	}
 
 	function insertCell(data) {
-        var html = `<div class='taskListCell' onclick="didSelect(this)" facilityName = "${data.facilityName}" facilityId = "${data.facilityId}" > <div class="taskType"> <img src="dianj.png"/> <span style="position: absolute;color: white;font-size: 11px;left: 9px;top: 11px;">${data.tag}</span> </div> <div class="taskTitle"><span>${data.title}</span></div> <div class="taskTime"><span>${data.date}</span></div> </div>`
+        let date = (data.date == null?"":data.date)
+        var html = `<div class='taskListCell' onclick="didSelect(this)" facilityName = "${data.facilityName}" facilityId = "${data.facilityId}" > <div class="taskType"> <img src="dianj.png"/> <span style="position: absolute;color: white;font-size: 11px;left: 9px;top: 11px;">${data.tag}</span> </div> <div class="taskTitle"><span>${data.title}</span></div> <div class="taskTime"><span>${date}</span></div> </div>`
 		var body = document.getElementsByTagName("body")[0]
 		body.innerHTML = body.innerHTML + html
 	}

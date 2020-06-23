@@ -180,7 +180,8 @@ class BaseFormViewController: BaseViewController,UITableViewDelegate,UITableView
         }
         
         if self.temModel?.localValue != nil {
-            datePickerView.datePicker.date = YYDateUtil.dateStringToDate((self.temModel?.localValue)!)
+            let date = Date().timeStrWithFormat(format: "yyyy-MM-dd")
+            datePickerView.datePicker.date = YYDateUtil.dateStringToDate((date + " " + (self.temModel?.localValue)!)) 
         }
         datePickerView.show(inView: self.view)
         
