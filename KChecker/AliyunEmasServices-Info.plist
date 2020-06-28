@@ -9,7 +9,7 @@
             <key>emas.appSecret</key>
             <string>2c78762847c2e962195d39a6bfa8b871</string>
             <key>emas.bundleId</key>
-            <string>com.KChecker.liaoqiang</string>
+            <string>com.KChecker.liaoqiang1</string>
             <key>hotfix.idSecret</key>
             <string>26009078-2</string>
             <key>hotfix.rsaSecret</key>
@@ -18,37 +18,69 @@
             <string>116857</string>
             <key>httpdns.secretKey</key>
             <string>c1a0deab77018d3931c7d192fd278b43</string>
+            <key>appmonitor.tlog.rsaSecret</key>
+            <string>MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC5ebThxVDGyyTJZWaSA4TzQLvgdz4sUR4ERqheHF4xlXrn7Z4+IbGEgBUST7lN+7njkO5VC89EhiJeST2gvCXZbUMxl6E+J2hsMzZtOTmguK6A4XynD3c1RhHicOT3RkqzWk5IRf6YlzX4B1qpB49ChuD5O3X1rsxI9+2tdC/C6QIDAQAB</string>
+            <key>appmonitor.rsaSecret</key>
+            <string>MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC5ebThxVDGyyTJZWaSA4TzQLvgdz4sUR4ERqheHF4xlXrn7Z4+IbGEgBUST7lN+7njkO5VC89EhiJeST2gvCXZbUMxl6E+J2hsMzZtOTmguK6A4XynD3c1RhHicOT3RkqzWk5IRf6YlzX4B1qpB49ChuD5O3X1rsxI9+2tdC/C6QIDAQAB</string>
     	</dict>
 	<key>services</key>
 	<dict>
-		<key>httpdns_service</key>
-		<dict>
+          	<key>hotfix_service</key>
+       	<dict>
 			<key>status</key>
 			<integer>1</integer>
 			<key>version</key>
-			<string>1.7.3</string>
+			<string>1.0.0-1</string>
 		</dict>
-		<key>cps_service</key>
-		<dict>
+         	<key>feedback_service</key>
+       	<dict>
 			<key>status</key>
 			<integer>1</integer>
 			<key>version</key>
-			<string>1.9.8</string>
+			<string>3.3.8</string>
 		</dict>
-		<key>feedback_service</key>
-		<dict>
+         	<key>tlog_service</key>
+       	<dict>
 			<key>status</key>
 			<integer>1</integer>
 			<key>version</key>
-			<string>3.3.6</string>
+			<string>1.0.0.2</string>
 		</dict>
-		<key>man_service</key>
-		<dict>
+         	<key>httpdns_service</key>
+       	<dict>
+			<key>status</key>
+			<integer>1</integer>
+			<key>version</key>
+			<string>1.19.2.5</string>
+		</dict>
+         	<key>apm_service</key>
+       	<dict>
+			<key>status</key>
+			<integer>1</integer>
+			<key>version</key>
+			<string>1.0.0.1</string>
+		</dict>
+         	<key>crashreporter_service</key>
+       	<dict>
+			<key>status</key>
+			<integer>1</integer>
+			<key>version</key>
+			<string>1.1.1</string>
+		</dict>
+         	<key>man_service</key>
+       	<dict>
 			<key>status</key>
 			<integer>0</integer>
 			<key>version</key>
 			<string>1.0.13</string>
 		</dict>
-	</dict>
+         	<key>cps_service</key>
+       	<dict>
+			<key>status</key>
+			<integer>1</integer>
+			<key>version</key>
+			<string>1.9.9.1</string>
+		</dict>
+    	</dict>
 </dict>
 </plist>

@@ -40,6 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
             self.nav = UINavigationController(rootViewController: LoginViewController())
             self.nav.toolbar.isHidden = true
         }
+//        CloudPushSDK.turnOnDebug()
         print(CloudPushSDK.isChannelOpened())
         self.window?.rootViewController = self.nav
         

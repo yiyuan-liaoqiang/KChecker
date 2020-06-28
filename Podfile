@@ -11,7 +11,7 @@ inhibit_all_warnings!
 
     source 'https://github.com/CocoaPods/Specs.git'
     source 'https://github.com/aliyun/aliyun-specs.git'
-    pod 'AlicloudPush', '~> 1.9.8'
+    pod 'AlicloudPush'
     
     pod 'AFNetworking', '~> 3.2.1'
     pod "FMDB", "~>2.6.2"

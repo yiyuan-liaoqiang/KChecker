@@ -106,6 +106,7 @@ static PushUtils *_util;
     application.applicationIconBadgeNumber = 0;
     // 通知打开回执上报
     // [CloudPushSDK handleReceiveRemoteNotification:userInfo];(Deprecated from v1.8.1)
+    NSLog(@"userInfo = %@",userInfo);
     [CloudPushSDK sendNotificationAck:userInfo];
 }
 @end
