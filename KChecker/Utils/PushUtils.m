@@ -84,6 +84,17 @@ static PushUtils *_util;
     NSString *title = [[NSString alloc] initWithData:message.title encoding:NSUTF8StringEncoding];
     NSString *body = [[NSString alloc] initWithData:message.body encoding:NSUTF8StringEncoding];
     NSLog(@"Receive message title: %@, content: %@.", title, body);
+    NSDictionary *dic = [self JSONStringToDictionaryWithData:body];
+    NSString *sql = [NSString stringWithFormat:@"replace into facility(id,style,facilityId,planTime,state,planId,standardId,standard,versionType,partName,transactorId,facilityName,componentName) values ('%@','%@','%@','%@','%@','%@','%@','%@','%@','%@','%@','%@','%@')",dic[@"id"],dic[@"style"],dic[@"facilityId"],dic[@"planTime"],dic[@"state"],dic[@"planId"],dic[@"standardId"],dic[@"standard"],dic[@"versionType"],dic[@"partName"],dic[@"transactorId"],dic[@"facilityName"],dic[@"componentName"]];
+    [DBUtil.sharedUtil update:sql];
+    NSLog(@"%@",dic);
+}
+
+-(NSDictionary *) JSONStringToDictionaryWithData:(NSString *)data{
+    NSError * error;
+    NSData * m_data = [data  dataUsingEncoding:NSUTF8StringEncoding];
+    NSDictionary *dict = [NSJSONSerialization  JSONObjectWithData:m_data options:NSJSONReadingMutableContainers error:&error];
+    return dict;
 }
 
 /*
