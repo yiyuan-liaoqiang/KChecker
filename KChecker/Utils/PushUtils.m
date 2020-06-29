@@ -85,9 +85,14 @@ static PushUtils *_util;
     NSString *body = [[NSString alloc] initWithData:message.body encoding:NSUTF8StringEncoding];
     NSLog(@"Receive message title: %@, content: %@.", title, body);
     NSDictionary *dic = [self JSONStringToDictionaryWithData:body];
-    NSString *sql = [NSString stringWithFormat:@"replace into facility(id,style,facilityId,planTime,state,planId,standardId,standard,versionType,partName,transactorId,facilityName,componentName) values ('%@','%@','%@','%@','%@','%@','%@','%@','%@','%@','%@','%@','%@')",dic[@"id"],dic[@"style"],dic[@"facilityId"],dic[@"planTime"],dic[@"state"],dic[@"planId"],dic[@"standardId"],dic[@"standard"],dic[@"versionType"],dic[@"partName"],dic[@"transactorId"],dic[@"facilityName"],dic[@"componentName"]];
-    [DBUtil.sharedUtil update:sql];
-    NSLog(@"%@",dic);
+    if ([dic[@"versionType"] isEqualToString:@"v2_lubrication"]) {
+        NSString *sql = [NSString stringWithFormat:@"replace into t_lubrication_check(id,style,facilityId,planTime,state,planId,standardId,fillingCategory,fillingAmount,versionType,partName,transactorId,facilityName,componentName) values ('%@','%@','%@','%@','%@','%@','%@','%@','%@','%@','%@','%@','%@','%@')",dic[@"id"],dic[@"style"],dic[@"facilityId"],dic[@"planTime"],dic[@"state"],dic[@"planId"],dic[@"standardId"],dic[@"fillingCategory"],dic[@"fillingAmount"],dic[@"versionType"],dic[@"partName"],dic[@"transactorId"],dic[@"facilityName"],dic[@"componentName"]];
+        [DBUtil.sharedUtil update:sql];
+    }
+    else {
+        NSString *sql = [NSString stringWithFormat:@"replace into t_plan_check(id,style,facilityId,planTime,state,planId,standardId,standard,versionType,partName,transactorId,facilityName,componentName) values ('%@','%@','%@','%@','%@','%@','%@','%@','%@','%@','%@','%@','%@')",dic[@"id"],dic[@"style"],dic[@"facilityId"],dic[@"planTime"],dic[@"state"],dic[@"planId"],dic[@"standardId"],dic[@"standard"],dic[@"versionType"],dic[@"partName"],dic[@"transactorId"],dic[@"facilityName"],dic[@"componentName"]];
+        [DBUtil.sharedUtil update:sql];
+    }
 }
 
 -(NSDictionary *) JSONStringToDictionaryWithData:(NSString *)data{

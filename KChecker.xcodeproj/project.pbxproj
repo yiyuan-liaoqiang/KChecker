@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		043AB71B24A07C8C00FD7056 /* xinxi.png in Resources */ = {isa = PBXBuildFile; fileRef = 043AB71924A07C8C00FD7056 /* xinxi.png */; };
 		043AB71C24A07C8C00FD7056 /* xitongguzhang.png in Resources */ = {isa = PBXBuildFile; fileRef = 043AB71A24A07C8C00FD7056 /* xitongguzhang.png */; };
+		04EB0D7E24A9E01200AD405A /* DBUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EB0D7D24A9E01200AD405A /* DBUtil.swift */; };
+		04EB0D8224A9E60700AD405A /* k_checker.db in Resources */ = {isa = PBXBuildFile; fileRef = 04EB0D8124A9E60700AD405A /* k_checker.db */; };
 		0922CE40226A15F10042A220 /* AliyunEmasServices-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0922CE3F226A15F10042A220 /* AliyunEmasServices-Info.plist */; };
 		0922CE43226A1CBC0042A220 /* BaseOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0922CE42226A1CBC0042A220 /* BaseOCViewController.m */; };
 		0922CE46226A20450042A220 /* TitleIndexView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0922CE45226A20450042A220 /* TitleIndexView.m */; };
@@ -151,6 +153,8 @@
 /* Begin PBXFileReference section */
 		043AB71924A07C8C00FD7056 /* xinxi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xinxi.png; sourceTree = "<group>"; };
 		043AB71A24A07C8C00FD7056 /* xitongguzhang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xitongguzhang.png; sourceTree = "<group>"; };
+		04EB0D7D24A9E01200AD405A /* DBUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBUtil.swift; sourceTree = "<group>"; };
+		04EB0D8124A9E60700AD405A /* k_checker.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = k_checker.db; sourceTree = "<group>"; };
 		0922CE3F226A15F10042A220 /* AliyunEmasServices-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AliyunEmasServices-Info.plist"; sourceTree = "<group>"; };
 		0922CE41226A1CBC0042A220 /* BaseOCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseOCViewController.h; sourceTree = "<group>"; };
 		0922CE42226A1CBC0042A220 /* BaseOCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseOCViewController.m; sourceTree = "<group>"; };
@@ -391,6 +395,7 @@
 		0940C93B221D034800C7697B /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				04EB0D7D24A9E01200AD405A /* DBUtil.swift */,
 				0997AD7B2280725200301CEF /* UIView+NoDataWarning.h */,
 				0997AD7A2280725200301CEF /* UIView+NoDataWarning.m */,
 				09F687B6226A32E20016D0B4 /* UILabel+YYNExtension.h */,
@@ -526,6 +531,7 @@
 		0940C9C0221D247500C7697B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				04EB0D8124A9E60700AD405A /* k_checker.db */,
 				09911839249BC265002C6D3B /* selected.png */,
 				043AB71924A07C8C00FD7056 /* xinxi.png */,
 				043AB71A24A07C8C00FD7056 /* xitongguzhang.png */,
@@ -957,6 +963,7 @@
 				BEF764FA226EA277009237B3 /* FacilityInfo.plist in Resources */,
 				0940CA08221D53EE00C7697B /* TaskListCell.xib in Resources */,
 				098B795122633E52003B893B /* TitleValueVTableViewCell.xib in Resources */,
+				04EB0D8224A9E60700AD405A /* k_checker.db in Resources */,
 				0940C9C8221D30EA00C7697B /* yhming.png in Resources */,
 				09B7F44E226A2D9E0096F056 /* CheckUPStandardsCell.xib in Resources */,
 				0940C9E7221D323400C7697B /* TitleSwitchTableViewCell.xib in Resources */,
@@ -1106,6 +1113,7 @@
 				098B794822632B24003B893B /* DaylyRecordViewController.swift in Sources */,
 				BED6760B2269A19700591AA2 /* SettingTableViewCell.m in Sources */,
 				0940C958221D034800C7697B /* UIController+SelectImage.swift in Sources */,
+				04EB0D7E24A9E01200AD405A /* DBUtil.swift in Sources */,
 				0940C9FB221D34A500C7697B /* HomePageViewController.swift in Sources */,
 				0940C9FE221D34BB00C7697B /* TaskViewController.swift in Sources */,
 				BEF764EB226DED4C009237B3 /* FacilityInforController.m in Sources */,

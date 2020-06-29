@@ -97,9 +97,26 @@
         [self setupTableView];
         [ActivityIndicatorManager hideActivityIndicatorInView:self.view];
     } failure:^(id error) {
-        [self.view showWarningWithIcon:nil andTitle:@"该设备没有点检计划" andTopSpace:140];
+        [self getLocalData];
         [ActivityIndicatorManager hideActivityIndicatorInView:self.view];
     }];
+}
+
+- (void)getLocalData {
+    NSString *sql = [NSString stringWithFormat:@"select * from t_plan_check where facilityId = '%@' and versionType = '%@'",self.baseData[@"facilityId"],self.versionTypes];
+    NSArray *data = [DBUtil.sharedUtil query:sql];
+    if (data.count == 0) {
+        [self.view showWarningWithIcon:nil andTitle:@"该设备没有点检计划" andTopSpace:140];
+    }
+    else {
+        self.dataArray = [JsonStringTransfer dictionaryArray:data ToModelArray:@"CheckUPModel"];
+        [self setupTableView];
+    }
+}
+
+- (NSString *)versionTypes {
+    NSDictionary *dic = @{@"check":@"v2_check",@"lubrication":@"v2_lubrication",@"fasten":@"v2_fasten",@"adjust":@"v2_adjust",@"replace":@"v2_replace"};
+    return dic[self.category];
 }
 
 - (void)setupTableView {
