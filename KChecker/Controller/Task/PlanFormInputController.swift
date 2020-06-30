@@ -76,6 +76,13 @@ class PlanFormInputController: BaseFormViewController {
                     }
                     ActivityIndicatorManager.hideActivityIndicator(in: self.view)
                 }, failure: { (err) in
+                    let facilityId = (self.baseData?["facilityId"]) as! String
+                    let sql = "select * from t_plan_check where facilityId = '" + facilityId + "'" + "and versionType = 'v2_check'"
+                    let data = DBUtil.sharedUtil().query(sql)
+                    if data.count > 0 {
+                        CommonCellUtil.setValue(data.first, self.dataArray)
+                        self.tableView.reloadData()
+                    }
                     ActivityIndicatorManager.hideActivityIndicator(in: self.view)
             })
         }

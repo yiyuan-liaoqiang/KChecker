@@ -67,8 +67,15 @@ class AdjustFormInputController: BaseFormViewController {
                     }
                     ActivityIndicatorManager.hideActivityIndicator(in: self.view)
                 }, failure: { (err) in
-                    ActivityIndicatorManager.hideActivityIndicator(in: self.view)
-            })
+                        let facilityId = (self.baseData?["facilityId"]) as! String
+                        let sql = "select * from t_plan_check where facilityId = '" + facilityId + "'" + "and versionType = 'v2_adjust'"
+                        let data = DBUtil.sharedUtil().query(sql)
+                        if data.count > 0 {
+                            CommonCellUtil.setValue(data.first, self.dataArray)
+                            self.tableView.reloadData()
+                        }
+                        ActivityIndicatorManager.hideActivityIndicator(in: self.view)
+                })
         }
     }
         

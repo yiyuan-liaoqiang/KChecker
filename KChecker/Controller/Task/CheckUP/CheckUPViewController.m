@@ -66,23 +66,24 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    NSDictionary *userInfo = @{@"model":self.dataArray[indexPath.section],@"facilityId":self.baseData[@"facilityId"]};
     if ([self.category isEqualToString:@"check"]) {
-        [YYRoute pushToController:@"PlanFormInputController" data:@{@"model":self.dataArray[indexPath.section]}];
+        [YYRoute pushToController:@"PlanFormInputController" data:userInfo];
     }
     else if ([self.category isEqualToString:@"lubrication"]) {
-        [YYRoute pushToController:@"LubricationInputViewController" data:@{@"model":self.dataArray[indexPath.section]}];
+        [YYRoute pushToController:@"LubricationInputViewController" data:userInfo];
     }
     else if ([self.category isEqualToString:@"fasten"]) {
-        [YYRoute pushToController:@"FastenInputViewController" data:@{@"model":self.dataArray[indexPath.section]}];
+        [YYRoute pushToController:@"FastenInputViewController" data:userInfo];
     }
     else if ([self.category isEqualToString:@"adjust"]) {
-        [YYRoute pushToController:@"AdjustFormInputController" data:@{@"model":self.dataArray[indexPath.section]}];
+        [YYRoute pushToController:@"AdjustFormInputController" data:userInfo];
     }
     else if ([self.category isEqualToString:@"replace"]) {
-        [YYRoute pushToController:@"ReplaceFormInputController" data:@{@"model":self.dataArray[indexPath.section]}];
+        [YYRoute pushToController:@"ReplaceFormInputController" data:userInfo];
     }
     else {
-        [YYRoute pushToController:@"LubricationInputViewController" data:@{@"model":self.dataArray[indexPath.section]}];
+        [YYRoute pushToController:@"LubricationInputViewController" data:userInfo];
     }
 }
 
@@ -109,7 +110,13 @@
         [self.view showWarningWithIcon:nil andTitle:@"该设备没有点检计划" andTopSpace:140];
     }
     else {
-        self.dataArray = [JsonStringTransfer dictionaryArray:data ToModelArray:@"CheckUPModel"];
+        NSMutableArray *marray = NSMutableArray.array;
+        for (NSDictionary *dic in data) {
+            NSMutableDictionary *mdic = dic.mutableCopy;
+            mdic[@"contentId"] = mdic[@"id"];
+            [marray addObject:mdic.copy];
+        }
+        self.dataArray = [JsonStringTransfer dictionaryArray:marray ToModelArray:@"CheckUPModel"];
         [self setupTableView];
     }
 }
