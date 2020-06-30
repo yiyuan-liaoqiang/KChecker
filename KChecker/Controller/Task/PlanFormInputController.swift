@@ -96,19 +96,19 @@ class PlanFormInputController: BaseFormViewController {
         param!["executeDate"] = Date().timeStrWithFormat(format: "yyyy-MM-dd HH:mm:ss")
         let session = YYNSessionManager.default()
         session?.requestSerializer = AFJSONRequestSerializer()
-        ActivityIndicatorManager.showActivityIndicator(in: self.view)
-        session?.method("post", urlString: "http://111.229.39.85:9094/facility/check", andParams: param, andHttpHeaders: [:], success: { (ret) in
-            ActivityIndicatorManager.hideActivityIndicator(in: self.view)
-            if let ret = ret as? [String:Any] {
-                ProgressHUD.showMessage(ret["msg"] as? String)
-                if let code = ret["code"] as? Int,code == 200 {
-                    YYRoute.pop()
-                }
-            }
-        }, failure: { (err) in
-            ActivityIndicatorManager.hideActivityIndicator(in: self.view)
-            if let error = err as? NSError {
-                if error.code == -1009 || error.code == -1004 {
+//        ActivityIndicatorManager.showActivityIndicator(in: self.view)
+//        session?.method("post", urlString: "http://111.229.39.85:9094/facility/check", andParams: param, andHttpHeaders: [:], success: { (ret) in
+//            ActivityIndicatorManager.hideActivityIndicator(in: self.view)
+//            if let ret = ret as? [String:Any] {
+//                ProgressHUD.showMessage(ret["msg"] as? String)
+//                if let code = ret["code"] as? Int,code == 200 {
+//                    YYRoute.pop()
+//                }
+//            }
+//        }, failure: { (err) in
+//            ActivityIndicatorManager.hideActivityIndicator(in: self.view)
+//            if let error = err as? NSError {
+//                if error.code == -1009 || error.code == -1004 {
                     //The Internet connection appears to be offline.
                     ProgressHUD.showMessage("网络连接中断，已将请求缓存在本地，待有网络再次提交")
                     var localRequest:[String:JSON]?
@@ -122,15 +122,15 @@ class PlanFormInputController: BaseFormViewController {
                     param!["style"] = "AFJSONRequestSerializer"
                     localRequest?["http://111.229.39.85:9094/facility/check"] = JSON(param ?? [:])
                     try? YYNCache.requestStorage?.setObject(JSON(localRequest!), forKey: "request")
-                }
-                else {
-                    ProgressHUD.showMessage(error.localizedDescription)
-                }
-            }
-            else {
-                ProgressHUD.showMessage(err as? String)
-            }
-        })
+//                }
+//                else {
+//                    ProgressHUD.showMessage(error.localizedDescription)
+//                }
+//            }
+//            else {
+//                ProgressHUD.showMessage(err as? String)
+//            }
+//        })
     }
     
     deinit {

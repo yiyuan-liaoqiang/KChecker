@@ -19,13 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        DBUtil.sharedUtil()
         if AccountHelper.isLogin {
             self.nav = UINavigationController(rootViewController: MainViewController())
             self.nav.toolbar.isHidden = true
 
-            //推送
-            PushUtils.shared().registerAPNS(application)
             //绑定账号到阿里云推送
             let info = (try? YYNCache.userRelatedStorage?.object(forKey: "userInfo").dictionary)
             if let userInfo = info as? [String:Any] {
@@ -41,7 +38,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
             self.nav.toolbar.isHidden = true
         }
 //        CloudPushSDK.turnOnDebug()
-        print(CloudPushSDK.isChannelOpened())
+        //推送
+        PushUtils.shared().registerAPNS(application)
         self.window?.rootViewController = self.nav
         
         return true
@@ -62,8 +60,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
-        
-//        ResendRequest.shared.resendRequest()
+        if AccountHelper.isLogin {
+            ResendRequest.shared.resendRequest()
+        }
     }
 
     func applicationWillTerminate(_ application: UIApplication) {

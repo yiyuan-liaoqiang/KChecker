@@ -59,6 +59,7 @@ class ResendRequest: NSObject {
                 if let ret = ret as? [String:AnyObject] {
                     if Int(truncating: ret["code"] as! NSNumber) == 200 {
                         ProgressHUD.showMessage("\(param!["localTitle"] as? String ?? "未知填报")提交成功")
+                        print("\(param!["localTitle"] as? String ?? "未知填报")提交成功")
                         self.removeRequestForKey(key)
                     }
                     else {
